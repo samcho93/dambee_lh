@@ -1,0 +1,20 @@
+{
+	"schedule": [
+		{
+			"dayOfWeek": "",
+			"startDt": "20211128",
+			"endDt": "20211128",
+			"startTime": "20:00",
+			"endTime": "20:10"
+		},
+		{
+			"dayOfWeek": "1",
+			"startDt": "20211129",
+			"endDt": "99991231",
+			"startTime": "00:00",
+			"endTime": "00:05"
+		}
+	],
+	"method": "setSchedule",
+	"responseId": "d723a252b08045ca81e2fd0d5959c912"
+}

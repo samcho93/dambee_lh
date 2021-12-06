@@ -1,0 +1,30 @@
+[2021-12-06 22:44:18][COMMAND]Read System Configuration File
+[2021-12-06 22:44:18][MAIN]입출력 초기화
+[2021-12-06 22:44:18][MAIN]LCD 초기화
+[2021-12-06 22:44:18][MAIN]사운드 초기화
+[2021-12-06 22:44:18][MAIN]네트워크 정보 로드
+[2021-12-06 22:44:18][MAIN]Send to BLE
+[2021-12-06 22:44:19][COMMAND]##################################################
+[2021-12-06 22:44:19][COMMAND]> CMD : Get BLE Infor.
+[2021-12-06 22:44:19][COMMAND]{'enckey': 'BBCCD728663FF5F2', 'mac': 'D3:68:BF:B2:F2:5C'}
+[2021-12-06 22:44:19][COMMAND]##################################################
+[2021-12-06 22:44:19][COMMAND]Write System Configuration File
+[2021-12-06 22:44:19][UTIL]key : 20D368BFB2F25CBBCCD728663FF5F221
+[2021-12-06 22:44:19][UTIL]iv : BBCCD728663FF5F2
+[2021-12-06 22:44:19][MAIN]터치초기화
+[2021-12-06 22:44:22][MAIN]카드리더초기화
+[2021-12-06 22:44:22][MAIN]소켓서버 연결
+[2021-12-06 22:44:22][MYSOCKET]접속 완료
+[2021-12-06 22:44:22][MYSOCKET]{'result': 0}
+[2021-12-06 22:44:22][MYSOCKET]## Send Message ##
+[2021-12-06 22:44:22][MYSOCKET]orig : {'method': 'getDeviceFcltInfo', 'macAddr': 'D3:68:BF:B2:F2:5C'}
+[2021-12-06 22:44:22][MYSOCKET]dec : {"resulttime":"20211206224422","fcltSn":5,"errorCode":0,"orgnztSn":3}
+[2021-12-06 22:44:22][MYSOCKET]recvData : b'\xcd\x9b\xcbw\x7f,\xeb\x8f(\x9bk\x12\x83\x85#\xe2\x9c\xe11PE\x81\x11\x89Im\x15">C\x1cp\xfd\xb2h\xa8\x96\xa7o:Q\x80Hd\xea\xe3\x12\x01\xa20\x9b\xa2\xc3n\x0e\x9e\xb2~\x99\xab\x9bInNHF\xb4v}\xd3\x10\x07\xe3\x05n\xd2\xa8_\xbb\xe0'
+[2021-12-06 22:44:22][MYSOCKET]dicdata : {'resulttime': '20211206224422', 'fcltSn': 5, 'errorCode': 0, 'orgnztSn': 3}
+[2021-12-06 22:44:22][MYSOCKET]resulttime : 20211206224422
+[2021-12-06 22:44:22][MYSOCKET]Receive Socket
+[2021-12-06 22:44:22][MYSOCKET]Decoding : {"resulttime":"20211206224422","fcltSn":5,"errorCode":0,"orgnztSn":3}
+[2021-12-06 22:44:22][MYSOCKET]Call taskProcess
+[2021-12-06 22:44:22][TASK]taskProcess dic : {'resulttime': '20211206224422', 'fcltSn': 5, 'errorCode': 0, 'orgnztSn': 3}
+[2021-12-06 22:44:22][COMMAND]Write System Configuration File
+[2021-12-06 22:44:27][MAIN][Key] K7

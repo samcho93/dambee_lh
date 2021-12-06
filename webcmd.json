@@ -1,0 +1,37 @@
+{  
+  "webcmd":[  
+  {"method":"getDeviceFcltInfo",
+   "macAddr":""},
+   
+  {"method":"getAuthKeyInfo", 
+   "orgnztSn":1,
+   "fcltSn":21},
+   
+  {"method":"setMapXY",
+   "orgnztSn":1,
+   "fcltSn":21,
+   "mapX":"32.52024821",
+   "mapY":"126.359038"},
+   
+  {"method":"setError",
+   "orgnztSn":1,
+   "fcltSn":21,
+   "errorCode":0},
+   
+  {"method":"reqVideoCall",
+   "macAddr":""},
+   
+  {"method":"reqVideoCallResult",
+   "macAddr":"",
+   "videocallSn":111,
+   "videoCallResult":0},
+   
+  {"method":"videoCallTimeout",
+   "macAddr":"",
+   "videocallSn":111},
+   
+  {"method":"reqFingerCardCheck",
+    "cardNumber":"00AABBCCDDEE",
+    "fcltSn":21}
+  ]
+}            

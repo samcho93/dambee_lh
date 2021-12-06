@@ -1,0 +1,5 @@
+
+{"responseId": "76b9e29dc1b8418a9dee1a0300880f44","method":"getDeviceOption"},
+{"method":"setInit"},
+{"method":"setReboot"},
+{"responseId": "76b9e29dc1b8418a9dee1a0300880f44","method" : "setDeviceOption", "opetime" : 3, "lcd" : 3, "lcdtxt" : 3, "spk" : 3, "mic" : 3, "bluepwr" : 3, "brkyn" : 3}

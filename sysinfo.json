@@ -1,0 +1,34 @@
+{
+	"System": {
+		"fcltsn": 5,
+		"frmver": "1.0.0.1",
+		"plfmaddr": "lhhome.com/lhhoms",
+		"mac": "e4:5f:01:30:9f:1c",
+		"AuthKey": "1",
+		"orgnztSn": "1"
+	},
+	"Network": {
+		"ipaddr": "192.168.0.2",
+		"gateway": "192.168.0.1",
+		"netmask": "255.255.255.0",
+		"dns": "168.126.63.1"
+	},
+	"Option": {
+		"interval": 15,
+		"opetime": 3,
+		"lcd": 5,
+		"lcdtxt": 2,
+		"spk": 3,
+		"mic": 3,
+		"bluepwr": 3,
+		"brkyn": 1
+	},
+	"BLE": {
+		"enckey": "BBCCD728663FF5F2",
+		"mac": "D3:68:BF:B2:F2:5C"
+	},
+	"Server": {
+		"IP": "yeolligo-soc.com",
+		"PORT": 17005
+	}
+}
