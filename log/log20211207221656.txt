@@ -1,0 +1,29 @@
+[2021-12-07 22:16:56][COMMAND]Read System Configuration File
+[2021-12-07 22:16:56][MAIN]입출력 초기화
+[2021-12-07 22:16:56][MAIN]LCD 초기화
+[2021-12-07 22:16:57][MAIN]사운드 초기화
+[2021-12-07 22:16:57][MAIN]네트워크 정보 로드
+[2021-12-07 22:16:57][UTIL]Send to BLE
+[2021-12-07 22:16:57][COMMAND]##################################################
+[2021-12-07 22:16:57][COMMAND]> CMD : Get BLE Infor.
+[2021-12-07 22:16:57][COMMAND]{'enckey': 'BBCCD728663FF5F2', 'mac': 'D3:68:BF:B2:F2:5C'}
+[2021-12-07 22:16:57][COMMAND]##################################################
+[2021-12-07 22:16:57][COMMAND]Write System Configuration File
+[2021-12-07 22:16:57][UTIL]key : 20D368BFB2F25CBBCCD728663FF5F221
+[2021-12-07 22:16:57][UTIL]iv : BBCCD728663FF5F2
+[2021-12-07 22:16:58][MAIN]터치초기화
+[2021-12-07 22:17:00][MAIN]카드리더초기화
+[2021-12-07 22:17:00][MAIN]소켓서버 연결
+[2021-12-07 22:17:10][MYSOCKET]접속 완료
+[2021-12-07 22:17:15][MYSOCKET]{'result': 0}
+[2021-12-07 22:17:15][MYSOCKET]## Send Message ##
+[2021-12-07 22:17:15][MYSOCKET]orig : {'method': 'getDeviceFcltInfo', 'macAddr': 'D3:68:BF:B2:F2:5C'}
+[2021-12-07 22:17:15][MYSOCKET]dec : {"resulttime":"20211207221715","fcltSn":5,"errorCode":0,"orgnztSn":3}
+[2021-12-07 22:17:15][MYSOCKET]recvData : b'\xcd\x9b\xcbw\x7f,\xeb\x8f(\x9bk\x12\x83\x85#\xe2\x18\x89\xb4\x87\xdc{\xf3\xed`\x0c0\xef\xe0\xfe\x82\xa2W{\xad\xcc\x9b}n\xd7\x07\xd4\x7f\xab\xfaL\xd8\xe9\xc1\x17\xbe\xb7A$\x0c\xf4g\xb6T\x89\xdb\x06\x04[oE8H\x04\x00j\x0fL?\xa1\xbd\xc7x\xc3\x10'
+[2021-12-07 22:17:15][MYSOCKET]dicdata : {'resulttime': '20211207221715', 'fcltSn': 5, 'errorCode': 0, 'orgnztSn': 3}
+[2021-12-07 22:17:15][MYSOCKET]resulttime : 20211207221715
+[2021-12-07 22:17:15][MYSOCKET]Receive Socket
+[2021-12-07 22:17:15][MYSOCKET]Decoding : {"resulttime":"20211207221715","fcltSn":5,"errorCode":0,"orgnztSn":3}
+[2021-12-07 22:17:15][MYSOCKET]Call taskProcess
+[2021-12-07 22:17:15][TASK]taskProcess dic : {'resulttime': '20211207221715', 'fcltSn': 5, 'errorCode': 0, 'orgnztSn': 3}
+[2021-12-07 22:17:15][COMMAND]Write System Configuration File

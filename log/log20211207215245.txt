@@ -1,0 +1,18 @@
+[2021-12-07 21:52:46][COMMAND]Read System Configuration File
+[2021-12-07 21:52:46][MAIN]입출력 초기화
+[2021-12-07 21:52:46][MAIN]LCD 초기화
+[2021-12-07 21:52:46][MAIN]사운드 초기화
+[2021-12-07 21:52:46][MAIN]네트워크 정보 로드
+[2021-12-07 21:52:46][MAIN]Send to BLE
+[2021-12-07 21:52:47][MAIN]Send to Error Message : +010cmd:seterr,error:2
+
+[2021-12-07 21:52:47][MAIN]터치초기화
+[2021-12-07 21:52:49][MAIN]카드리더초기화
+[2021-12-07 21:52:49][MAIN]소켓서버 연결
+[2021-12-07 21:52:59][MYSOCKET]접속 완료
+[2021-12-07 21:53:05][MYSOCKET]{'result': 1}
+[2021-12-07 21:53:05][MYSOCKET]## Send Message ##
+[2021-12-07 21:53:05][MYSOCKET]orig : {'method': 'getDeviceFcltInfo', 'macAddr': 'AA:BB:CC:DD:EE:DD'}
+[2021-12-07 21:53:05][MYSOCKET]연결이 거부 되었습니다
+[2021-12-07 21:53:05][COMMAND]Write System Configuration File
+[2021-12-07 21:56:41][MAIN]접속 종료

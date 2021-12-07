@@ -177,88 +177,91 @@ def CheckNetwork():
         return '127.0.0.1'
                 
 def SendMessage(sel, param=0):
-    global result, roomnumber, webcmd, task
-      
-    #if "roomNumber" in webcmd[sel]:
-      #webcmd[sel]["roomNumber"] = roomnumber
-      
-    if sel == 3:
-      webcmd[sel]['errorCode'] = param
-      webcmd[sel]['orgnztSn'] = pcmd.system["orgnztSn"]
-      
-    if "videocallSn" in webcmd[sel]:
-        webcmd[sel]["videocallSn"] = callsn
-      
-    if "fcltSn" in webcmd[sel]:
-        webcmd[sel]["fcltSn"] = pcmd.system["fcltsn"]
-      
-    DEBUGPrint("## Send Message ##")
-    DEBUGPrint("orig : ", webcmd[sel])
-    
-    da = str(webcmd[sel])        
-    da = json.dumps(da)
-    da = da.replace("\'","\"")
-    da = da[1:-1]
-    #print("dump : ", da)
-    
-    result = ""
-    aes = AESCryptoCBC(key, iv)
-    enc = aes.encrypt(da)
-    clientSock.send(enc)
-    
-    #recvData = clientSock.recv(1024)
-    timeout = int(time())
-    
-    while result == "":
-      cur_time = int(time())
-      if (cur_time - timeout) > 3: 
-        DEBUGPrint("Socket Timeout")
-        timeout = -1
-        task.task = 0
-        break 
-
-    if timeout != -1:
-      recv = result
-      DEBUGPrint("Receive Socket")
-      #DEBUGPrint('from Server > ', recvData)
-  
-      #키 생성
-      # Decoding
-      if recv is not "error":
-        aes2 = AESCryptoCBC(key, iv)
-        dec = aes2.decrypt(recv)
-        dic = json.loads(dec)
+    try:
+        global result, roomnumber, webcmd, task
+          
+        #if "roomNumber" in webcmd[sel]:
+          #webcmd[sel]["roomNumber"] = roomnumber
+          
+        if sel == 3:
+          webcmd[sel]['errorCode'] = param
+          webcmd[sel]['orgnztSn'] = pcmd.system["orgnztSn"]
+          
+        if "videocallSn" in webcmd[sel]:
+            webcmd[sel]["videocallSn"] = callsn
+          
+        if "fcltSn" in webcmd[sel]:
+            webcmd[sel]["fcltSn"] = pcmd.system["fcltsn"]
+          
+        DEBUGPrint("## Send Message ##")
+        DEBUGPrint("orig : ", webcmd[sel])
         
-        DEBUGPrint('Decoding : ', dec)
+        da = str(webcmd[sel])        
+        da = json.dumps(da)
+        da = da.replace("\'","\"")
+        da = da[1:-1]
+        #print("dump : ", da)
         
-        if "fcltSn" in dic:
-          pcmd.system["fcltsn"] = dic["fcltSn"]
-        elif "orgnztSn" in dic:
-          pcmd.system["orgnztSn"] = dic["orgnztSn"]
-        elif "authKey" in dic:
-          if dic["authKey"] == pcmd.system["AuthKey"]:
-            if pcmd.fOpen == False:
-              pcmd.fOpen = True
-            pcmd.system["AuthKey"] = '1'
-            DEBUGPrint("Valid Authkey...")
+        result = ""
+        aes = AESCryptoCBC(key, iv)
+        enc = aes.encrypt(da)
+        clientSock.send(enc)
+        
+        #recvData = clientSock.recv(1024)
+        timeout = int(time())
+        
+        while result == "":
+          cur_time = int(time())
+          if (cur_time - timeout) > 3: 
+            DEBUGPrint("Socket Timeout")
+            timeout = -1
+            task.task = 0
+            break 
+    
+        if timeout != -1:
+          recv = result
+          DEBUGPrint("Receive Socket")
+          #DEBUGPrint('from Server > ', recvData)
+      
+          #키 생성
+          # Decoding
+          if recv is not "error":
+            aes2 = AESCryptoCBC(key, iv)
+            dec = aes2.decrypt(recv)
+            dic = json.loads(dec)
+            
+            DEBUGPrint('Decoding : ', dec)
+            
+            if "fcltSn" in dic:
+              pcmd.system["fcltsn"] = dic["fcltSn"]
+            elif "orgnztSn" in dic:
+              pcmd.system["orgnztSn"] = dic["orgnztSn"]
+            elif "authKey" in dic:
+              if dic["authKey"] == pcmd.system["AuthKey"]:
+                if pcmd.fOpen == False:
+                  pcmd.fOpen = True
+                pcmd.system["AuthKey"] = '1'
+                DEBUGPrint("Valid Authkey...")
+              else:
+                DEBUGPrint("Invalid Authkey...") 
+            
+            if webcmd[sel]['method'] == "reqFingerCardCheck": 
+              if dic['errorCode'] == 0:
+                if pcmd.fOpen == False :
+                  pcmd.fOpen = True
+    
+            DEBUGPrint("Call taskProcess")
+            task.taskProcess(dic)
           else:
-            DEBUGPrint("Invalid Authkey...") 
-        
-        if webcmd[sel]['method'] == "reqFingerCardCheck": 
-          if dic['errorCode'] == 0:
-            if pcmd.fOpen == False :
-              pcmd.fOpen = True
-
-        DEBUGPrint("Call taskProcess")
-        task.taskProcess(dic)
-      else:
-        if task.task == 2:
-          task.task = 3# TASK_REQUEST_CALL_RESULT
-          task.timeout = int(time()*1000)
-          task.belltime = task.timeout
-  
-      result = ""
-    
+            if task.task == 2:
+              task.task = 3# TASK_REQUEST_CALL_RESULT
+              task.timeout = int(time()*1000)
+              task.belltime = task.timeout
+      
+          result = ""
+    except:
+        DEBUGPrint("SendMessage Error")
+            
 def Close():
     global clientSock
 

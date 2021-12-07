@@ -1,0 +1,32 @@
+[2021-12-07 21:56:44][COMMAND]Read System Configuration File
+[2021-12-07 21:56:44][MAIN]입출력 초기화
+[2021-12-07 21:56:44][MAIN]LCD 초기화
+[2021-12-07 21:56:44][MAIN]사운드 초기화
+[2021-12-07 21:56:44][MAIN]네트워크 정보 로드
+[2021-12-07 21:56:44][MAIN]Send to BLE
+[2021-12-07 21:56:45][MAIN]터치초기화
+[2021-12-07 21:56:48][MAIN]카드리더초기화
+[2021-12-07 21:56:48][MAIN]소켓서버 연결
+[2021-12-07 21:56:58][MYSOCKET]접속 완료
+[2021-12-07 21:57:03][MYSOCKET]{'result': 1}
+[2021-12-07 21:57:03][MYSOCKET]## Send Message ##
+[2021-12-07 21:57:03][MYSOCKET]orig : {'method': 'getDeviceFcltInfo', 'macAddr': 'AA:BB:CC:DD:EE:DD'}
+[2021-12-07 21:57:03][MYSOCKET]연결이 거부 되었습니다
+[2021-12-07 21:57:03][COMMAND]Write System Configuration File
+[2021-12-07 21:57:09][COMMAND]+067cmd:setsyn,authkey:0905142444RYSTWU,timesync:20211207215709fcltsn:5
+[2021-12-07 21:57:10][COMMAND]+071cmd:setope,authkey:0905142444RYSTWU,gender:1,reqtime:20211207215710,cardcnt:0001,pw1:702181,pw2:281565,pw3:485164,btry:0,error:0
+[2021-12-07 21:57:10][COMMAND]##################################################
+[2021-12-07 21:57:10][COMMAND]> CMD : door open
+[2021-12-07 21:57:10][COMMAND]> Authkey : 0905142444RYSTWU
+[2021-12-07 21:57:10][COMMAND]> Gender : Women
+[2021-12-07 21:57:10][COMMAND]> Request Time : 20211207215710
+[2021-12-07 21:57:10][COMMAND]> pw1 : 702181
+[2021-12-07 21:57:10][COMMAND]> pw2 : 281565
+[2021-12-07 21:57:10][COMMAND]> pw3 : 485164
+[2021-12-07 21:57:10][COMMAND]> Current Time : 20211207215710
+[2021-12-07 21:57:10][COMMAND]Respons Time(sec) : 0(s)
+[2021-12-07 21:57:10][COMMAND]##################################################
+[2021-12-07 21:57:10][COMMAND]BLE인증완료
+[2021-12-07 21:57:10][MAIN]서버인증요청
+[2021-12-07 21:57:10][MYSOCKET]## Send Message ##
+[2021-12-07 21:57:10][MYSOCKET]orig : {'method': 'getAuthKeyInfo', 'orgnztSn': 1, 'fcltSn': 5}

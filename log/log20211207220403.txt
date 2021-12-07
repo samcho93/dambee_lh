@@ -1,0 +1,196 @@
+[2021-12-07 22:04:03][COMMAND]Read System Configuration File
+[2021-12-07 22:04:03][MAIN]입출력 초기화
+[2021-12-07 22:04:03][MAIN]LCD 초기화
+[2021-12-07 22:04:04][MAIN]사운드 초기화
+[2021-12-07 22:04:04][MAIN]네트워크 정보 로드
+[2021-12-07 22:04:04][MAIN]Send to BLE
+[2021-12-07 22:04:04][COMMAND]##################################################
+[2021-12-07 22:04:04][COMMAND]> CMD : Get BLE Infor.
+[2021-12-07 22:04:04][COMMAND]{'enckey': 'BBCCD728663FF5F2', 'mac': 'D3:68:BF:B2:F2:5C'}
+[2021-12-07 22:04:04][COMMAND]##################################################
+[2021-12-07 22:04:04][COMMAND]Write System Configuration File
+[2021-12-07 22:04:04][UTIL]key : 20D368BFB2F25CBBCCD728663FF5F221
+[2021-12-07 22:04:04][UTIL]iv : BBCCD728663FF5F2
+[2021-12-07 22:04:05][MAIN]터치초기화
+[2021-12-07 22:04:07][MAIN]카드리더초기화
+[2021-12-07 22:04:07][MAIN]소켓서버 연결
+[2021-12-07 22:04:46][MYSOCKET]접속 완료
+[2021-12-07 22:04:51][MYSOCKET]{'result': 0}
+[2021-12-07 22:04:51][MYSOCKET]## Send Message ##
+[2021-12-07 22:04:51][MYSOCKET]orig : {'method': 'getDeviceFcltInfo', 'macAddr': 'D3:68:BF:B2:F2:5C'}
+[2021-12-07 22:04:51][MYSOCKET]dec : {"resulttime":"20211207220451","fcltSn":5,"errorCode":0,"orgnztSn":3}
+[2021-12-07 22:04:51][MYSOCKET]recvData : b'\xcd\x9b\xcbw\x7f,\xeb\x8f(\x9bk\x12\x83\x85#\xe2]\x98\x13\xcf\x95C\xbe\x0c\xdbl\x93[\t0u\x0b\xe6;#q0\x1act\xd3\x15\x98\\\x93b\xc9\xe4\xc14\x14\xdf\xa2\xd0\xdb\xf6\x10\xb9v\xa0\x90\x96\xd3<"\xd5\x08\xee\xec\xfcEh\x03\xe2\xb4>&NW\xc1'
+[2021-12-07 22:04:52][MYSOCKET]dicdata : {'resulttime': '20211207220451', 'fcltSn': 5, 'errorCode': 0, 'orgnztSn': 3}
+[2021-12-07 22:04:52][MYSOCKET]resulttime : 20211207220451
+[2021-12-07 22:04:52][MYSOCKET]Receive Socket
+[2021-12-07 22:04:52][MYSOCKET]Decoding : {"resulttime":"20211207220451","fcltSn":5,"errorCode":0,"orgnztSn":3}
+[2021-12-07 22:04:52][MYSOCKET]Call taskProcess
+[2021-12-07 22:04:52][TASK]taskProcess dic : {'resulttime': '20211207220451', 'fcltSn': 5, 'errorCode': 0, 'orgnztSn': 3}
+[2021-12-07 22:04:52][COMMAND]Write System Configuration File
+[2021-12-07 22:04:56][COMMAND]+067cmd:setsyn,authkey:0905142444RYSTWU,timesync:20211207220456fcltsn:5
+[2021-12-07 22:04:57][COMMAND]+071cmd:setope,authkey:0905142444RYSTWU,gender:1,reqtime:20211207220457,cardcnt:0001,pw1:468659,pw2:676362,pw3:049374,btry:0,error:0
+[2021-12-07 22:04:57][COMMAND]##################################################
+[2021-12-07 22:04:57][COMMAND]> CMD : door open
+[2021-12-07 22:04:57][COMMAND]> Authkey : 0905142444RYSTWU
+[2021-12-07 22:04:57][COMMAND]> Gender : Women
+[2021-12-07 22:04:57][COMMAND]> Request Time : 20211207220457
+[2021-12-07 22:04:57][COMMAND]> pw1 : 468659
+[2021-12-07 22:04:57][COMMAND]> pw2 : 676362
+[2021-12-07 22:04:57][COMMAND]> pw3 : 049374
+[2021-12-07 22:04:57][COMMAND]> Current Time : 20211207220457
+[2021-12-07 22:04:57][COMMAND]Respons Time(sec) : 0(s)
+[2021-12-07 22:04:57][COMMAND]##################################################
+[2021-12-07 22:04:57][COMMAND]BLE인증완료
+[2021-12-07 22:04:57][MAIN]서버인증요청
+[2021-12-07 22:04:57][MYSOCKET]## Send Message ##
+[2021-12-07 22:04:57][MYSOCKET]orig : {'method': 'getAuthKeyInfo', 'orgnztSn': 1, 'fcltSn': 5}
+[2021-12-07 22:04:57][MYSOCKET]dec : {"authKey":"0905142444RYSTWU","resulttime":"20211207220457","errorCode":0}
+[2021-12-07 22:04:57][MYSOCKET]recvData : b"L'\xf4aP\xfd\xc7HR\xe2\xb9pW\x82\xd3@\xf3\x08\x12%.\xb3\x89\xe0Yg5\x0c\xdb)\x00\xd7t=\xcc;\x03\x07j\x1cP\xe8\xb8y\x83?\xb2\xa2\x9b\x9bPf<\xfb\x1a\xd1g\xc0\xbe!\xd1o\xee\xe3F\xc2\x94\x1a\xa1\xb3\xce-\xbb2\x9a2\xef\xa8n\x9c"
+[2021-12-07 22:04:57][MYSOCKET]dicdata : {'authKey': '0905142444RYSTWU', 'resulttime': '20211207220457', 'errorCode': 0}
+[2021-12-07 22:04:57][MYSOCKET]Receive Socket
+[2021-12-07 22:04:57][MYSOCKET]resulttime : 20211207220457
+[2021-12-07 22:04:57][MYSOCKET]Decoding : {"authKey":"0905142444RYSTWU","resulttime":"20211207220457","errorCode":0}
+[2021-12-07 22:04:57][MYSOCKET]Valid Authkey...
+[2021-12-07 22:04:57][MYSOCKET]Call taskProcess
+[2021-12-07 22:04:57][TASK]taskProcess dic : {'authKey': '0905142444RYSTWU', 'resulttime': '20211207220457', 'errorCode': 0}
+[2021-12-07 22:04:57][MAIN]Door Open
+[2021-12-07 22:05:00][MAIN]Door Close
+[2021-12-07 22:05:02][MAIN]Display Init...
+[2021-12-07 22:05:23][MYSOCKET]## Send Message ##
+[2021-12-07 22:05:23][MYSOCKET]orig : {'method': 'setError', 'orgnztSn': '1', 'fcltSn': 5, 'errorCode': '3'}
+[2021-12-07 22:05:23][MYSOCKET]dec : {"resulttime":"20211207220523","errorCode":0}
+[2021-12-07 22:05:23][MYSOCKET]recvData : b'\xcd\x9b\xcbw\x7f,\xeb\x8f(\x9bk\x12\x83\x85#\xe2\xef\xb8\x7f\x84\xc6\xefB\x13\x85\xf3\xa5\xce\x8c\x8b1Wg\x1d\x14\xddf\xfa\x07\xa4\xf3\xc3\xc4Om\x8b\x0b\x1f'
+[2021-12-07 22:05:23][MYSOCKET]dicdata : {'resulttime': '20211207220523', 'errorCode': 0}
+[2021-12-07 22:05:23][MYSOCKET]resulttime : 20211207220523
+[2021-12-07 22:05:23][MYSOCKET]Receive Socket
+[2021-12-07 22:05:23][MYSOCKET]Decoding : {"resulttime":"20211207220523","errorCode":0}
+[2021-12-07 22:05:23][MYSOCKET]Call taskProcess
+[2021-12-07 22:05:23][TASK]taskProcess dic : {'resulttime': '20211207220523', 'errorCode': 0}
+[2021-12-07 22:05:27][MAIN]Send to Error Message : +010cmd:seterr,error:1
+
+[2021-12-07 22:05:28][MAIN]Send to Error Message : +010cmd:seterr,error:1
+
+[2021-12-07 22:05:41][MAIN][Key] K1
+[2021-12-07 22:05:42][MAIN][Key] K1
+[2021-12-07 22:05:47][COMMAND]+067cmd:setsyn,authkey:0905142444RYSTWU,timesync:20211207220547fcltsn:5
+[2021-12-07 22:05:47][COMMAND]+071cmd:setope,authkey:0905142444RYSTWU,gender:1,reqtime:20211207220547,cardcnt:0001,pw1:969349,pw2:142068,pw3:104576,btry:0,error:0
+[2021-12-07 22:05:47][COMMAND]##################################################
+[2021-12-07 22:05:47][COMMAND]> CMD : door open
+[2021-12-07 22:05:47][COMMAND]> Authkey : 0905142444RYSTWU
+[2021-12-07 22:05:47][COMMAND]> Gender : Women
+[2021-12-07 22:05:47][COMMAND]> Request Time : 20211207220547
+[2021-12-07 22:05:47][COMMAND]> pw1 : 969349
+[2021-12-07 22:05:47][COMMAND]> pw2 : 142068
+[2021-12-07 22:05:47][COMMAND]> pw3 : 104576
+[2021-12-07 22:05:47][COMMAND]> Current Time : 20211207220547
+[2021-12-07 22:05:47][COMMAND]Respons Time(sec) : 0(s)
+[2021-12-07 22:05:47][COMMAND]##################################################
+[2021-12-07 22:05:47][COMMAND]BLE인증완료
+[2021-12-07 22:05:47][MAIN]서버인증요청
+[2021-12-07 22:05:47][MYSOCKET]## Send Message ##
+[2021-12-07 22:05:47][MYSOCKET]orig : {'method': 'getAuthKeyInfo', 'orgnztSn': 1, 'fcltSn': 5}
+[2021-12-07 22:05:47][MYSOCKET]dec : {"authKey":"0905142444RYSTWU","resulttime":"20211207220547","errorCode":0}
+[2021-12-07 22:05:47][MYSOCKET]recvData : b"L'\xf4aP\xfd\xc7HR\xe2\xb9pW\x82\xd3@\xf3\x08\x12%.\xb3\x89\xe0Yg5\x0c\xdb)\x00\xd7t=\xcc;\x03\x07j\x1cP\xe8\xb8y\x83?\xb2\xa2\xd80t\x8cz\x08\xd5\xc9\xa2C\xf2+\x03\x99\x80\xf2\x8a\xea\xcc\x13\x8c\x10\xe6#D\xf0\x81:k\x9f\x07\x83"
+[2021-12-07 22:05:48][MYSOCKET]dicdata : {'authKey': '0905142444RYSTWU', 'resulttime': '20211207220547', 'errorCode': 0}
+[2021-12-07 22:05:48][MYSOCKET]Receive Socket
+[2021-12-07 22:05:48][MYSOCKET]resulttime : 20211207220547
+[2021-12-07 22:05:48][MYSOCKET]Decoding : {"authKey":"0905142444RYSTWU","resulttime":"20211207220547","errorCode":0}
+[2021-12-07 22:05:48][MYSOCKET]Valid Authkey...
+[2021-12-07 22:05:48][MYSOCKET]Call taskProcess
+[2021-12-07 22:05:48][TASK]taskProcess dic : {'authKey': '0905142444RYSTWU', 'resulttime': '20211207220547', 'errorCode': 0}
+[2021-12-07 22:05:48][MAIN]Door Open
+[2021-12-07 22:05:51][MAIN]Door Close
+[2021-12-07 22:05:53][MAIN]Display Init...
+[2021-12-07 22:06:02][COMMAND]+067cmd:setsyn,authkey:0905142444RYSTWU,timesync:20211207220602fcltsn:5
+[2021-12-07 22:06:02][COMMAND]+071cmd:setope,authkey:0905142444RYSTWU,gender:1,reqtime:20211207220602,cardcnt:0001,pw1:774530,pw2:922157,pw3:350981,btry:0,error:0
+[2021-12-07 22:06:02][COMMAND]##################################################
+[2021-12-07 22:06:02][COMMAND]> CMD : door open
+[2021-12-07 22:06:02][COMMAND]> Authkey : 0905142444RYSTWU
+[2021-12-07 22:06:02][COMMAND]> Gender : Women
+[2021-12-07 22:06:02][COMMAND]> Request Time : 20211207220602
+[2021-12-07 22:06:02][COMMAND]> pw1 : 774530
+[2021-12-07 22:06:02][COMMAND]> pw2 : 922157
+[2021-12-07 22:06:02][COMMAND]> pw3 : 350981
+[2021-12-07 22:06:02][COMMAND]> Current Time : 20211207220602
+[2021-12-07 22:06:02][COMMAND]Respons Time(sec) : 0(s)
+[2021-12-07 22:06:02][COMMAND]##################################################
+[2021-12-07 22:06:02][COMMAND]BLE인증완료
+[2021-12-07 22:06:02][MAIN]서버인증요청
+[2021-12-07 22:06:02][MYSOCKET]## Send Message ##
+[2021-12-07 22:06:02][MYSOCKET]orig : {'method': 'getAuthKeyInfo', 'orgnztSn': 1, 'fcltSn': 5}
+[2021-12-07 22:06:03][MYSOCKET]dec : {"authKey":"0905142444RYSTWU","resulttime":"20211207220603","errorCode":0}
+[2021-12-07 22:06:03][MYSOCKET]recvData : b"L'\xf4aP\xfd\xc7HR\xe2\xb9pW\x82\xd3@\xf3\x08\x12%.\xb3\x89\xe0Yg5\x0c\xdb)\x00\xd7t=\xcc;\x03\x07j\x1cP\xe8\xb8y\x83?\xb2\xa2\xe7\x9cc\x96\x03\xe8?\x11\xe4\xb2\xd5+\xc5b^\x90\xe8&\xef\x1d\x13Q\x8e\xb2\xa7L:\xac\x91\xc9\x961"
+[2021-12-07 22:06:03][MYSOCKET]dicdata : {'authKey': '0905142444RYSTWU', 'resulttime': '20211207220603', 'errorCode': 0}
+[2021-12-07 22:06:03][MYSOCKET]resulttime : 20211207220603
+[2021-12-07 22:06:03][MYSOCKET]Receive Socket
+[2021-12-07 22:06:03][MYSOCKET]Decoding : {"authKey":"0905142444RYSTWU","resulttime":"20211207220603","errorCode":0}
+[2021-12-07 22:06:03][MYSOCKET]Valid Authkey...
+[2021-12-07 22:06:03][MYSOCKET]Call taskProcess
+[2021-12-07 22:06:03][TASK]taskProcess dic : {'authKey': '0905142444RYSTWU', 'resulttime': '20211207220603', 'errorCode': 0}
+[2021-12-07 22:06:03][MAIN]Door Open
+[2021-12-07 22:06:06][MAIN]Door Close
+[2021-12-07 22:06:08][MAIN]Display Init...
+[2021-12-07 22:06:55][MAIN][Key] K1
+[2021-12-07 22:07:29][MAIN][Key] K1
+[2021-12-07 22:07:39][COMMAND]+067cmd:setsyn,authkey:0905142444RYSTWU,timesync:20211207220739fcltsn:5
+[2021-12-07 22:07:40][COMMAND]+071cmd:setope,authkey:0905142444RYSTWU,gender:1,reqtime:20211207220740,cardcnt:0001,pw1:586316,pw2:717615,pw3:025887,btry:0,error:0
+[2021-12-07 22:07:40][COMMAND]##################################################
+[2021-12-07 22:07:40][COMMAND]> CMD : door open
+[2021-12-07 22:07:40][COMMAND]> Authkey : 0905142444RYSTWU
+[2021-12-07 22:07:40][COMMAND]> Gender : Women
+[2021-12-07 22:07:40][COMMAND]> Request Time : 20211207220740
+[2021-12-07 22:07:40][COMMAND]> pw1 : 586316
+[2021-12-07 22:07:40][COMMAND]> pw2 : 717615
+[2021-12-07 22:07:40][COMMAND]> pw3 : 025887
+[2021-12-07 22:07:40][COMMAND]> Current Time : 20211207220740
+[2021-12-07 22:07:40][COMMAND]Respons Time(sec) : 0(s)
+[2021-12-07 22:07:40][COMMAND]##################################################
+[2021-12-07 22:07:40][COMMAND]BLE인증완료
+[2021-12-07 22:07:40][MAIN]서버인증요청
+[2021-12-07 22:07:40][MYSOCKET]## Send Message ##
+[2021-12-07 22:07:40][MYSOCKET]orig : {'method': 'getAuthKeyInfo', 'orgnztSn': 1, 'fcltSn': 5}
+[2021-12-07 22:07:40][MYSOCKET]dec : {"authKey":"0905142444RYSTWU","resulttime":"20211207220740","errorCode":0}
+[2021-12-07 22:07:40][MYSOCKET]recvData : b"L'\xf4aP\xfd\xc7HR\xe2\xb9pW\x82\xd3@\xf3\x08\x12%.\xb3\x89\xe0Yg5\x0c\xdb)\x00\xd7t=\xcc;\x03\x07j\x1cP\xe8\xb8y\x83?\xb2\xa2\xd7\x86/\xa4\xde\x08v\xc7\xa2\xb0\xa0\xfd\n\x8d*\xf2\xa1\xeaM\x9f#\xdb\x12\xc5Ym\x14:x\xb6;\xcb"
+[2021-12-07 22:07:40][MYSOCKET]dicdata : {'authKey': '0905142444RYSTWU', 'resulttime': '20211207220740', 'errorCode': 0}
+[2021-12-07 22:07:40][MYSOCKET]resulttime : 20211207220740
+[2021-12-07 22:07:40][MYSOCKET]Receive Socket
+[2021-12-07 22:07:40][MYSOCKET]Decoding : {"authKey":"0905142444RYSTWU","resulttime":"20211207220740","errorCode":0}
+[2021-12-07 22:07:40][MYSOCKET]Valid Authkey...
+[2021-12-07 22:07:40][MYSOCKET]Call taskProcess
+[2021-12-07 22:07:40][TASK]taskProcess dic : {'authKey': '0905142444RYSTWU', 'resulttime': '20211207220740', 'errorCode': 0}
+[2021-12-07 22:07:40][MAIN]Door Open
+[2021-12-07 22:07:43][MAIN]Door Close
+[2021-12-07 22:07:45][MAIN]Display Init...
+[2021-12-07 22:07:50][MAIN][Key] K1
+[2021-12-07 22:07:58][MAIN][Key] K1
+[2021-12-07 22:07:59][COMMAND]+067cmd:setsyn,authkey:0905142444RYSTWU,timesync:20211207220758fcltsn:5
+[2021-12-07 22:07:59][COMMAND]+071cmd:setope,authkey:0905142444RYSTWU,gender:1,reqtime:20211207220759,cardcnt:0001,pw1:501291,pw2:429419,pw3:056226,btry:0,error:0
+[2021-12-07 22:07:59][COMMAND]##################################################
+[2021-12-07 22:07:59][COMMAND]> CMD : door open
+[2021-12-07 22:07:59][COMMAND]> Authkey : 0905142444RYSTWU
+[2021-12-07 22:07:59][COMMAND]> Gender : Women
+[2021-12-07 22:07:59][COMMAND]> Request Time : 20211207220759
+[2021-12-07 22:07:59][COMMAND]> pw1 : 501291
+[2021-12-07 22:07:59][COMMAND]> pw2 : 429419
+[2021-12-07 22:07:59][COMMAND]> pw3 : 056226
+[2021-12-07 22:07:59][COMMAND]> Current Time : 20211207220759
+[2021-12-07 22:07:59][COMMAND]Respons Time(sec) : 0(s)
+[2021-12-07 22:07:59][COMMAND]##################################################
+[2021-12-07 22:07:59][COMMAND]BLE인증완료
+[2021-12-07 22:07:59][MAIN]서버인증요청
+[2021-12-07 22:07:59][MYSOCKET]## Send Message ##
+[2021-12-07 22:07:59][MYSOCKET]orig : {'method': 'getAuthKeyInfo', 'orgnztSn': 1, 'fcltSn': 5}
+[2021-12-07 22:07:59][MYSOCKET]dec : {"authKey":"0905142444RYSTWU","resulttime":"20211207220759","errorCode":0}
+[2021-12-07 22:07:59][MYSOCKET]recvData : b"L'\xf4aP\xfd\xc7HR\xe2\xb9pW\x82\xd3@\xf3\x08\x12%.\xb3\x89\xe0Yg5\x0c\xdb)\x00\xd7t=\xcc;\x03\x07j\x1cP\xe8\xb8y\x83?\xb2\xa2\xad4\xe2\x0b_\xbcp\x8f\xe6K\xed\x91\xff\xf5\x0f\xe9\x8d5aX\xd5\xfa\x0bY\x17\x1a\x03!D8\x95\x98"
+[2021-12-07 22:07:59][MYSOCKET]dicdata : {'authKey': '0905142444RYSTWU', 'resulttime': '20211207220759', 'errorCode': 0}
+[2021-12-07 22:07:59][MYSOCKET]resulttime : 20211207220759
+[2021-12-07 22:07:59][MYSOCKET]Receive Socket
+[2021-12-07 22:07:59][MYSOCKET]Decoding : {"authKey":"0905142444RYSTWU","resulttime":"20211207220759","errorCode":0}
+[2021-12-07 22:07:59][MYSOCKET]Valid Authkey...
+[2021-12-07 22:07:59][MYSOCKET]Call taskProcess
+[2021-12-07 22:07:59][TASK]taskProcess dic : {'authKey': '0905142444RYSTWU', 'resulttime': '20211207220759', 'errorCode': 0}
+[2021-12-07 22:08:00][MAIN]Door Open
+[2021-12-07 22:08:03][MAIN]Door Close
+[2021-12-07 22:08:05][MAIN]Display Init...
+[2021-12-07 22:08:07][MAIN][Key] K1
+[2021-12-07 22:09:26][MAIN]접속 종료

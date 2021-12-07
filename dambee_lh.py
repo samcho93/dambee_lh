@@ -52,9 +52,8 @@ exitThread = False
 line = []
 key = ""
 bCover = False
+netdiscon = False
 ser = serial.Serial('/dev/ttyS0', 115200)
-
-
 
 def DEBUGPrint(msg, param1="", param2=""):
   string = "[MAIN]" + str(msg) + str(param1) + str(param2)
@@ -67,6 +66,7 @@ def handler(signum, frame):
 def readThread(ser):
     global line
     global exitThread
+    global bCober, netdiscon
 
     while not exitThread:
       try:
@@ -75,19 +75,18 @@ def readThread(ser):
                 
           if c == 10:
             tmp = ''.join(line[:-2])
-            parsing_str(tmp)
+            if bCover == False and netdiscon == False:
+                parsing_str(tmp)
+            else:
+                sendErrorMessage(ser, 1)
+                
             del line[:]
       except Exception as e:
           DEBUGPrint(e)
           
       sleep(0.001)
             
-def sendInitMessage():
-  global ser
 
-  str = "+010cmd:getble,error:0\r\n"
-  ser.write(str.encode('utf-8'))
-  DEBUGPrint("Send to BLE")
 
 def bleopen():
   global ser
@@ -122,7 +121,8 @@ draw = TFT.draw()
 
 TFT.backlight(pcmd.option['lcd'])
 display.DispInit(TFT, draw)
-display.DispWait(init=True)
+display.DispSocketDiscon()
+
 
 # 옵션 설정
 DEBUGPrint("사운드 초기화")
@@ -141,7 +141,7 @@ pcmd.network['netmask'] = tmp[0]['netmask']
 
 # BLE 연결
 bleopen()
-sendInitMessage()
+sendInitMessage(ser)
 
 sleep(1)
 
@@ -158,7 +158,7 @@ task = TASK()
 # 소켓서버 & 웹서버 연결
 DEBUGPrint("소켓서버 연결")
 mysocket.Init(pcmd.Server['IP'], pcmd.Server['PORT'], task)
-#mysocket.Init('192.168.137.1', 9000, task)
+#mysocket.Init('192.168.137.100', 9000, task)
 # 네트워크 설정 저장
 pcmd.save()
 
@@ -171,7 +171,7 @@ open_time = 0
 disp_time = 0
 access_time = 0
 net_time = 0
-
+alarm_time = 0
 cur_time = int(time())
 net_time = cur_time
 
@@ -181,11 +181,13 @@ keythread.start()
 nfcbusy = False
 keybusy = False
 keycnt = 0
-netdiscon = False
 
 keyinput = []
 
 schedule.readSchedule()
+tog = 0
+
+display.DispWait()
 
 while True:
   # Door Open 
@@ -227,6 +229,10 @@ while True:
   # Retry Disp
   if pcmd.fRetry == True and disp_time == 0:
     display.DispRetry()
+    try:
+      os.system("aplay -D plughw:1,0 /home/pi/dambee_lh/music/retry.wav &")
+    except:
+      DEBUGPrint("Sound Card 1 detect error!!!")     
     pcmd.fRetry = False
     disp_time = int(time())
   
@@ -297,16 +303,8 @@ while True:
       pcmd.fAuth = False
       DEBUGPrint("서버인증요청")
       mysocket.SendMessage(1)
-    
-  # Command Line Instruction
-  key = cli(key, inout, task, TFT)
-  if key == "quit": break
   
-  cur_time = int(time())
-  
-  if task.task == TASK_IDLE and (cur_time - net_time) >= 1:
-
-      
+  if task.task == TASK_IDLE and (cur_time - net_time) >= 1:      
     now = datetime.now()
     t = now.strftime('%H%M%S')
     if t == '000000':
@@ -328,6 +326,7 @@ while True:
         if Input.InputState['Cover'] == 1 and bCover == False:
           display.DispCoverOpen()
           bCover = True
+          alarm_timer = cur_time
           mysocket.SendMessage(3, "3")
         elif Input.InputState['Cover'] == 0 and bCover == True:
           display.DispWait()
@@ -359,13 +358,25 @@ while True:
             display.DispSocketDiscon()
             mysocket.bRetryCon = True          
         mysocket.Init(pcmd.Server['IP'], pcmd.Server['PORT'], task) 
+        #mysocket.Init('192.168.137.100', 9000, task)
     else:
         if mysocket.bRetryCon == True:
             display.DispWait()
             mysocket.bRetryCon = False
                                           
     net_time = cur_time
-    
+  
+  if bCover == True:
+    if (cur_time - alarm_time) >= 2:
+        os.system("aplay -D plughw:1,0 /home/pi/dambee_lh/music/emergency.wav")
+        alarm_time = cur_time
+      
+  # Command Line Instruction
+  key = cli(key, inout, task, TFT)
+  if key == "quit": break
+  
+  cur_time = int(time())    
+  
   sleep(0.001)
 
 DEBUGPrint("접속 종료")

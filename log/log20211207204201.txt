@@ -1,0 +1,67 @@
+[2021-12-07 20:42:01][COMMAND]Read System Configuration File
+[2021-12-07 20:42:01][MAIN]입출력 초기화
+[2021-12-07 20:42:01][MAIN]LCD 초기화
+[2021-12-07 20:42:01][MAIN]사운드 초기화
+[2021-12-07 20:42:01][MAIN]네트워크 정보 로드
+[2021-12-07 20:42:01][MAIN]Send to BLE
+[2021-12-07 20:42:02][COMMAND]##################################################
+[2021-12-07 20:42:02][COMMAND]> CMD : Get BLE Infor.
+[2021-12-07 20:42:02][COMMAND]{'enckey': 'BBCCD728663FF5F2', 'mac': 'D3:68:BF:B2:F2:5C'}
+[2021-12-07 20:42:02][COMMAND]##################################################
+[2021-12-07 20:42:02][COMMAND]Write System Configuration File
+[2021-12-07 20:42:02][UTIL]key : 20D368BFB2F25CBBCCD728663FF5F221
+[2021-12-07 20:42:02][UTIL]iv : BBCCD728663FF5F2
+[2021-12-07 20:42:02][MAIN]터치초기화
+[2021-12-07 20:42:05][MAIN]카드리더초기화
+[2021-12-07 20:42:05][MAIN]소켓서버 연결
+[2021-12-07 20:42:15][MYSOCKET]접속 완료
+[2021-12-07 20:42:20][MYSOCKET]{'result': 0}
+[2021-12-07 20:42:20][MYSOCKET]## Send Message ##
+[2021-12-07 20:42:20][MYSOCKET]orig : {'method': 'getDeviceFcltInfo', 'macAddr': 'D3:68:BF:B2:F2:5C'}
+[2021-12-07 20:42:20][MYSOCKET]dec : {"resulttime":"20211207204220","fcltSn":5,"errorCode":0,"orgnztSn":3}
+[2021-12-07 20:42:20][MYSOCKET]recvData : b'\xcd\x9b\xcbw\x7f,\xeb\x8f(\x9bk\x12\x83\x85#\xe2\xbeTt\x1b\xa7\xbc\x9e\t\xbb\xdf\xcc\x82\xcc\xc9\xf3\xee\xf40\xaf\xcd\xf1C]\xbb\xa0\rb"~\xedIe\xc2\x9cL\xc1\x11(%[S\xd2)\x94\x8bq\x03\x9a\x15CZ7\xf9IGF\xbfQ\x0b\x1c\xba\xf2o\x8a'
+[2021-12-07 20:42:20][MYSOCKET]dicdata : {'resulttime': '20211207204220', 'fcltSn': 5, 'errorCode': 0, 'orgnztSn': 3}
+[2021-12-07 20:42:20][MYSOCKET]resulttime : 20211207204220
+[2021-12-07 20:42:20][MYSOCKET]Receive Socket
+[2021-12-07 20:42:20][MYSOCKET]Decoding : {"resulttime":"20211207204220","fcltSn":5,"errorCode":0,"orgnztSn":3}
+[2021-12-07 20:42:20][MYSOCKET]Call taskProcess
+[2021-12-07 20:42:20][TASK]taskProcess dic : {'resulttime': '20211207204220', 'fcltSn': 5, 'errorCode': 0, 'orgnztSn': 3}
+[2021-12-07 20:42:20][COMMAND]Write System Configuration File
+[2021-12-07 20:42:28][MAIN][Key] K*
+[2021-12-07 20:42:28][TASK]TASK_REQUEST_CALL
+[2021-12-07 20:42:28][MYSOCKET]## Send Message ##
+[2021-12-07 20:42:28][MYSOCKET]orig : {'method': 'reqVideoCall', 'macAddr': 'D3:68:BF:B2:F2:5C'}
+[2021-12-07 20:42:28][MYSOCKET]dec : {"resulttime":"20211207204228","errorCode":0,"videocallSn":813}
+[2021-12-07 20:42:28][MYSOCKET]recvData : b'\xcd\x9b\xcbw\x7f,\xeb\x8f(\x9bk\x12\x83\x85#\xe2\xa2\xf5Ov\x16\x91\x8a%Y`[\x11\x85\xc1jA%\x15\x03X\xf0\xf4\x87\xa7.\xa7\x1e\xa4\x03M\xac\xf7\xb2\x92\x05\xc3^\x8c\xf4\x7f\xba\x8d\x06\x90\xa5{\x1c\x94'
+[2021-12-07 20:42:28][MYSOCKET]dicdata : {'resulttime': '20211207204228', 'errorCode': 0, 'videocallSn': 813}
+[2021-12-07 20:42:28][MYSOCKET]resulttime : 20211207204228
+[2021-12-07 20:42:28][MYSOCKET]Receive Socket
+[2021-12-07 20:42:28][MYSOCKET]Decoding : {"resulttime":"20211207204228","errorCode":0,"videocallSn":813}
+[2021-12-07 20:42:28][MYSOCKET]Call taskProcess
+[2021-12-07 20:42:28][TASK]taskProcess dic : {'resulttime': '20211207204228', 'errorCode': 0, 'videocallSn': 813}
+[2021-12-07 20:42:28][TASK]TASK_REQUEST_CALL_RESP
+[2021-12-07 20:42:28][TASK]VideoCallSn : 813
+[2021-12-07 20:42:28][TASK]TASK_REQUEST_CALL_RESULT
+[2021-12-07 20:42:28][MYSOCKET]## Send Message ##
+[2021-12-07 20:42:28][MYSOCKET]orig : {'method': 'reqVideoCallResult', 'macAddr': 'D3:68:BF:B2:F2:5C', 'videocallSn': 813, 'videoCallResult': 0}
+[2021-12-07 20:42:28][MYSOCKET]dec : {"result":0,"resulttime":"20211207204228","errorCode":0}
+[2021-12-07 20:42:28][MYSOCKET]recvData : b'#\xc4p\xbf\xe5F\xe3\xc3\xf5\xed\x9c\t\x95\xb4z\xbcy\xc5\x0b\xab@+\x08BlR\x96\xd31l98;q\x1ect\x84\xbd\xe2\xbbv\xf5e\xe9\xedx\xde\x854\x12\xb8WR\xe0\xc9\xd31\xd9\x83`%\xb2\x0f'
+[2021-12-07 20:42:28][MYSOCKET]dicdata : {'result': 0, 'resulttime': '20211207204228', 'errorCode': 0}
+[2021-12-07 20:42:28][MYSOCKET]Receive Socket
+[2021-12-07 20:42:28][MYSOCKET]resulttime : 20211207204228
+[2021-12-07 20:42:28][MYSOCKET]Decoding : {"result":0,"resulttime":"20211207204228","errorCode":0}
+[2021-12-07 20:42:28][MYSOCKET]Call taskProcess
+[2021-12-07 20:42:28][TASK]taskProcess dic : {'result': 0, 'resulttime': '20211207204228', 'errorCode': 0}
+[2021-12-07 20:42:48][TASK]videoCallTimeout!!!
+[2021-12-07 20:42:48][TASK]TASK_REQUEST_CALL_TIMEOUT
+[2021-12-07 20:42:48][MYSOCKET]## Send Message ##
+[2021-12-07 20:42:48][MYSOCKET]orig : {'method': 'videoCallTimeout', 'macAddr': 'D3:68:BF:B2:F2:5C', 'videocallSn': 813}
+[2021-12-07 20:42:48][MYSOCKET]dec : {"resulttime":"20211207204248","errorCode":0}
+[2021-12-07 20:42:48][MYSOCKET]recvData : b'\xcd\x9b\xcbw\x7f,\xeb\x8f(\x9bk\x12\x83\x85#\xe2\x13\x04\x80\xd4":`B\xcc\x90\xdf\xf6\x968\xf7=\xce\xbb~4\x1c\xab\xaf\x12\x8d\xfe$\xaa~k\x1fJ'
+[2021-12-07 20:42:48][MYSOCKET]dicdata : {'resulttime': '20211207204248', 'errorCode': 0}
+[2021-12-07 20:42:48][MYSOCKET]resulttime : 20211207204248
+[2021-12-07 20:42:48][MYSOCKET]Receive Socket
+[2021-12-07 20:42:48][MYSOCKET]Decoding : {"resulttime":"20211207204248","errorCode":0}
+[2021-12-07 20:42:48][MYSOCKET]Call taskProcess
+[2021-12-07 20:42:48][TASK]taskProcess dic : {'resulttime': '20211207204248', 'errorCode': 0}
+[2021-12-07 20:49:25][MAIN]접속 종료

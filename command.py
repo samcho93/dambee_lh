@@ -98,7 +98,7 @@ def dooropen(cmd):
   
   tmp = lst[2]
   loc = tmp.find('gender') + 7
-  if tmp[loc] == '0':
+  if tmp[loc] == '1':
     DEBUGPrint('> Gender : Women')
   else:
     DEBUGPrint('> Gender : Man')

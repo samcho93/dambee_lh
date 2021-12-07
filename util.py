@@ -54,6 +54,18 @@ def parsing_str(cmd):
     mysocket.iv = iv
     DEBUGPrint("key : ", mysocket.key)
     DEBUGPrint("iv : ", mysocket.iv)
+    
+def sendInitMessage(ser):
+
+  str = "+010cmd:getble,error:0\r\n"
+  ser.write(str.encode('utf-8'))
+  DEBUGPrint("Send to BLE")
+  
+def sendErrorMessage(ser, error):
+  
+  str = "+010cmd:seterr,error:%d\r\n" %(error)
+  ser.write(str.encode('utf-8'))
+  DEBUGPrint("Send to Error Message : ", str)
   
 def cli(key, inout, task, TFT):
   if key != "":  

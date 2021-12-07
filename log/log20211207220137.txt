@@ -1,0 +1,15 @@
+[2021-12-07 22:01:37][COMMAND]Read System Configuration File
+[2021-12-07 22:01:37][MAIN]입출력 초기화
+[2021-12-07 22:01:37][MAIN]LCD 초기화
+[2021-12-07 22:01:38][MAIN]사운드 초기화
+[2021-12-07 22:01:38][MAIN]네트워크 정보 로드
+[2021-12-07 22:01:38][MAIN]Send to BLE
+[2021-12-07 22:01:39][MAIN]터치초기화
+[2021-12-07 22:01:41][MAIN]카드리더초기화
+[2021-12-07 22:01:41][MAIN]소켓서버 연결
+[2021-12-07 22:01:51][MYSOCKET]접속 완료
+[2021-12-07 22:01:56][MYSOCKET]{'result': 1}
+[2021-12-07 22:01:56][MYSOCKET]## Send Message ##
+[2021-12-07 22:01:56][MYSOCKET]orig : {'method': 'getDeviceFcltInfo', 'macAddr': 'AA:BB:CC:DD:EE:DD'}
+[2021-12-07 22:01:56][MYSOCKET]SendMessage Error
+[2021-12-07 22:01:56][COMMAND]Write System Configuration File

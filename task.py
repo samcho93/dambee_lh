@@ -113,12 +113,8 @@ class TASK():
             try:
               DEBUGPrint("TASK_REQUEST_CALL_RESP")
               if "videocallSn" in dic:
-                #ms.roomnumber = dic["roomNumber"]
                 ms.callsn = dic["videocallSn"]
-                
-                #DEBUGPrint("RoomNumber : ", ms.roomnumber) 
                 DEBUGPrint("VideoCallSn : ", ms.callsn)
-                #webrtc.start(ms.roomnumber)
                 display.DispCall()                         
                 self.task = TASK_REQUEST_CALL_RESULT            
             except:
@@ -127,7 +123,8 @@ class TASK():
         DEBUGPrint("ErrorCode : ", errorCode)        
         
         if self.task == TASK_REQUEST_CALL_RESULT_WAIT:
-          display.DispCallFail()          
+          display.DispCallFail() 
+              
           sleep(1)
           display.DispWait()
           self.timeout = 0

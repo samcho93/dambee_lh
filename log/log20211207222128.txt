@@ -1,0 +1,32 @@
+[2021-12-07 22:21:28][COMMAND]Read System Configuration File
+[2021-12-07 22:21:28][MAIN]입출력 초기화
+[2021-12-07 22:21:28][MAIN]LCD 초기화
+[2021-12-07 22:21:28][MAIN]사운드 초기화
+[2021-12-07 22:21:28][MAIN]네트워크 정보 로드
+[2021-12-07 22:21:28][UTIL]Send to BLE
+[2021-12-07 22:21:29][COMMAND]##################################################
+[2021-12-07 22:21:29][COMMAND]> CMD : Get BLE Infor.
+[2021-12-07 22:21:29][COMMAND]{'enckey': 'BBCCD728663FF5F2', 'mac': 'D3:68:BF:B2:F2:5C'}
+[2021-12-07 22:21:29][COMMAND]##################################################
+[2021-12-07 22:21:29][COMMAND]Write System Configuration File
+[2021-12-07 22:21:29][UTIL]key : 20D368BFB2F25CBBCCD728663FF5F221
+[2021-12-07 22:21:29][UTIL]iv : BBCCD728663FF5F2
+[2021-12-07 22:21:29][MAIN]터치초기화
+[2021-12-07 22:21:32][MAIN]카드리더초기화
+[2021-12-07 22:21:32][MAIN]소켓서버 연결
+[2021-12-07 22:21:42][MYSOCKET]연결이 거부 되었습니다
+[2021-12-07 22:21:42][COMMAND]Write System Configuration File
+[2021-12-07 22:21:43][MAIN]접속이 끊겼습니다.
+[2021-12-07 22:21:53][MYSOCKET]접속 완료
+[2021-12-07 22:21:58][MYSOCKET]{'result': 0}
+[2021-12-07 22:21:58][MYSOCKET]## Send Message ##
+[2021-12-07 22:21:58][MYSOCKET]orig : {'method': 'getDeviceFcltInfo', 'macAddr': 'D3:68:BF:B2:F2:5C'}
+[2021-12-07 22:21:58][MYSOCKET]dec : {"resulttime":"20211207222158","fcltSn":5,"errorCode":0,"orgnztSn":3}
+[2021-12-07 22:21:58][MYSOCKET]recvData : b'\xcd\x9b\xcbw\x7f,\xeb\x8f(\x9bk\x12\x83\x85#\xe2\xb7\xa3\xbdE\xc7f\xb3\xc4ox\xe9>\x00\xd2LW\xc6\xd4\xa5\x978\x152v\xc8p\xc7\xc3\xe7i\xff\x9c\x92b\x87\x81\x13<\xf7R\xc0J\xf7E\xdc\xa5\n\x81\xfc4\xec\x0eLB>-\xb3zF\n\xfbcD\xe7'
+[2021-12-07 22:21:58][MYSOCKET]dicdata : {'resulttime': '20211207222158', 'fcltSn': 5, 'errorCode': 0, 'orgnztSn': 3}
+[2021-12-07 22:21:58][MYSOCKET]resulttime : 20211207222158
+[2021-12-07 22:21:58][MYSOCKET]Receive Socket
+[2021-12-07 22:21:58][MYSOCKET]Decoding : {"resulttime":"20211207222158","fcltSn":5,"errorCode":0,"orgnztSn":3}
+[2021-12-07 22:21:58][MYSOCKET]Call taskProcess
+[2021-12-07 22:21:58][TASK]taskProcess dic : {'resulttime': '20211207222158', 'fcltSn': 5, 'errorCode': 0, 'orgnztSn': 3}
+[2021-12-07 22:22:26][MAIN]접속 종료
