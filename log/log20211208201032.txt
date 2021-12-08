@@ -1,0 +1,46 @@
+[2021-12-08 20:10:32][COMMAND]Read System Configuration File
+[2021-12-08 20:10:32][MAIN]입출력 초기화
+[2021-12-08 20:10:32][MAIN]LCD 초기화
+[2021-12-08 20:10:33][MAIN]사운드 초기화
+[2021-12-08 20:10:33][MAIN]네트워크 정보 로드
+[2021-12-08 20:10:33][UTIL]Send to BLE+010cmd:getble,error:0
+
+[2021-12-08 20:10:33][COMMAND]##################################################
+[2021-12-08 20:10:33][COMMAND]> CMD : Get BLE Infor.
+[2021-12-08 20:10:33][COMMAND]{'enckey': 'BBCCD728663FF5F2', 'mac': 'D3:68:BF:B2:F2:5C'}
+[2021-12-08 20:10:33][COMMAND]##################################################
+[2021-12-08 20:10:33][COMMAND]Write System Configuration File
+[2021-12-08 20:10:33][UTIL]key : 20D368BFB2F25CBBCCD728663FF5F221
+[2021-12-08 20:10:33][UTIL]iv : BBCCD728663FF5F2
+[2021-12-08 20:10:34][MAIN]터치초기화
+[2021-12-08 20:10:36][MAIN]카드리더초기화
+[2021-12-08 20:10:36][MAIN]소켓서버 연결
+[2021-12-08 20:10:36][MYSOCKET]접속 완료
+[2021-12-08 20:10:36][MYSOCKET]{'result': 0}
+[2021-12-08 20:10:36][MYSOCKET]## Send Message ##
+[2021-12-08 20:10:36][MYSOCKET]orig : {'method': 'getDeviceFcltInfo', 'macAddr': 'D3:68:BF:B2:F2:5C'}
+[2021-12-08 20:10:36][MYSOCKET]dec : $¦½¾0eRADÒÇÌ~
+[2021-12-08 20:10:36][MYSOCKET]recvData : b'{"errorCode":0}'
+[2021-12-08 20:10:36][MYSOCKET]Error!!!!!
+[2021-12-08 20:10:36][MYSOCKET]b'{"errorCode":0}'$¦½¾0eRADÒÇÌ~
+[2021-12-08 20:10:36][MYSOCKET]Receive Socket
+[2021-12-08 20:10:36][COMMAND]Write System Configuration File
+[2021-12-08 20:10:43][MAIN][Key] K7
+[2021-12-08 20:10:45][MAIN][Key] K7
+[2021-12-08 20:11:02][MAIN]UID :9DBC0500
+[2021-12-08 20:11:02][MYSOCKET]## Send Message ##
+[2021-12-08 20:11:02][MYSOCKET]orig : {'method': 'reqFingerCardCheck', 'cardNumber': '00009DBC0500', 'fcltSn': 5}
+[2021-12-08 20:11:02][MYSOCKET]dec : $¦½¾0eRADÒÇÌ~
+[2021-12-08 20:11:02][MYSOCKET]recvData : b'{"errorCode":0}'
+[2021-12-08 20:11:02][MYSOCKET]Error!!!!!
+[2021-12-08 20:11:02][MYSOCKET]b'{"errorCode":0}'$¦½¾0eRADÒÇÌ~
+[2021-12-08 20:11:02][MYSOCKET]Receive Socket
+[2021-12-08 20:11:04][MAIN]UID :9DBC0500
+[2021-12-08 20:11:04][MYSOCKET]## Send Message ##
+[2021-12-08 20:11:04][MYSOCKET]orig : {'method': 'reqFingerCardCheck', 'cardNumber': '00009DBC0500', 'fcltSn': 5}
+[2021-12-08 20:11:04][MYSOCKET]dec : $¦½¾0eRADÒÇÌ~
+[2021-12-08 20:11:04][MYSOCKET]recvData : b'{"errorCode":0}'
+[2021-12-08 20:11:04][MYSOCKET]Error!!!!!
+[2021-12-08 20:11:05][MYSOCKET]b'{"errorCode":0}'$¦½¾0eRADÒÇÌ~
+[2021-12-08 20:11:05][MYSOCKET]Receive Socket
+[2021-12-08 20:11:09][MAIN]접속 종료

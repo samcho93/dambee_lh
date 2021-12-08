@@ -21,6 +21,8 @@ fAuth = False
 fRetry = False
 fCallFail = False
 ferror = 0
+ferrorcnt = 0
+alive_time = 0
 
 def DEBUGPrint(msg, param1="", param2=""):
   string = "[COMMAND]" + str(msg) + str(param1) + str(param2)
@@ -132,9 +134,7 @@ def dooropen(cmd):
   if diff.seconds < 20:
     fAuth = True
     DEBUGPrint("BLE인증완료")
-#    fOpen = True
-#  else:
-#    fFail = True
+
 
 #+089cmd:setnet,ipaddr:200.24.21.11,gateway:200.24.21.1,netmask:255.255.255.0,dns:168.126.63.1      
 def setnet(cmd):

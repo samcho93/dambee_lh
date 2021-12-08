@@ -232,13 +232,15 @@ def SendMessage(sel, param=0, ser=None):
             dic = json.loads(dec)
             
             DEBUGPrint('Decoding : ', dec)
+            pcmd.alive_time = int(time())
+            pcmd.ferrorcnt = 0
             
             if "fcltSn" in dic:
               pcmd.system["fcltsn"] = dic["fcltSn"]
             elif "orgnztSn" in dic:
               pcmd.system["orgnztSn"] = dic["orgnztSn"]
             elif "authKey" in dic:
-              dic["authKey"] = "1"
+              #dic["authKey"] = "1"
               if dic["authKey"] == pcmd.system["AuthKey"]:
                 if pcmd.fOpen == False:
                   pcmd.fOpen = True

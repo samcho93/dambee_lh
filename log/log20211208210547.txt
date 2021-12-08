@@ -1,0 +1,507 @@
+[2021-12-08 21:05:47][COMMAND]Read System Configuration File
+[2021-12-08 21:05:47][MAIN]입출력 초기화
+[2021-12-08 21:05:47][MAIN]LCD 초기화
+[2021-12-08 21:05:48][MAIN]사운드 초기화
+[2021-12-08 21:05:48][MAIN]네트워크 정보 로드
+[2021-12-08 21:05:48][UTIL]Send to BLE+010cmd:getble,error:0
+
+[2021-12-08 21:05:48][COMMAND]##################################################
+[2021-12-08 21:05:48][COMMAND]> CMD : Get BLE Infor.
+[2021-12-08 21:05:48][COMMAND]{'enckey': 'BBCCD728663FF5F2', 'mac': 'D3:68:BF:B2:F2:5C'}
+[2021-12-08 21:05:48][COMMAND]##################################################
+[2021-12-08 21:05:48][COMMAND]Write System Configuration File
+[2021-12-08 21:05:48][UTIL]key : 20D368BFB2F25CBBCCD728663FF5F221
+[2021-12-08 21:05:48][UTIL]iv : BBCCD728663FF5F2
+[2021-12-08 21:05:49][MAIN]터치초기화
+[2021-12-08 21:05:51][MAIN]카드리더초기화
+[2021-12-08 21:05:51][MAIN]소켓서버 연결
+[2021-12-08 21:05:51][MYSOCKET]접속 완료
+[2021-12-08 21:05:52][MYSOCKET]{'result': 1}
+[2021-12-08 21:05:52][MYSOCKET]## Send Message ##
+[2021-12-08 21:05:52][MYSOCKET]orig : {'method': 'getDeviceFcltInfo', 'macAddr': 'D3:68:BF:B2:F2:5C'}
+[2021-12-08 21:05:52][MYSOCKET]dec : {"resulttime":"20211208210552","fcltSn":9,"errorCode":0,"orgnztSn":3}
+[2021-12-08 21:05:52][MYSOCKET]recvData : b'\xcd\x9b\xcbw\x7f,\xeb\x8f(\x9bk\x12\x83\x85#\xe2\x12\xc2\xc1\xc1\x01ZRA\xb7\xa8\xae\\\xaf\rG\x8bes\x01\x17 \xeb\xc1\x89}\xcf4\x9f(\x02/\x9b\x8d\xee\x0b\x1a\xb7\xd8\xebZH\xe5\xd6\x8d|&_\x8fpw\x03\xd9\xb4X\x8d\x06\x1e\xd8 \xf8\xf6\xefOe'
+[2021-12-08 21:05:52][MYSOCKET]dicdata : {'resulttime': '20211208210552', 'fcltSn': 9, 'errorCode': 0, 'orgnztSn': 3}
+[2021-12-08 21:05:52][MYSOCKET]resulttime : 20211208210552
+[2021-12-08 21:05:52][MYSOCKET]Receive Socket
+[2021-12-08 21:05:52][MYSOCKET]Decoding : {"resulttime":"20211208210552","fcltSn":9,"errorCode":0,"orgnztSn":3}
+[2021-12-08 21:05:52][MYSOCKET]Call taskProcess
+[2021-12-08 21:05:52][TASK]taskProcess dic : {'resulttime': '20211208210552', 'fcltSn': 9, 'errorCode': 0, 'orgnztSn': 3}
+[2021-12-08 21:05:52][COMMAND]Write System Configuration File
+[2021-12-08 21:05:52][MAIN][Key] K4
+[2021-12-08 21:05:54][MAIN][Key] K4
+[2021-12-08 21:05:55][MYSOCKET]## Send Message ##
+[2021-12-08 21:05:55][MYSOCKET]orig : {'method': 'setError', 'orgnztSn': '1', 'fcltSn': 9, 'errorCode': '3'}
+[2021-12-08 21:05:55][MYSOCKET]dec : {"resulttime":"20211208210555","errorCode":0}
+[2021-12-08 21:05:55][MYSOCKET]recvData : b'\xcd\x9b\xcbw\x7f,\xeb\x8f(\x9bk\x12\x83\x85#\xe2\xdd\xfb+\xa6\x85TP\xfb-^\t\xf09E\xbfO\xb4\x0be&\xb1Ko\xf4\x7f\xa4\x15\xf0e\xf3\x9br'
+[2021-12-08 21:05:55][MYSOCKET]dicdata : {'resulttime': '20211208210555', 'errorCode': 0}
+[2021-12-08 21:05:55][MYSOCKET]Receive Socket
+[2021-12-08 21:05:55][MYSOCKET]resulttime : 20211208210555
+[2021-12-08 21:05:55][MYSOCKET]Decoding : {"resulttime":"20211208210555","errorCode":0}
+[2021-12-08 21:05:55][MYSOCKET]Call taskProcess
+[2021-12-08 21:05:55][TASK]taskProcess dic : {'resulttime': '20211208210555', 'errorCode': 0}
+[2021-12-08 21:06:11][MYSOCKET]## Send Message ##
+[2021-12-08 21:06:11][MYSOCKET]orig : {'method': 'setError', 'orgnztSn': '1', 'fcltSn': 9, 'errorCode': '0'}
+[2021-12-08 21:06:11][MYSOCKET]dec : {"resulttime":"20211208210611","errorCode":0}
+[2021-12-08 21:06:11][MYSOCKET]recvData : b'\xcd\x9b\xcbw\x7f,\xeb\x8f(\x9bk\x12\x83\x85#\xe2\xb9\xa0\x15\x13x\xbb\xcek\xf4\xb7\xc5\x05\x88\xf1T-\xf6G?\xb7!\x98\xdf\xebl\xa0\xb2\xaa\x04\x1d\xbeR'
+[2021-12-08 21:06:11][MYSOCKET]dicdata : {'resulttime': '20211208210611', 'errorCode': 0}
+[2021-12-08 21:06:11][MYSOCKET]resulttime : 20211208210611
+[2021-12-08 21:06:11][MYSOCKET]Receive Socket
+[2021-12-08 21:06:11][MYSOCKET]Decoding : {"resulttime":"20211208210611","errorCode":0}
+[2021-12-08 21:06:11][MYSOCKET]Call taskProcess
+[2021-12-08 21:06:11][TASK]taskProcess dic : {'resulttime': '20211208210611', 'errorCode': 0}
+[2021-12-08 21:06:13][MAIN][Key] K4
+[2021-12-08 21:06:16][MYSOCKET]## Send Message ##
+[2021-12-08 21:06:16][MYSOCKET]orig : {'method': 'setError', 'orgnztSn': '1', 'fcltSn': 9, 'errorCode': '3'}
+[2021-12-08 21:06:16][MYSOCKET]dec : {"resulttime":"20211208210616","errorCode":0}
+[2021-12-08 21:06:16][MYSOCKET]recvData : b'\xcd\x9b\xcbw\x7f,\xeb\x8f(\x9bk\x12\x83\x85#\xe2\xdb\x8d!\xf1A\xe8\xc6\xf9\xc8\xf0\xcb\xed\xdfyJ\xd3\x83\x99#H_S\x8c\xa5l\xc6\xf9\xfb\x19\xda:\xa5'
+[2021-12-08 21:06:16][MYSOCKET]dicdata : {'resulttime': '20211208210616', 'errorCode': 0}
+[2021-12-08 21:06:16][MYSOCKET]Receive Socket
+[2021-12-08 21:06:16][MYSOCKET]resulttime : 20211208210616
+[2021-12-08 21:06:16][MYSOCKET]Decoding : {"resulttime":"20211208210616","errorCode":0}
+[2021-12-08 21:06:16][MYSOCKET]Call taskProcess
+[2021-12-08 21:06:16][TASK]taskProcess dic : {'resulttime': '20211208210616', 'errorCode': 0}
+[2021-12-08 21:06:23][MYSOCKET]## Send Message ##
+[2021-12-08 21:06:23][MYSOCKET]orig : {'method': 'setError', 'orgnztSn': '1', 'fcltSn': 9, 'errorCode': '0'}
+[2021-12-08 21:06:23][MYSOCKET]dec : {"resulttime":"20211208210623","errorCode":0}
+[2021-12-08 21:06:23][MYSOCKET]recvData : b'\xcd\x9b\xcbw\x7f,\xeb\x8f(\x9bk\x12\x83\x85#\xe2dE:\xc6\n\xdc\x94\x7fP\xa7\xbd\xe6\xb6\x9c\x1d\x9f\x15\x85\xdb8\xa8\xfcLv\xda\x05\x8e#\x80\x021\x97'
+[2021-12-08 21:06:23][MYSOCKET]dicdata : {'resulttime': '20211208210623', 'errorCode': 0}
+[2021-12-08 21:06:23][MYSOCKET]Receive Socket
+[2021-12-08 21:06:23][MYSOCKET]resulttime : 20211208210623
+[2021-12-08 21:06:23][MYSOCKET]Decoding : {"resulttime":"20211208210623","errorCode":0}
+[2021-12-08 21:06:23][MYSOCKET]Call taskProcess
+[2021-12-08 21:06:23][TASK]taskProcess dic : {'resulttime': '20211208210623', 'errorCode': 0}
+[2021-12-08 21:06:27][MAIN][Key] K4
+[2021-12-08 21:06:27][MAIN][Key] K4
+[2021-12-08 21:06:28][MAIN][Key] K4
+[2021-12-08 21:06:29][MAIN][Key] K4
+[2021-12-08 21:06:38][MAIN]UID :9DBC0500
+[2021-12-08 21:06:38][MYSOCKET]## Send Message ##
+[2021-12-08 21:06:38][MYSOCKET]orig : {'method': 'reqFingerCardCheck', 'cardNumber': '00009DBC0500', 'fcltSn': 9}
+[2021-12-08 21:06:38][MYSOCKET]dec : {"resulttime":"20211208210638","errorCode":0}
+[2021-12-08 21:06:38][MYSOCKET]recvData : b'\xcd\x9b\xcbw\x7f,\xeb\x8f(\x9bk\x12\x83\x85#\xe2\xf5\x1b)\x17\x86>VS\xbaT\x91d>\x085%w\x1c\xb5\xd3t\x1e\t?\x00\x19,\xe9\x1d\xc8I\x15'
+[2021-12-08 21:06:38][MYSOCKET]dicdata : {'resulttime': '20211208210638', 'errorCode': 0}
+[2021-12-08 21:06:38][MYSOCKET]Receive Socket
+[2021-12-08 21:06:38][MYSOCKET]Decoding : {"resulttime":"20211208210638","errorCode":0}
+[2021-12-08 21:06:38][MYSOCKET]resulttime : 20211208210638
+[2021-12-08 21:06:38][MYSOCKET]Call taskProcess
+[2021-12-08 21:06:38][TASK]taskProcess dic : {'resulttime': '20211208210638', 'errorCode': 0}
+[2021-12-08 21:06:38][MAIN]Door Open
+[2021-12-08 21:06:41][MAIN]Door Close
+[2021-12-08 21:06:43][MAIN]Display Init...
+[2021-12-08 21:06:52][MYSOCKET]## Send Message ##
+[2021-12-08 21:06:52][MYSOCKET]orig : {'method': 'setError', 'orgnztSn': '1', 'fcltSn': 9, 'errorCode': '0'}
+[2021-12-08 21:06:52][MYSOCKET]dec : {"resulttime":"20211208210652","errorCode":0}
+[2021-12-08 21:06:52][MYSOCKET]recvData : b'\xcd\x9b\xcbw\x7f,\xeb\x8f(\x9bk\x12\x83\x85#\xe2\xc2\xb9\x897.1@."\x81\xeep\xdf\xd2\xe2$\xc0\xc0\x8cHk\xe9\xc62_B\xd2\x80s#K\x9c'
+[2021-12-08 21:06:52][MYSOCKET]dicdata : {'resulttime': '20211208210652', 'errorCode': 0}
+[2021-12-08 21:06:52][MYSOCKET]Receive Socket
+[2021-12-08 21:06:52][MYSOCKET]resulttime : 20211208210652
+[2021-12-08 21:06:52][MYSOCKET]Decoding : {"resulttime":"20211208210652","errorCode":0}
+[2021-12-08 21:06:52][MYSOCKET]Call taskProcess
+[2021-12-08 21:06:52][TASK]taskProcess dic : {'resulttime': '20211208210652', 'errorCode': 0}
+[2021-12-08 21:06:52][MAIN]+++++++++++ Alive Message
+[2021-12-08 21:06:58][MAIN][Key] K4
+[2021-12-08 21:07:52][MYSOCKET]## Send Message ##
+[2021-12-08 21:07:52][MYSOCKET]orig : {'method': 'setError', 'orgnztSn': '1', 'fcltSn': 9, 'errorCode': '0'}
+[2021-12-08 21:07:52][MYSOCKET]dec : {"resulttime":"20211208210752","errorCode":0}
+[2021-12-08 21:07:52][MYSOCKET]recvData : b'\xcd\x9b\xcbw\x7f,\xeb\x8f(\x9bk\x12\x83\x85#\xe2\xf9\xf7\xda\x99y\x81\x19\x01.)oR\x97\x15\x84\xc2\x19l<\x18\xc0\xf2\xbdY\xbdc<\xa1\x9b\xd1"\x81'
+[2021-12-08 21:07:52][MYSOCKET]dicdata : {'resulttime': '20211208210752', 'errorCode': 0}
+[2021-12-08 21:07:52][MYSOCKET]Receive Socket
+[2021-12-08 21:07:52][MYSOCKET]resulttime : 20211208210752
+[2021-12-08 21:07:52][MYSOCKET]Decoding : {"resulttime":"20211208210752","errorCode":0}
+[2021-12-08 21:07:52][MYSOCKET]Call taskProcess
+[2021-12-08 21:07:52][TASK]taskProcess dic : {'resulttime': '20211208210752', 'errorCode': 0}
+[2021-12-08 21:07:52][MAIN]+++++++++++ Alive Message
+[2021-12-08 21:08:28][MAIN][Key] K4
+[2021-12-08 21:08:52][MYSOCKET]## Send Message ##
+[2021-12-08 21:08:52][MYSOCKET]orig : {'method': 'setError', 'orgnztSn': '1', 'fcltSn': 9, 'errorCode': '0'}
+[2021-12-08 21:08:52][MYSOCKET]dec : {"resulttime":"20211208210852","errorCode":0}
+[2021-12-08 21:08:52][MYSOCKET]recvData : b'\xcd\x9b\xcbw\x7f,\xeb\x8f(\x9bk\x12\x83\x85#\xe2\xf3\x16$>tu\xdae\xc0X\xb45\xb0hA\xbey|\x83C6\x9fT\nb\xc9\xe2H\xa72<\x99'
+[2021-12-08 21:08:52][MYSOCKET]dicdata : {'resulttime': '20211208210852', 'errorCode': 0}
+[2021-12-08 21:08:52][MYSOCKET]resulttime : 20211208210852
+[2021-12-08 21:08:52][MYSOCKET]Receive Socket
+[2021-12-08 21:08:52][MYSOCKET]Decoding : {"resulttime":"20211208210852","errorCode":0}
+[2021-12-08 21:08:52][MYSOCKET]Call taskProcess
+[2021-12-08 21:08:52][TASK]taskProcess dic : {'resulttime': '20211208210852', 'errorCode': 0}
+[2021-12-08 21:08:52][MAIN]+++++++++++ Alive Message
+[2021-12-08 21:09:52][MYSOCKET]## Send Message ##
+[2021-12-08 21:09:52][MYSOCKET]orig : {'method': 'setError', 'orgnztSn': '1', 'fcltSn': 9, 'errorCode': '0'}
+[2021-12-08 21:09:52][MYSOCKET]dec : {"resulttime":"20211208210952","errorCode":0}
+[2021-12-08 21:09:52][MYSOCKET]recvData : b'\xcd\x9b\xcbw\x7f,\xeb\x8f(\x9bk\x12\x83\x85#\xe2z\xa2\x1e\xcc\xee{\x1f\xf2g\x92\x15T\xe3\x01nK\x9e\x96\xfc\x9c\xdf\x02I\x96\x86\xab\x95`\x16\xc7\xb5\xbb'
+[2021-12-08 21:09:52][MYSOCKET]dicdata : {'resulttime': '20211208210952', 'errorCode': 0}
+[2021-12-08 21:09:52][MYSOCKET]Receive Socket
+[2021-12-08 21:09:52][MYSOCKET]resulttime : 20211208210952
+[2021-12-08 21:09:52][MYSOCKET]Decoding : {"resulttime":"20211208210952","errorCode":0}
+[2021-12-08 21:09:52][MYSOCKET]Call taskProcess
+[2021-12-08 21:09:52][TASK]taskProcess dic : {'resulttime': '20211208210952', 'errorCode': 0}
+[2021-12-08 21:09:52][MAIN]+++++++++++ Alive Message
+[2021-12-08 21:10:52][MYSOCKET]## Send Message ##
+[2021-12-08 21:10:52][MYSOCKET]orig : {'method': 'setError', 'orgnztSn': '1', 'fcltSn': 9, 'errorCode': '0'}
+[2021-12-08 21:10:52][MYSOCKET]dec : {"resulttime":"20211208211052","errorCode":0}
+[2021-12-08 21:10:52][MYSOCKET]recvData : b'\xcd\x9b\xcbw\x7f,\xeb\x8f(\x9bk\x12\x83\x85#\xe2\x03\xae\xb3\xdbA\xd1\xdd\xc4\xfeG@\xdc\xd1\xc1\x07\xd4\xbd\xb6\xd6\xc8\x05\xab\xe4\xc28m)\xf4@>m\x85'
+[2021-12-08 21:10:52][MYSOCKET]dicdata : {'resulttime': '20211208211052', 'errorCode': 0}
+[2021-12-08 21:10:52][MYSOCKET]resulttime : 20211208211052
+[2021-12-08 21:10:52][MYSOCKET]Receive Socket
+[2021-12-08 21:10:52][MYSOCKET]Decoding : {"resulttime":"20211208211052","errorCode":0}
+[2021-12-08 21:10:52][MYSOCKET]Call taskProcess
+[2021-12-08 21:10:52][TASK]taskProcess dic : {'resulttime': '20211208211052', 'errorCode': 0}
+[2021-12-08 21:10:52][MAIN]+++++++++++ Alive Message
+[2021-12-08 21:11:42][MAIN]UID :9DBC0500
+[2021-12-08 21:11:42][MYSOCKET]## Send Message ##
+[2021-12-08 21:11:42][MYSOCKET]orig : {'method': 'reqFingerCardCheck', 'cardNumber': '00009DBC0500', 'fcltSn': 9}
+[2021-12-08 21:11:42][MYSOCKET]dec : {"resulttime":"20211208211142","errorCode":0}
+[2021-12-08 21:11:42][MYSOCKET]recvData : b"\xcd\x9b\xcbw\x7f,\xeb\x8f(\x9bk\x12\x83\x85#\xe2\x1f4\x11\xb6\xbc\x1dr\xf5'\x90\xd0\x9dfP#K.4\xef\n$\x0c\xd3j\x0b\x95\xfc\x9e&\xbfEl"
+[2021-12-08 21:11:42][MYSOCKET]dicdata : {'resulttime': '20211208211142', 'errorCode': 0}
+[2021-12-08 21:11:42][MYSOCKET]resulttime : 20211208211142
+[2021-12-08 21:11:42][MYSOCKET]Receive Socket
+[2021-12-08 21:11:42][MYSOCKET]Decoding : {"resulttime":"20211208211142","errorCode":0}
+[2021-12-08 21:11:42][MYSOCKET]Call taskProcess
+[2021-12-08 21:11:42][TASK]taskProcess dic : {'resulttime': '20211208211142', 'errorCode': 0}
+[2021-12-08 21:11:43][MAIN]Door Open
+[2021-12-08 21:11:46][MAIN]Door Close
+[2021-12-08 21:11:47][MAIN]UID :9DBC0500
+[2021-12-08 21:11:47][MYSOCKET]## Send Message ##
+[2021-12-08 21:11:47][MYSOCKET]orig : {'method': 'reqFingerCardCheck', 'cardNumber': '00009DBC0500', 'fcltSn': 9}
+[2021-12-08 21:11:47][MYSOCKET]dec : {"resulttime":"20211208211147","errorCode":0}
+[2021-12-08 21:11:47][MYSOCKET]recvData : b'\xcd\x9b\xcbw\x7f,\xeb\x8f(\x9bk\x12\x83\x85#\xe2\x98\x85+K\x1a\xb5W\xe8\x95b\x95#{\xbf\xdf\xadJ8\x15@\x0c\x89\xc6mD\x07\x1f\x19\xcc0t0'
+[2021-12-08 21:11:47][MYSOCKET]dicdata : {'resulttime': '20211208211147', 'errorCode': 0}
+[2021-12-08 21:11:47][MYSOCKET]Receive Socket
+[2021-12-08 21:11:47][MYSOCKET]resulttime : 20211208211147
+[2021-12-08 21:11:47][MYSOCKET]Decoding : {"resulttime":"20211208211147","errorCode":0}
+[2021-12-08 21:11:47][MYSOCKET]Call taskProcess
+[2021-12-08 21:11:47][TASK]taskProcess dic : {'resulttime': '20211208211147', 'errorCode': 0}
+[2021-12-08 21:11:47][MAIN]Door Open
+[2021-12-08 21:11:50][MAIN]Door Close
+[2021-12-08 21:11:52][MAIN]Display Init...
+[2021-12-08 21:11:52][MYSOCKET]## Send Message ##
+[2021-12-08 21:11:52][MYSOCKET]orig : {'method': 'setError', 'orgnztSn': '1', 'fcltSn': 9, 'errorCode': '0'}
+[2021-12-08 21:11:52][MYSOCKET]dec : {"resulttime":"20211208211152","errorCode":0}
+[2021-12-08 21:11:52][MYSOCKET]recvData : b'\xcd\x9b\xcbw\x7f,\xeb\x8f(\x9bk\x12\x83\x85#\xe2\xe3o\x95\xc1\xd9\x83r\xad\xd6\xd7\xe3\x9d \xb5?\xf3\xa7\x8dY;\xff\x0c\xe0\xbb\x06\x17\xbc\x02;\xb0\x83\xea'
+[2021-12-08 21:11:52][MYSOCKET]dicdata : {'resulttime': '20211208211152', 'errorCode': 0}
+[2021-12-08 21:11:52][MYSOCKET]resulttime : 20211208211152
+[2021-12-08 21:11:52][MYSOCKET]Receive Socket
+[2021-12-08 21:11:52][MYSOCKET]Decoding : {"resulttime":"20211208211152","errorCode":0}
+[2021-12-08 21:11:52][MYSOCKET]Call taskProcess
+[2021-12-08 21:11:52][TASK]taskProcess dic : {'resulttime': '20211208211152', 'errorCode': 0}
+[2021-12-08 21:11:52][MAIN]+++++++++++ Alive Message
+[2021-12-08 21:12:52][MYSOCKET]## Send Message ##
+[2021-12-08 21:12:52][MYSOCKET]orig : {'method': 'setError', 'orgnztSn': '1', 'fcltSn': 9, 'errorCode': '0'}
+[2021-12-08 21:12:52][MYSOCKET]dec : {"resulttime":"20211208211252","errorCode":0}
+[2021-12-08 21:12:52][MYSOCKET]recvData : b"\xcd\x9b\xcbw\x7f,\xeb\x8f(\x9bk\x12\x83\x85#\xe2P\xa0\xe8E2z\xe1H>F0\n\xae\xc1<\xe8\xb8\xa01\xa6}\x17\xde'X\x13,`\x95.\x16\xd0"
+[2021-12-08 21:12:52][MYSOCKET]dicdata : {'resulttime': '20211208211252', 'errorCode': 0}
+[2021-12-08 21:12:52][MYSOCKET]resulttime : 20211208211252
+[2021-12-08 21:12:52][MYSOCKET]Receive Socket
+[2021-12-08 21:12:52][MYSOCKET]Decoding : {"resulttime":"20211208211252","errorCode":0}
+[2021-12-08 21:12:52][MYSOCKET]Call taskProcess
+[2021-12-08 21:12:52][TASK]taskProcess dic : {'resulttime': '20211208211252', 'errorCode': 0}
+[2021-12-08 21:12:52][MAIN]+++++++++++ Alive Message
+[2021-12-08 21:13:52][MYSOCKET]## Send Message ##
+[2021-12-08 21:13:52][MYSOCKET]orig : {'method': 'setError', 'orgnztSn': '1', 'fcltSn': 9, 'errorCode': '0'}
+[2021-12-08 21:13:52][MYSOCKET]dec : {"resulttime":"20211208211352","errorCode":0}
+[2021-12-08 21:13:52][MYSOCKET]recvData : b'\xcd\x9b\xcbw\x7f,\xeb\x8f(\x9bk\x12\x83\x85#\xe2\xfd+6N\x14|y\xb0\xd4#T\x874\xef\xdd\x9a\xd3\x19\x14M\xb5\x0e\xd2\xf0\xd0\x15)0\xf7-\xdb['
+[2021-12-08 21:13:52][MYSOCKET]dicdata : {'resulttime': '20211208211352', 'errorCode': 0}
+[2021-12-08 21:13:52][MYSOCKET]resulttime : 20211208211352
+[2021-12-08 21:13:52][MYSOCKET]Receive Socket
+[2021-12-08 21:13:52][MYSOCKET]Decoding : {"resulttime":"20211208211352","errorCode":0}
+[2021-12-08 21:13:52][MYSOCKET]Call taskProcess
+[2021-12-08 21:13:52][TASK]taskProcess dic : {'resulttime': '20211208211352', 'errorCode': 0}
+[2021-12-08 21:13:52][MAIN]+++++++++++ Alive Message
+[2021-12-08 21:14:52][MYSOCKET]## Send Message ##
+[2021-12-08 21:14:52][MYSOCKET]orig : {'method': 'setError', 'orgnztSn': '1', 'fcltSn': 9, 'errorCode': '0'}
+[2021-12-08 21:14:52][MYSOCKET]dec : {"resulttime":"20211208211452","errorCode":0}
+[2021-12-08 21:14:52][MYSOCKET]recvData : b'\xcd\x9b\xcbw\x7f,\xeb\x8f(\x9bk\x12\x83\x85#\xe2n\xaf\x94h\xd8`\x8b\xf6\x1b\xf0\xecLN\xe0\xcd\xe0h\xad\xfa\x17\n<.\xabC\xb4\xb2l\x06\xa5\x84y'
+[2021-12-08 21:14:52][MYSOCKET]dicdata : {'resulttime': '20211208211452', 'errorCode': 0}
+[2021-12-08 21:14:52][MYSOCKET]resulttime : 20211208211452
+[2021-12-08 21:14:52][MYSOCKET]Receive Socket
+[2021-12-08 21:14:52][MYSOCKET]Decoding : {"resulttime":"20211208211452","errorCode":0}
+[2021-12-08 21:14:52][MYSOCKET]Call taskProcess
+[2021-12-08 21:14:52][TASK]taskProcess dic : {'resulttime': '20211208211452', 'errorCode': 0}
+[2021-12-08 21:14:52][MAIN]+++++++++++ Alive Message
+[2021-12-08 21:15:52][MYSOCKET]## Send Message ##
+[2021-12-08 21:15:52][MYSOCKET]orig : {'method': 'setError', 'orgnztSn': '1', 'fcltSn': 9, 'errorCode': '0'}
+[2021-12-08 21:15:52][MYSOCKET]dec : {"resulttime":"20211208211552","errorCode":0}
+[2021-12-08 21:15:52][MYSOCKET]recvData : b'\xcd\x9b\xcbw\x7f,\xeb\x8f(\x9bk\x12\x83\x85#\xe2\xcf\xad\xbaq\x1d\xbe\x13\xc2\x03\xcco\x035m\x14\xe8@\x10\xb7\xaf91>a\x9dH-\xc5\xd8\x8d\xe7w'
+[2021-12-08 21:15:52][MYSOCKET]dicdata : {'resulttime': '20211208211552', 'errorCode': 0}
+[2021-12-08 21:15:52][MYSOCKET]resulttime : 20211208211552
+[2021-12-08 21:15:52][MYSOCKET]Receive Socket
+[2021-12-08 21:15:52][MYSOCKET]Decoding : {"resulttime":"20211208211552","errorCode":0}
+[2021-12-08 21:15:52][MYSOCKET]Call taskProcess
+[2021-12-08 21:15:52][TASK]taskProcess dic : {'resulttime': '20211208211552', 'errorCode': 0}
+[2021-12-08 21:15:52][MAIN]+++++++++++ Alive Message
+[2021-12-08 21:15:53][MAIN][Key] K4
+[2021-12-08 21:16:52][MYSOCKET]## Send Message ##
+[2021-12-08 21:16:52][MYSOCKET]orig : {'method': 'setError', 'orgnztSn': '1', 'fcltSn': 9, 'errorCode': '0'}
+[2021-12-08 21:16:52][MYSOCKET]dec : {"resulttime":"20211208211652","errorCode":0}
+[2021-12-08 21:16:52][MYSOCKET]recvData : b'\xcd\x9b\xcbw\x7f,\xeb\x8f(\x9bk\x12\x83\x85#\xe2X\x1b\x03\xc6CzH\x87T\x88RL\xa8s\x87\x8fq\x1a\xf5="z\x0b\x152:\xca\xfa\xd2\x9e\x89\x8f'
+[2021-12-08 21:16:52][MYSOCKET]dicdata : {'resulttime': '20211208211652', 'errorCode': 0}
+[2021-12-08 21:16:52][MYSOCKET]Receive Socket
+[2021-12-08 21:16:52][MYSOCKET]resulttime : 20211208211652
+[2021-12-08 21:16:52][MYSOCKET]Decoding : {"resulttime":"20211208211652","errorCode":0}
+[2021-12-08 21:16:52][MYSOCKET]Call taskProcess
+[2021-12-08 21:16:52][TASK]taskProcess dic : {'resulttime': '20211208211652', 'errorCode': 0}
+[2021-12-08 21:16:52][MAIN]+++++++++++ Alive Message
+[2021-12-08 21:17:38][MAIN]UID :9DBC0500
+[2021-12-08 21:17:38][MYSOCKET]## Send Message ##
+[2021-12-08 21:17:38][MYSOCKET]orig : {'method': 'reqFingerCardCheck', 'cardNumber': '00009DBC0500', 'fcltSn': 9}
+[2021-12-08 21:17:38][MYSOCKET]dec : {"resulttime":"20211208211738","errorCode":0}
+[2021-12-08 21:17:38][MYSOCKET]recvData : b'\xcd\x9b\xcbw\x7f,\xeb\x8f(\x9bk\x12\x83\x85#\xe2}\x9d\xa1&\x06\x94y\xda.9\x1eJ\xc0\xf2e\xe2!n\xea\x15\xaa\xbf\x94\xed\xcc\xcag\xd5\xb0m]_'
+[2021-12-08 21:17:38][MYSOCKET]dicdata : {'resulttime': '20211208211738', 'errorCode': 0}
+[2021-12-08 21:17:38][MYSOCKET]resulttime : 20211208211738
+[2021-12-08 21:17:38][MYSOCKET]Receive Socket
+[2021-12-08 21:17:38][MYSOCKET]Decoding : {"resulttime":"20211208211738","errorCode":0}
+[2021-12-08 21:17:38][MYSOCKET]Call taskProcess
+[2021-12-08 21:17:38][TASK]taskProcess dic : {'resulttime': '20211208211738', 'errorCode': 0}
+[2021-12-08 21:17:38][MAIN]Door Open
+[2021-12-08 21:17:41][MAIN]Door Close
+[2021-12-08 21:17:43][MAIN]Display Init...
+[2021-12-08 21:17:52][MYSOCKET]## Send Message ##
+[2021-12-08 21:17:52][MYSOCKET]orig : {'method': 'setError', 'orgnztSn': '1', 'fcltSn': 9, 'errorCode': '0'}
+[2021-12-08 21:17:52][MYSOCKET]dec : {"resulttime":"20211208211752","errorCode":0}
+[2021-12-08 21:17:52][MYSOCKET]recvData : b'\xcd\x9b\xcbw\x7f,\xeb\x8f(\x9bk\x12\x83\x85#\xe2\xb1\x93Sw\xc5\xc4\x1c\xa4P\xabL \xff\xb8?\xe1\x8b\xb2\x0e"]L\xf2KE\x13\x1e\xdb\xc9s\x8f\x06'
+[2021-12-08 21:17:52][MYSOCKET]dicdata : {'resulttime': '20211208211752', 'errorCode': 0}
+[2021-12-08 21:17:52][MYSOCKET]Receive Socket
+[2021-12-08 21:17:52][MYSOCKET]resulttime : 20211208211752
+[2021-12-08 21:17:52][MYSOCKET]Decoding : {"resulttime":"20211208211752","errorCode":0}
+[2021-12-08 21:17:52][MYSOCKET]Call taskProcess
+[2021-12-08 21:17:52][TASK]taskProcess dic : {'resulttime': '20211208211752', 'errorCode': 0}
+[2021-12-08 21:17:52][MAIN]+++++++++++ Alive Message
+[2021-12-08 21:18:24][MAIN][Key] K4
+[2021-12-08 21:18:26][MAIN][Key] K4
+[2021-12-08 21:18:28][MAIN][Key] K*
+[2021-12-08 21:18:28][TASK]TASK_REQUEST_CALL
+[2021-12-08 21:18:28][MYSOCKET]## Send Message ##
+[2021-12-08 21:18:28][MYSOCKET]orig : {'method': 'reqVideoCall', 'macAddr': 'D3:68:BF:B2:F2:5C'}
+[2021-12-08 21:18:28][MYSOCKET]dec : {"resulttime":"20211208211828","errorCode":0,"videocallSn":826}
+[2021-12-08 21:18:28][MYSOCKET]recvData : b'\xcd\x9b\xcbw\x7f,\xeb\x8f(\x9bk\x12\x83\x85#\xe2\x94\xda\xeeEx$\x07\x9b\xc8\xd8\xbe\x8d\xbb\xb9Q1\x16\xb8\x83f}\x99Nm\xdf\xee#\xf7z\xcf\x95\x13dx_:oLe\xf0\x82/\x92O[%\x9f]'
+[2021-12-08 21:18:28][MYSOCKET]dicdata : {'resulttime': '20211208211828', 'errorCode': 0, 'videocallSn': 826}
+[2021-12-08 21:18:28][MYSOCKET]resulttime : 20211208211828
+[2021-12-08 21:18:28][MYSOCKET]Receive Socket
+[2021-12-08 21:18:28][MYSOCKET]Decoding : {"resulttime":"20211208211828","errorCode":0,"videocallSn":826}
+[2021-12-08 21:18:28][MYSOCKET]Call taskProcess
+[2021-12-08 21:18:28][TASK]taskProcess dic : {'resulttime': '20211208211828', 'errorCode': 0, 'videocallSn': 826}
+[2021-12-08 21:18:28][TASK]TASK_REQUEST_CALL_RESP
+[2021-12-08 21:18:28][TASK]VideoCallSn : 826
+[2021-12-08 21:18:28][TASK]TASK_REQUEST_CALL_RESULT
+[2021-12-08 21:18:28][MYSOCKET]## Send Message ##
+[2021-12-08 21:18:28][MYSOCKET]orig : {'method': 'reqVideoCallResult', 'macAddr': 'D3:68:BF:B2:F2:5C', 'videocallSn': 826, 'videoCallResult': 0}
+[2021-12-08 21:18:29][MYSOCKET]dec : {"result":0,"resulttime":"20211208211828","errorCode":3}
+[2021-12-08 21:18:29][MYSOCKET]recvData : b'#\xc4p\xbf\xe5F\xe3\xc3\xf5\xed\x9c\t\x95\xb4z\xbcy\xc5\x0b\xab@+\x08BlR\x96\xd31l98$\xbeM\xb6u\xa7\x84\xd3\x84\xed\x9f\xcb\x97\xf5y\x85^\xdf\xc5<?\x11\xa2\xa2J\xc2P\xda\x072|#'
+[2021-12-08 21:18:29][MYSOCKET]dicdata : {'result': 0, 'resulttime': '20211208211828', 'errorCode': 3}
+[2021-12-08 21:18:29][MYSOCKET]resulttime : 20211208211828
+[2021-12-08 21:18:29][MYSOCKET]Receive Socket
+[2021-12-08 21:18:29][MYSOCKET]Decoding : {"result":0,"resulttime":"20211208211828","errorCode":3}
+[2021-12-08 21:18:29][MYSOCKET]Call taskProcess
+[2021-12-08 21:18:29][TASK]taskProcess dic : {'result': 0, 'resulttime': '20211208211828', 'errorCode': 3}
+[2021-12-08 21:18:29][TASK]ErrorCode : 3
+[2021-12-08 21:18:52][MYSOCKET]## Send Message ##
+[2021-12-08 21:18:52][MYSOCKET]orig : {'method': 'setError', 'orgnztSn': '1', 'fcltSn': 9, 'errorCode': '0'}
+[2021-12-08 21:18:52][MYSOCKET]dec : {"resulttime":"20211208211852","errorCode":0}
+[2021-12-08 21:18:52][MYSOCKET]recvData : b'\xcd\x9b\xcbw\x7f,\xeb\x8f(\x9bk\x12\x83\x85#\xe2\x1f\xdf\x97\x96Zm8\x80\x12On\x1f\x90Sz\x81(\xbc\x15\xb0\xf1oVc\x08\x91\xaa\x8f~\xe1\x7f\xa0'
+[2021-12-08 21:18:52][MYSOCKET]dicdata : {'resulttime': '20211208211852', 'errorCode': 0}
+[2021-12-08 21:18:52][MYSOCKET]Receive Socket
+[2021-12-08 21:18:52][MYSOCKET]Decoding : {"resulttime":"20211208211852","errorCode":0}
+[2021-12-08 21:18:52][MYSOCKET]resulttime : 20211208211852
+[2021-12-08 21:18:52][MYSOCKET]Call taskProcess
+[2021-12-08 21:18:52][TASK]taskProcess dic : {'resulttime': '20211208211852', 'errorCode': 0}
+[2021-12-08 21:18:52][MAIN]+++++++++++ Alive Message
+[2021-12-08 21:19:52][MYSOCKET]## Send Message ##
+[2021-12-08 21:19:52][MYSOCKET]orig : {'method': 'setError', 'orgnztSn': '1', 'fcltSn': 9, 'errorCode': '0'}
+[2021-12-08 21:19:52][MYSOCKET]dec : {"resulttime":"20211208211952","errorCode":0}
+[2021-12-08 21:19:52][MYSOCKET]recvData : b'\xcd\x9b\xcbw\x7f,\xeb\x8f(\x9bk\x12\x83\x85#\xe2\xa6\xe4v\x96\x98S\x13\xa1\x0f\x11\xf9\xef\x07\x0e\xe8(\xf0HUhFc\x1ao\xe9\xafO\xc4\xd7\xe4\xfe\xde'
+[2021-12-08 21:19:52][MYSOCKET]dicdata : {'resulttime': '20211208211952', 'errorCode': 0}
+[2021-12-08 21:19:52][MYSOCKET]Receive Socket
+[2021-12-08 21:19:52][MYSOCKET]resulttime : 20211208211952
+[2021-12-08 21:19:52][MYSOCKET]Decoding : {"resulttime":"20211208211952","errorCode":0}
+[2021-12-08 21:19:52][MYSOCKET]Call taskProcess
+[2021-12-08 21:19:52][TASK]taskProcess dic : {'resulttime': '20211208211952', 'errorCode': 0}
+[2021-12-08 21:19:52][MAIN]+++++++++++ Alive Message
+[2021-12-08 21:20:52][MYSOCKET]## Send Message ##
+[2021-12-08 21:20:52][MYSOCKET]orig : {'method': 'setError', 'orgnztSn': '1', 'fcltSn': 9, 'errorCode': '0'}
+[2021-12-08 21:20:52][MYSOCKET]dec : {"resulttime":"20211208212052","errorCode":0}
+[2021-12-08 21:20:52][MYSOCKET]recvData : b'\xcd\x9b\xcbw\x7f,\xeb\x8f(\x9bk\x12\x83\x85#\xe2\xc1c\x82\xf4\x9b\xb2Rj5\xc5\x7f\xc4SF\x8d\x11-\xc0\xc8\x16M\xac\xabM\xe6\x1aSA\x96lS\xbd'
+[2021-12-08 21:20:52][MYSOCKET]dicdata : {'resulttime': '20211208212052', 'errorCode': 0}
+[2021-12-08 21:20:52][MYSOCKET]resulttime : 20211208212052
+[2021-12-08 21:20:52][MYSOCKET]Receive Socket
+[2021-12-08 21:20:52][MYSOCKET]Decoding : {"resulttime":"20211208212052","errorCode":0}
+[2021-12-08 21:20:52][MYSOCKET]Call taskProcess
+[2021-12-08 21:20:52][TASK]taskProcess dic : {'resulttime': '20211208212052', 'errorCode': 0}
+[2021-12-08 21:20:52][MAIN]+++++++++++ Alive Message
+[2021-12-08 21:21:52][MYSOCKET]## Send Message ##
+[2021-12-08 21:21:52][MYSOCKET]orig : {'method': 'setError', 'orgnztSn': '1', 'fcltSn': 9, 'errorCode': '0'}
+[2021-12-08 21:21:52][MYSOCKET]dec : {"resulttime":"20211208212152","errorCode":0}
+[2021-12-08 21:21:52][MYSOCKET]recvData : b'\xcd\x9b\xcbw\x7f,\xeb\x8f(\x9bk\x12\x83\x85#\xe2G\xdb\xde\xb2\x0e\xe0G\x13\x0f\xa9\xc9)p\xfe\xae\x12A\x9d\xe3\x81\x12#L\x1d\x03\x97@\x8d\x96\x1f\xa1a'
+[2021-12-08 21:21:52][MYSOCKET]dicdata : {'resulttime': '20211208212152', 'errorCode': 0}
+[2021-12-08 21:21:52][MYSOCKET]Receive Socket
+[2021-12-08 21:21:52][MYSOCKET]resulttime : 20211208212152
+[2021-12-08 21:21:52][MYSOCKET]Decoding : {"resulttime":"20211208212152","errorCode":0}
+[2021-12-08 21:21:52][MYSOCKET]Call taskProcess
+[2021-12-08 21:21:52][TASK]taskProcess dic : {'resulttime': '20211208212152', 'errorCode': 0}
+[2021-12-08 21:21:52][MAIN]+++++++++++ Alive Message
+[2021-12-08 21:22:52][MYSOCKET]## Send Message ##
+[2021-12-08 21:22:52][MYSOCKET]orig : {'method': 'setError', 'orgnztSn': '1', 'fcltSn': 9, 'errorCode': '0'}
+[2021-12-08 21:22:52][MYSOCKET]dec : {"resulttime":"20211208212252","errorCode":0}
+[2021-12-08 21:22:52][MYSOCKET]recvData : b'\xcd\x9b\xcbw\x7f,\xeb\x8f(\x9bk\x12\x83\x85#\xe27K@\xe0\x0c\x8c\xd4\x16Y\xf1I\x10\x8f\xc1\xd0\x9b\xb4\xb4:"W\xab\x85\xcc5u\xae\xf03\xd5;\xeb'
+[2021-12-08 21:22:52][MYSOCKET]dicdata : {'resulttime': '20211208212252', 'errorCode': 0}
+[2021-12-08 21:22:52][MYSOCKET]resulttime : 20211208212252
+[2021-12-08 21:22:52][MYSOCKET]Receive Socket
+[2021-12-08 21:22:52][MYSOCKET]Decoding : {"resulttime":"20211208212252","errorCode":0}
+[2021-12-08 21:22:52][MYSOCKET]Call taskProcess
+[2021-12-08 21:22:52][TASK]taskProcess dic : {'resulttime': '20211208212252', 'errorCode': 0}
+[2021-12-08 21:22:52][MAIN]+++++++++++ Alive Message
+[2021-12-08 21:23:52][MYSOCKET]## Send Message ##
+[2021-12-08 21:23:52][MYSOCKET]orig : {'method': 'setError', 'orgnztSn': '1', 'fcltSn': 9, 'errorCode': '0'}
+[2021-12-08 21:23:52][MYSOCKET]dec : {"resulttime":"20211208212352","errorCode":0}
+[2021-12-08 21:23:52][MYSOCKET]recvData : b"\xcd\x9b\xcbw\x7f,\xeb\x8f(\x9bk\x12\x83\x85#\xe2a\x99\xc1}\xf4\xd7\xb0&\xb4\x11\x0eg'Y!\xcb~\x8c\x92\x01\x14W\x1b\xe3\xf6Q\x91D?\xbf\x95\x18"
+[2021-12-08 21:23:52][MYSOCKET]dicdata : {'resulttime': '20211208212352', 'errorCode': 0}
+[2021-12-08 21:23:52][MYSOCKET]resulttime : 20211208212352
+[2021-12-08 21:23:52][MYSOCKET]Receive Socket
+[2021-12-08 21:23:52][MYSOCKET]Decoding : {"resulttime":"20211208212352","errorCode":0}
+[2021-12-08 21:23:52][MYSOCKET]Call taskProcess
+[2021-12-08 21:23:52][TASK]taskProcess dic : {'resulttime': '20211208212352', 'errorCode': 0}
+[2021-12-08 21:23:52][MAIN]+++++++++++ Alive Message
+[2021-12-08 21:24:52][MYSOCKET]## Send Message ##
+[2021-12-08 21:24:52][MYSOCKET]orig : {'method': 'setError', 'orgnztSn': '1', 'fcltSn': 9, 'errorCode': '0'}
+[2021-12-08 21:24:52][MYSOCKET]dec : {"resulttime":"20211208212452","errorCode":0}
+[2021-12-08 21:24:52][MYSOCKET]recvData : b'\xcd\x9b\xcbw\x7f,\xeb\x8f(\x9bk\x12\x83\x85#\xe2_\xd1\x8a\x86fQ&(\x1a\xe6`\xc2\xfc\x9bg7\xd2\x8a\xfb:\x7f5\x00\xcb\xc2G\xa4b4\x99\xc0<'
+[2021-12-08 21:24:52][MYSOCKET]dicdata : {'resulttime': '20211208212452', 'errorCode': 0}
+[2021-12-08 21:24:52][MYSOCKET]Receive Socket
+[2021-12-08 21:24:52][MYSOCKET]resulttime : 20211208212452
+[2021-12-08 21:24:52][MYSOCKET]Decoding : {"resulttime":"20211208212452","errorCode":0}
+[2021-12-08 21:24:52][MYSOCKET]Call taskProcess
+[2021-12-08 21:24:52][TASK]taskProcess dic : {'resulttime': '20211208212452', 'errorCode': 0}
+[2021-12-08 21:24:52][MAIN]+++++++++++ Alive Message
+[2021-12-08 21:25:52][MYSOCKET]## Send Message ##
+[2021-12-08 21:25:52][MYSOCKET]orig : {'method': 'setError', 'orgnztSn': '1', 'fcltSn': 9, 'errorCode': '0'}
+[2021-12-08 21:25:52][MYSOCKET]dec : {"resulttime":"20211208212552","errorCode":0}
+[2021-12-08 21:25:52][MYSOCKET]recvData : b'\xcd\x9b\xcbw\x7f,\xeb\x8f(\x9bk\x12\x83\x85#\xe2\x0c\x92\xc3#:\xf9\xbf\r7\xb3\xb3\x80:\xe2\xcb\xba\x9e1\x89._\x8d\x9f?\x05(b`{\xe8l\xeb'
+[2021-12-08 21:25:52][MYSOCKET]dicdata : {'resulttime': '20211208212552', 'errorCode': 0}
+[2021-12-08 21:25:52][MYSOCKET]Receive Socket
+[2021-12-08 21:25:52][MYSOCKET]Decoding : {"resulttime":"20211208212552","errorCode":0}
+[2021-12-08 21:25:52][MYSOCKET]Call taskProcess
+[2021-12-08 21:25:52][MYSOCKET]resulttime : 20211208212552
+[2021-12-08 21:25:52][TASK]taskProcess dic : {'resulttime': '20211208212552', 'errorCode': 0}
+[2021-12-08 21:25:52][MAIN]+++++++++++ Alive Message
+[2021-12-08 21:26:52][MYSOCKET]## Send Message ##
+[2021-12-08 21:26:52][MYSOCKET]orig : {'method': 'setError', 'orgnztSn': '1', 'fcltSn': 9, 'errorCode': '0'}
+[2021-12-08 21:26:52][MYSOCKET]dec : {"resulttime":"20211208212652","errorCode":0}
+[2021-12-08 21:26:52][MYSOCKET]recvData : b'\xcd\x9b\xcbw\x7f,\xeb\x8f(\x9bk\x12\x83\x85#\xe2U\xb81:\xc5?1\xf1sd$\xf0\xdc\x8d\xdfp\xed\xb1\x83Q3\xdb]\x9e3\xc6\xec/\xb6.\x93\x8c'
+[2021-12-08 21:26:52][MYSOCKET]dicdata : {'resulttime': '20211208212652', 'errorCode': 0}
+[2021-12-08 21:26:52][MYSOCKET]Receive Socket
+[2021-12-08 21:26:52][MYSOCKET]Decoding : {"resulttime":"20211208212652","errorCode":0}
+[2021-12-08 21:26:52][MYSOCKET]resulttime : 20211208212652
+[2021-12-08 21:26:52][MYSOCKET]Call taskProcess
+[2021-12-08 21:26:52][TASK]taskProcess dic : {'resulttime': '20211208212652', 'errorCode': 0}
+[2021-12-08 21:26:52][MAIN]+++++++++++ Alive Message
+[2021-12-08 21:27:52][MYSOCKET]## Send Message ##
+[2021-12-08 21:27:52][MYSOCKET]orig : {'method': 'setError', 'orgnztSn': '1', 'fcltSn': 9, 'errorCode': '0'}
+[2021-12-08 21:27:52][MYSOCKET]dec : {"resulttime":"20211208212752","errorCode":0}
+[2021-12-08 21:27:52][MYSOCKET]recvData : b'\xcd\x9b\xcbw\x7f,\xeb\x8f(\x9bk\x12\x83\x85#\xe2\xad\xe4\xf99W\x89\x88Sv\xe8)>g\xf8J\xa0.\x17\xb8f\xc1\x14\xd3\xd4\xa1\x1f\xb7\x10W\x984%'
+[2021-12-08 21:27:52][MYSOCKET]dicdata : {'resulttime': '20211208212752', 'errorCode': 0}
+[2021-12-08 21:27:52][MYSOCKET]Receive Socket
+[2021-12-08 21:27:52][MYSOCKET]resulttime : 20211208212752
+[2021-12-08 21:27:52][MYSOCKET]Decoding : {"resulttime":"20211208212752","errorCode":0}
+[2021-12-08 21:27:52][MYSOCKET]Call taskProcess
+[2021-12-08 21:27:52][TASK]taskProcess dic : {'resulttime': '20211208212752', 'errorCode': 0}
+[2021-12-08 21:27:52][MAIN]+++++++++++ Alive Message
+[2021-12-08 21:28:52][MYSOCKET]## Send Message ##
+[2021-12-08 21:28:52][MYSOCKET]orig : {'method': 'setError', 'orgnztSn': '1', 'fcltSn': 9, 'errorCode': '0'}
+[2021-12-08 21:28:52][MYSOCKET]dec : {"resulttime":"20211208212852","errorCode":0}
+[2021-12-08 21:28:52][MYSOCKET]recvData : b'\xcd\x9b\xcbw\x7f,\xeb\x8f(\x9bk\x12\x83\x85#\xe2\xd9OX\xfc\x9e\x8c\xa5\xee\xc10SN\xd5\xfeB\x81Z\xc5\xdd%\xe5\x00[\x00\x9e\x0f=\xb5\x0fbl\xb4'
+[2021-12-08 21:28:52][MYSOCKET]dicdata : {'resulttime': '20211208212852', 'errorCode': 0}
+[2021-12-08 21:28:52][MYSOCKET]Receive Socket
+[2021-12-08 21:28:52][MYSOCKET]resulttime : 20211208212852
+[2021-12-08 21:28:52][MYSOCKET]Decoding : {"resulttime":"20211208212852","errorCode":0}
+[2021-12-08 21:28:52][MYSOCKET]Call taskProcess
+[2021-12-08 21:28:52][TASK]taskProcess dic : {'resulttime': '20211208212852', 'errorCode': 0}
+[2021-12-08 21:28:52][MAIN]+++++++++++ Alive Message
+[2021-12-08 21:29:52][MYSOCKET]## Send Message ##
+[2021-12-08 21:29:52][MYSOCKET]orig : {'method': 'setError', 'orgnztSn': '1', 'fcltSn': 9, 'errorCode': '0'}
+[2021-12-08 21:29:52][MYSOCKET]dec : {"resulttime":"20211208212952","errorCode":0}
+[2021-12-08 21:29:52][MYSOCKET]recvData : b'\xcd\x9b\xcbw\x7f,\xeb\x8f(\x9bk\x12\x83\x85#\xe2\xb7\x84\xe5\xe1\x00\x04\x86\xe6R`\x13\xdc\x87\xde\xb35\xb3\xd9\x9b\x00\xe0\xd0\xf8\x04\x9b\xa6\x8boI\x89,\xc6'
+[2021-12-08 21:29:52][MYSOCKET]dicdata : {'resulttime': '20211208212952', 'errorCode': 0}
+[2021-12-08 21:29:52][MYSOCKET]Receive Socket
+[2021-12-08 21:29:52][MYSOCKET]resulttime : 20211208212952
+[2021-12-08 21:29:52][MYSOCKET]Decoding : {"resulttime":"20211208212952","errorCode":0}
+[2021-12-08 21:29:52][MYSOCKET]Call taskProcess
+[2021-12-08 21:29:52][TASK]taskProcess dic : {'resulttime': '20211208212952', 'errorCode': 0}
+[2021-12-08 21:29:52][MAIN]+++++++++++ Alive Message
+[2021-12-08 21:30:52][MYSOCKET]## Send Message ##
+[2021-12-08 21:30:52][MYSOCKET]orig : {'method': 'setError', 'orgnztSn': '1', 'fcltSn': 9, 'errorCode': '0'}
+[2021-12-08 21:30:52][MYSOCKET]dec : {"resulttime":"20211208213052","errorCode":0}
+[2021-12-08 21:30:52][MYSOCKET]recvData : b'\xcd\x9b\xcbw\x7f,\xeb\x8f(\x9bk\x12\x83\x85#\xe2\xc6^\xde\x9e\xb4\x86U\x91\xaa\x83\xda\xa8\xea\xe3\x85\x97\xc4\xedg\x95\xa3F\x01\xc8\x9c\xafS\x1a\xcb9\xeeW'
+[2021-12-08 21:30:52][MYSOCKET]dicdata : {'resulttime': '20211208213052', 'errorCode': 0}
+[2021-12-08 21:30:52][MYSOCKET]resulttime : 20211208213052
+[2021-12-08 21:30:52][MYSOCKET]Receive Socket
+[2021-12-08 21:30:52][MYSOCKET]Decoding : {"resulttime":"20211208213052","errorCode":0}
+[2021-12-08 21:30:52][MYSOCKET]Call taskProcess
+[2021-12-08 21:30:52][TASK]taskProcess dic : {'resulttime': '20211208213052', 'errorCode': 0}
+[2021-12-08 21:30:52][MAIN]+++++++++++ Alive Message
+[2021-12-08 21:31:52][MYSOCKET]## Send Message ##
+[2021-12-08 21:31:52][MYSOCKET]orig : {'method': 'setError', 'orgnztSn': '1', 'fcltSn': 9, 'errorCode': '0'}
+[2021-12-08 21:31:52][MYSOCKET]dec : {"resulttime":"20211208213152","errorCode":0}
+[2021-12-08 21:31:52][MYSOCKET]recvData : b'\xcd\x9b\xcbw\x7f,\xeb\x8f(\x9bk\x12\x83\x85#\xe2^\x04N\xd02\x88\x8dYZ\xd1f\xd8\x96\xc0"\x911\xbe.J\xa2\xabr\xdf\x9f\x85\xc5\x08-4Z\x9b'
+[2021-12-08 21:31:52][MYSOCKET]dicdata : {'resulttime': '20211208213152', 'errorCode': 0}
+[2021-12-08 21:31:52][MYSOCKET]resulttime : 20211208213152
+[2021-12-08 21:31:52][MYSOCKET]Receive Socket
+[2021-12-08 21:31:52][MYSOCKET]Decoding : {"resulttime":"20211208213152","errorCode":0}
+[2021-12-08 21:31:52][MYSOCKET]Call taskProcess
+[2021-12-08 21:31:52][TASK]taskProcess dic : {'resulttime': '20211208213152', 'errorCode': 0}
+[2021-12-08 21:31:52][MAIN]+++++++++++ Alive Message
+[2021-12-08 21:32:52][MYSOCKET]## Send Message ##
+[2021-12-08 21:32:52][MYSOCKET]orig : {'method': 'setError', 'orgnztSn': '1', 'fcltSn': 9, 'errorCode': '0'}
+[2021-12-08 21:32:52][MYSOCKET]dec : {"resulttime":"20211208213252","errorCode":0}
+[2021-12-08 21:32:52][MYSOCKET]recvData : b'\xcd\x9b\xcbw\x7f,\xeb\x8f(\x9bk\x12\x83\x85#\xe2J\xd9\x01\xcf\xe0A$0M#\x8e\x89\xa3\xd2\x1e\xde\xf7\xe73B!\xd4*$a<}\xa0\x82\xf5$J'
+[2021-12-08 21:32:52][MYSOCKET]dicdata : {'resulttime': '20211208213252', 'errorCode': 0}
+[2021-12-08 21:32:52][MYSOCKET]resulttime : 20211208213252
+[2021-12-08 21:32:52][MYSOCKET]Receive Socket
+[2021-12-08 21:32:52][MYSOCKET]Decoding : {"resulttime":"20211208213252","errorCode":0}
+[2021-12-08 21:32:52][MYSOCKET]Call taskProcess
+[2021-12-08 21:32:52][TASK]taskProcess dic : {'resulttime': '20211208213252', 'errorCode': 0}
+[2021-12-08 21:32:52][MAIN]+++++++++++ Alive Message
+[2021-12-08 21:33:52][MYSOCKET]## Send Message ##
+[2021-12-08 21:33:52][MYSOCKET]orig : {'method': 'setError', 'orgnztSn': '1', 'fcltSn': 9, 'errorCode': '0'}
+[2021-12-08 21:33:52][MYSOCKET]dec : {"resulttime":"20211208213352","errorCode":0}
+[2021-12-08 21:33:52][MYSOCKET]recvData : b'\xcd\x9b\xcbw\x7f,\xeb\x8f(\x9bk\x12\x83\x85#\xe2.U\xd3\x7f\xbe\x00\xc4\x8b\xfe\xad\xfa\xc2\x8b\xc0*\x03@(\x87\x061\x90\xac\xd3F\xcb\xd7\xbf\x8a\x8fQ\xaa'
+[2021-12-08 21:33:52][MYSOCKET]dicdata : {'resulttime': '20211208213352', 'errorCode': 0}
+[2021-12-08 21:33:52][MYSOCKET]resulttime : 20211208213352
+[2021-12-08 21:33:52][MYSOCKET]Receive Socket
+[2021-12-08 21:33:52][MYSOCKET]Decoding : {"resulttime":"20211208213352","errorCode":0}
+[2021-12-08 21:33:52][MYSOCKET]Call taskProcess
+[2021-12-08 21:33:52][TASK]taskProcess dic : {'resulttime': '20211208213352', 'errorCode': 0}
+[2021-12-08 21:33:52][MAIN]+++++++++++ Alive Message
+[2021-12-08 21:34:52][MYSOCKET]## Send Message ##
+[2021-12-08 21:34:52][MYSOCKET]orig : {'method': 'setError', 'orgnztSn': '1', 'fcltSn': 9, 'errorCode': '0'}
+[2021-12-08 21:34:52][MYSOCKET]dec : {"resulttime":"20211208213452","errorCode":0}
+[2021-12-08 21:34:52][MYSOCKET]recvData : b'\xcd\x9b\xcbw\x7f,\xeb\x8f(\x9bk\x12\x83\x85#\xe28(G_\x8caN\x94\xda~B\xe7\xf6\x1a\x84x\x85\x0c\x05]\xee\xdf\x9f\x1b\x00\xe7V\x9bQl\x8d5'
+[2021-12-08 21:34:52][MYSOCKET]dicdata : {'resulttime': '20211208213452', 'errorCode': 0}
+[2021-12-08 21:34:52][MYSOCKET]resulttime : 20211208213452
+[2021-12-08 21:34:52][MYSOCKET]Receive Socket
+[2021-12-08 21:34:52][MYSOCKET]Decoding : {"resulttime":"20211208213452","errorCode":0}
+[2021-12-08 21:34:52][MYSOCKET]Call taskProcess
+[2021-12-08 21:34:52][TASK]taskProcess dic : {'resulttime': '20211208213452', 'errorCode': 0}
+[2021-12-08 21:34:52][MAIN]+++++++++++ Alive Message
+[2021-12-08 21:35:34][MAIN][Key] K4
+[2021-12-08 21:35:35][MAIN][Key] K4
+[2021-12-08 21:35:52][MYSOCKET]## Send Message ##
+[2021-12-08 21:35:52][MYSOCKET]orig : {'method': 'setError', 'orgnztSn': '1', 'fcltSn': 9, 'errorCode': '0'}
+[2021-12-08 21:35:52][MYSOCKET]dec : {"resulttime":"20211208213552","errorCode":0}
+[2021-12-08 21:35:52][MYSOCKET]recvData : b'\xcd\x9b\xcbw\x7f,\xeb\x8f(\x9bk\x12\x83\x85#\xe2\xc8\x1f~1t\x99\xf2\xcf\xa5x\x89\x9eaG\xfe\x0b\xddw\x05\xbe0\x87\xcd\x84\xd0.w|\xa9\xc2\xc6\xc3'
+[2021-12-08 21:35:52][MYSOCKET]dicdata : {'resulttime': '20211208213552', 'errorCode': 0}
+[2021-12-08 21:35:52][MYSOCKET]Receive Socket
+[2021-12-08 21:35:52][MYSOCKET]resulttime : 20211208213552
+[2021-12-08 21:35:52][MYSOCKET]Decoding : {"resulttime":"20211208213552","errorCode":0}
+[2021-12-08 21:35:52][MYSOCKET]Call taskProcess
+[2021-12-08 21:35:52][TASK]taskProcess dic : {'resulttime': '20211208213552', 'errorCode': 0}
+[2021-12-08 21:35:52][MAIN]+++++++++++ Alive Message
+[2021-12-08 21:36:52][MYSOCKET]## Send Message ##
+[2021-12-08 21:36:52][MYSOCKET]orig : {'method': 'setError', 'orgnztSn': '1', 'fcltSn': 9, 'errorCode': '0'}
+[2021-12-08 21:36:52][MYSOCKET]dec : {"resulttime":"20211208213652","errorCode":0}
+[2021-12-08 21:36:52][MYSOCKET]recvData : b'\xcd\x9b\xcbw\x7f,\xeb\x8f(\x9bk\x12\x83\x85#\xe2\xfe\xf48\x15\x88\xecD\xd6\x0e%\x84\x87\x9b\xabO\x0f\xe8!\x98d\x9b,\xf2*\x9dek\x97P\xef\xff\xd3'
+[2021-12-08 21:36:52][MYSOCKET]dicdata : {'resulttime': '20211208213652', 'errorCode': 0}
+[2021-12-08 21:36:52][MYSOCKET]resulttime : 20211208213652
+[2021-12-08 21:36:52][MYSOCKET]Receive Socket
+[2021-12-08 21:36:52][MYSOCKET]Decoding : {"resulttime":"20211208213652","errorCode":0}
+[2021-12-08 21:36:52][MYSOCKET]Call taskProcess
+[2021-12-08 21:36:52][TASK]taskProcess dic : {'resulttime': '20211208213652', 'errorCode': 0}
+[2021-12-08 21:36:52][MAIN]+++++++++++ Alive Message
+[2021-12-08 21:37:50][MAIN]접속 종료

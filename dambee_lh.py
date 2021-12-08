@@ -53,6 +53,8 @@ line = []
 key = ""
 bCover = False
 netdiscon = False
+aliveerror = False
+errorcode = 0
 ser = serial.Serial('/dev/ttyS0', 115200)
 
 def DEBUGPrint(msg, param1="", param2=""):
@@ -101,7 +103,7 @@ def keyThread():
 ######################
 # Start Main Program # 
 ######################
-log.Init(True)
+log.Init(False)
 pcmd.read()
 
 # GPIO 입출력
@@ -118,8 +120,7 @@ draw = TFT.draw()
 
 TFT.backlight(pcmd.option['lcd'])
 display.DispInit(TFT, draw)
-display.DispSocketDiscon()
-
+display.DispWait()
 
 # 옵션 설정
 DEBUGPrint("사운드 초기화")
@@ -169,8 +170,10 @@ disp_time = 0
 access_time = 0
 net_time = 0
 alarm_time = 0
+
 cur_time = int(time())
 net_time = cur_time
+pcmd.alive_time = cur_time
 
 keythread = threading.Thread(target=keyThread, daemon=True)
 keythread.start()
@@ -184,7 +187,7 @@ keyinput = []
 schedule.readSchedule()
 tog = 0
 
-display.DispWait()
+
 error_disp = 0
 
 while True:
@@ -283,7 +286,7 @@ while True:
           if len(l) > 12:
             mysocket.webcmd[7]["cardNumber"] = l[0:12]
           elif len(l) < 12:
-            mysocket.webcmd[7]["cardNumber"] = "0000"+l
+            mysocket.webcmd[7]["cardNumber"] = "00AABBCCDDEE"#"0000"+l
           else:
             mysocket.webcmd[7]["cardNumber"] = l
           mysocket.SendMessage(7)
@@ -328,12 +331,14 @@ while True:
         if Input.InputState['Cover'] == 1 and bCover == False:          
           bCover = True
           alarm_timer = 0
-          error_disp |= 1
+          error_disp |= 1          
+          errorcode = 3 
           mysocket.SendMessage(3, "3")
         elif Input.InputState['Cover'] == 0 and bCover == True:
           bCover = False
           if netdiscon == False and mysocket.bRetryCon == False:
               display.DispWait()
+          errorcode = 0
           mysocket.SendMessage(3, "0")
 
     if pcmd.option['brkyn'] == 1 and bCover == True:
@@ -361,7 +366,14 @@ while True:
     else:
         if mysocket.bRetryCon == True:
             mysocket.bRetryCon = False
-            if netdiscon == False and bCover == False:
+            if netdiscon == False and bCover == False and aliveerror == False:
+              display.DispWait()
+              
+    if pcmd.ferrorcnt >= 2:
+          aliveerror = True
+    elif pcmd.ferrorcnt == 0:
+          aliveerror = False 
+          if netdiscon == False and bCover == False and mysocket.bRetryCon == False:
               display.DispWait()
             
     if bCover == True:
@@ -372,7 +384,7 @@ while True:
         if display.dispnum != 4:
             display.DispNetworkDiscon()
             error_disp = 3
-    elif mysocket.bRetryCon == True:
+    elif mysocket.bRetryCon == True or aliveerror == True:
         if display.dispnum != 5:
             display.DispSocketDiscon()
             error_disp = 4 
@@ -380,9 +392,16 @@ while True:
     net_time = cur_time
   
   if bCover == True:
-    if (cur_time - alarm_time) >= 1:
+    if (cur_time - alarm_time) >= 4:
         os.system("aplay -D plughw:2,0 /home/pi/dambee_lh/music/emergency.wav")
         alarm_time = cur_time
+        
+  if (cur_time - pcmd.alive_time) >= 60:
+    pcmd.alive_time = cur_time
+    pcmd.ferrorcnt = pcmd.ferrorcnt + 1
+    errmsg = "%d" %(errorcode)
+    mysocket.SendMessage(3, errmsg)
+    DEBUGPrint("+++++++++++ Alive Message")
       
   # Command Line Instruction
   key = cli(key, inout, task, TFT)

@@ -141,6 +141,11 @@ def cli(key, inout, task, TFT):
       os.system("sudo shutdown -h now")  
     elif key == 'reboot':
       os.system("sudo reboot")
+    elif key == 'blereset':
+      inout.blewakeup(0)
+      sleep(100)
+      inout.blewakeup(1)
+      print('ble reset')
     else :
       display.DispTest(key)
     key = ""
