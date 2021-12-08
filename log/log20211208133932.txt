@@ -1,0 +1,28 @@
+[2021-12-08 13:39:32][COMMAND]Read System Configuration File
+[2021-12-08 13:39:32][MAIN]입출력 초기화
+[2021-12-08 13:39:32][MAIN]LCD 초기화
+[2021-12-08 13:39:32][MAIN]사운드 초기화
+[2021-12-08 13:39:32][MAIN]네트워크 정보 로드
+[2021-12-08 13:39:32][UTIL]Send to BLE
+[2021-12-08 13:39:32][COMMAND]##################################################
+[2021-12-08 13:39:32][COMMAND]> CMD : Get BLE Infor.
+[2021-12-08 13:39:32][COMMAND]{'enckey': 'BBCCD728663FF5F2', 'mac': 'D3:68:BF:B2:F2:5C'}
+[2021-12-08 13:39:32][COMMAND]##################################################
+[2021-12-08 13:39:32][COMMAND]Write System Configuration File
+[2021-12-08 13:39:32][UTIL]key : 20D368BFB2F25CBBCCD728663FF5F221
+[2021-12-08 13:39:32][UTIL]iv : BBCCD728663FF5F2
+[2021-12-08 13:39:33][MAIN]터치초기화
+[2021-12-08 13:39:35][MAIN]카드리더초기화
+[2021-12-08 13:39:35][MAIN]소켓서버 연결
+[2021-12-08 13:39:36][MYSOCKET]접속 완료
+[2021-12-08 13:39:36][MYSOCKET]{'result': 0}
+[2021-12-08 13:39:36][MYSOCKET]## Send Message ##
+[2021-12-08 13:39:36][MYSOCKET]orig : {'method': 'getDeviceFcltInfo', 'macAddr': 'D3:68:BF:B2:F2:5C'}
+[2021-12-08 13:39:40][MYSOCKET]Socket Timeout
+[2021-12-08 13:39:40][COMMAND]Write System Configuration File
+[2021-12-08 13:39:40][MAIN][Key] K4
+[2021-12-08 13:39:49][MAIN]UID :9DBC0500
+[2021-12-08 13:39:49][MYSOCKET]## Send Message ##
+[2021-12-08 13:39:49][MYSOCKET]orig : {'method': 'reqFingerCardCheck', 'cardNumber': '00009DBC0500', 'fcltSn': 5}
+[2021-12-08 13:39:53][MYSOCKET]Socket Timeout
+[2021-12-08 13:40:00][MAIN]접속 종료

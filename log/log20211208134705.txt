@@ -1,0 +1,116 @@
+[2021-12-08 13:47:05][COMMAND]Read System Configuration File
+[2021-12-08 13:47:05][MAIN]입출력 초기화
+[2021-12-08 13:47:05][MAIN]LCD 초기화
+[2021-12-08 13:47:05][MAIN]사운드 초기화
+[2021-12-08 13:47:05][MAIN]네트워크 정보 로드
+[2021-12-08 13:47:05][UTIL]Send to BLE
+[2021-12-08 13:47:05][COMMAND]##################################################
+[2021-12-08 13:47:05][COMMAND]> CMD : Get BLE Infor.
+[2021-12-08 13:47:05][COMMAND]{'enckey': 'BBCCD728663FF5F2', 'mac': 'D3:68:BF:B2:F2:5C'}
+[2021-12-08 13:47:05][COMMAND]##################################################
+[2021-12-08 13:47:05][COMMAND]Write System Configuration File
+[2021-12-08 13:47:05][UTIL]key : 20D368BFB2F25CBBCCD728663FF5F221
+[2021-12-08 13:47:05][UTIL]iv : BBCCD728663FF5F2
+[2021-12-08 13:47:06][MAIN]터치초기화
+[2021-12-08 13:47:09][MAIN]카드리더초기화
+[2021-12-08 13:47:09][MAIN]소켓서버 연결
+[2021-12-08 13:47:09][MYSOCKET]접속 완료
+[2021-12-08 13:47:09][MYSOCKET]{'result': 0}
+[2021-12-08 13:47:09][MYSOCKET]## Send Message ##
+[2021-12-08 13:47:09][MYSOCKET]orig : {'method': 'getDeviceFcltInfo', 'macAddr': 'D3:68:BF:B2:F2:5C'}
+[2021-12-08 13:47:09][MYSOCKET]dec : {"resulttime":"20211208134709","fcltSn":5,"errorCode":0,"orgnztSn":3}
+[2021-12-08 13:47:09][MYSOCKET]recvData : b'\xcd\x9b\xcbw\x7f,\xeb\x8f(\x9bk\x12\x83\x85#\xe2\xaf\x8f\xbf\xc0\x8a\xba5v\xe1/F\xc7\x87?\xb4u\xb9\t\x9a_\xd7\x1d,\nB\xc5\x99T\x8d\x8a\xe0\x07]\x84\x82\xee \xc3\xf0\xd8V33\xe2m]\xc1\x17\xf5\xbc\xa8x\x8d5\xec2,\xf2q\xdd#\xe4\x0e\xa7'
+[2021-12-08 13:47:09][MYSOCKET]dicdata : {'resulttime': '20211208134709', 'fcltSn': 5, 'errorCode': 0, 'orgnztSn': 3}
+[2021-12-08 13:47:09][MYSOCKET]resulttime : 20211208134709
+[2021-12-08 13:47:09][MYSOCKET]Receive Socket
+[2021-12-08 13:47:09][MYSOCKET]Decoding : {"resulttime":"20211208134709","fcltSn":5,"errorCode":0,"orgnztSn":3}
+[2021-12-08 13:47:09][MYSOCKET]Call taskProcess
+[2021-12-08 13:47:09][TASK]taskProcess dic : {'resulttime': '20211208134709', 'fcltSn': 5, 'errorCode': 0, 'orgnztSn': 3}
+[2021-12-08 13:47:09][COMMAND]Write System Configuration File
+[2021-12-08 13:47:19][MYSOCKET]## Send Message ##
+[2021-12-08 13:47:19][MYSOCKET]orig : {'method': 'setError', 'orgnztSn': '1', 'fcltSn': 5, 'errorCode': '3'}
+[2021-12-08 13:47:19][MYSOCKET]dec : {"resulttime":"20211208134719","errorCode":0}
+[2021-12-08 13:47:19][MYSOCKET]recvData : b'\xcd\x9b\xcbw\x7f,\xeb\x8f(\x9bk\x12\x83\x85#\xe2\xdb!\xc3u\xc2r\x9e\xc4\x15\xa0\x94,\x160d\xe9\xbem\xd5L\xf0\xbbI\xaa\xf8\x99\x8b\x973S\xf7\xdd'
+[2021-12-08 13:47:19][MYSOCKET]dicdata : {'resulttime': '20211208134719', 'errorCode': 0}
+[2021-12-08 13:47:19][MYSOCKET]resulttime : 20211208134719
+[2021-12-08 13:47:19][MYSOCKET]Receive Socket
+[2021-12-08 13:47:19][MYSOCKET]Decoding : {"resulttime":"20211208134719","errorCode":0}
+[2021-12-08 13:47:19][MYSOCKET]Call taskProcess
+[2021-12-08 13:47:19][TASK]taskProcess dic : {'resulttime': '20211208134719', 'errorCode': 0}
+[2021-12-08 13:47:29][MYSOCKET]dec : {"method":"getDeviceOption","responseId":"e975633ec2434b328f3578d98ba9e025"}
+[2021-12-08 13:47:29][MYSOCKET]recvData : b']s\xa1\x82\rM38\xc39)]\xfb\x83E\n\x19\xc2\x85\xc0\xbe \xde\x89\t&\r\x15,J6\x93\x19\xcc*\xbf\xc1\xacJ\ty=\x88\xb7\xca\xbc\xd2(\xd1?v\xf71\xc7\xb8$\xc8\xc7\xc5\ta\\\xc12\xb2\x02z\xc5\xea\xa4a]\xadd\x7f\x97\xcd\t\xe7W'
+[2021-12-08 13:47:29][MYSOCKET]dicdata : {'method': 'getDeviceOption', 'responseId': 'e975633ec2434b328f3578d98ba9e025'}
+[2021-12-08 13:47:29][MYSOCKET]Method getDeviceOption
+[2021-12-08 13:47:30][MYSOCKET]{"responseId": "e975633ec2434b328f3578d98ba9e025", "opetime": 3, "lcd": 5, "lcdtxt": 2, "spk": 3, "mic": 3, "bluepwr": 3, "brkyn": 0, "errorCode": 0}
+[2021-12-08 13:47:30][SOCKETCMD]> {'responseId': 'e975633ec2434b328f3578d98ba9e025', 'opetime': 3, 'lcd': 5, 'lcdtxt': 2, 'spk': 3, 'mic': 3, 'bluepwr': 3, 'brkyn': 0, 'errorCode': 0}
+[2021-12-08 13:47:59][MAIN][Key] K1
+[2021-12-08 13:47:59][MAIN][Key] K1
+[2021-12-08 13:48:01][MAIN][Key] K1
+[2021-12-08 13:48:15][MAIN][Key] K1
+[2021-12-08 13:48:19][MAIN][Key] K1
+[2021-12-08 13:48:20][MAIN][Key] K1
+[2021-12-08 13:49:03][MAIN][Key] K1
+[2021-12-08 13:49:04][MAIN][Key] K1
+[2021-12-08 13:49:35][MAIN][Key] K1
+[2021-12-08 13:50:16][MAIN][Key] K1
+[2021-12-08 13:50:18][MAIN][Key] K1
+[2021-12-08 13:50:20][MAIN][Key] K1
+[2021-12-08 13:51:33][MAIN][Key] K1
+[2021-12-08 13:51:38][MAIN][Key] K1
+[2021-12-08 13:51:43][MAIN][Key] K1
+[2021-12-08 13:52:04][MAIN][Key] K1
+[2021-12-08 13:52:05][MAIN][Key] K1
+[2021-12-08 13:52:06][MAIN][Key] K1
+[2021-12-08 13:53:08][MAIN][Key] K1
+[2021-12-08 13:53:36][MAIN][Key] K1
+[2021-12-08 13:53:38][MAIN][Key] K1
+[2021-12-08 13:54:08][MAIN][Key] K1
+[2021-12-08 13:54:09][MAIN][Key] K1
+[2021-12-08 13:54:21][MAIN][Key] K1
+[2021-12-08 13:55:38][MAIN][Key] K1
+[2021-12-08 13:55:50][MAIN][Key] K1
+[2021-12-08 13:58:44][MAIN][Key] K4
+[2021-12-08 13:59:57][MAIN][Key] K4
+[2021-12-08 14:00:04][MAIN][Key] K4
+[2021-12-08 14:01:12][MAIN][Key] K1
+[2021-12-08 14:01:42][MAIN][Key] K1
+[2021-12-08 14:01:42][MAIN][Key] K1
+[2021-12-08 14:02:06][MAIN][Key] K1
+[2021-12-08 14:02:07][MAIN][Key] K1
+[2021-12-08 14:02:08][MAIN][Key] K1
+[2021-12-08 14:02:08][MAIN][Key] K1
+[2021-12-08 14:02:31][MAIN][Key] K1
+[2021-12-08 14:03:09][MAIN][Key] K1
+[2021-12-08 14:03:19][MAIN][Key] K1
+[2021-12-08 14:04:16][MAIN][Key] K1
+[2021-12-08 14:04:17][MAIN][Key] K1
+[2021-12-08 14:05:04][MAIN][Key] K1
+[2021-12-08 14:05:08][MAIN][Key] K1
+[2021-12-08 14:06:41][MAIN][Key] K1
+[2021-12-08 14:06:42][MAIN][Key] K1
+[2021-12-08 14:06:44][MAIN][Key] K1
+[2021-12-08 14:06:44][MAIN][Key] K1
+[2021-12-08 14:07:36][MAIN][Key] K1
+[2021-12-08 14:08:38][MAIN][Key] K1
+[2021-12-08 14:08:38][MAIN][Key] K1
+[2021-12-08 14:08:59][MAIN][Key] K1
+[2021-12-08 14:09:00][MAIN][Key] K1
+[2021-12-08 14:09:02][MAIN][Key] K1
+[2021-12-08 14:09:02][MAIN][Key] K1
+[2021-12-08 14:09:03][MAIN][Key] K1
+[2021-12-08 14:09:32][MAIN][Key] K1
+[2021-12-08 14:11:25][MAIN][Key] K1
+[2021-12-08 14:11:37][MAIN][Key] K1
+[2021-12-08 14:12:22][MAIN][Key] K1
+[2021-12-08 14:12:49][MAIN][Key] K1
+[2021-12-08 14:13:04][MAIN][Key] K1
+[2021-12-08 14:14:26][MAIN][Key] K1
+[2021-12-08 14:14:26][MAIN][Key] K1
+[2021-12-08 14:15:20][MAIN][Key] K1
+[2021-12-08 14:15:21][MAIN][Key] K1
+[2021-12-08 14:15:30][MAIN][Key] K1
+[2021-12-08 14:16:19][MAIN][Key] K1
+[2021-12-08 14:16:20][MAIN][Key] K1
+[2021-12-08 14:16:22][MAIN][Key] K1
+[2021-12-08 14:17:14][MAIN][Key] K1
+[2021-12-08 14:17:16][MAIN][Key] K1

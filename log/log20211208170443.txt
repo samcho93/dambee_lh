@@ -1,0 +1,31 @@
+[2021-12-08 17:04:43][COMMAND]Read System Configuration File
+[2021-12-08 17:04:43][MAIN]입출력 초기화
+[2021-12-08 17:04:43][MAIN]LCD 초기화
+[2021-12-08 17:04:44][MAIN]사운드 초기화
+[2021-12-08 17:04:44][MAIN]네트워크 정보 로드
+[2021-12-08 17:04:44][UTIL]Send to BLE
+[2021-12-08 17:04:44][COMMAND]##################################################
+[2021-12-08 17:04:44][COMMAND]> CMD : Get BLE Infor.
+[2021-12-08 17:04:44][COMMAND]{'enckey': 'BBCCD728663FF5F2', 'mac': 'D3:68:BF:B2:F2:5C'}
+[2021-12-08 17:04:44][COMMAND]##################################################
+[2021-12-08 17:04:44][COMMAND]Write System Configuration File
+[2021-12-08 17:04:44][UTIL]key : 20D368BFB2F25CBBCCD728663FF5F221
+[2021-12-08 17:04:44][UTIL]iv : BBCCD728663FF5F2
+[2021-12-08 17:04:45][MAIN]터치초기화
+[2021-12-08 17:04:47][MAIN]카드리더초기화
+[2021-12-08 17:04:47][MAIN]소켓서버 연결
+[2021-12-08 17:04:47][MYSOCKET]접속 완료
+[2021-12-08 17:04:47][MYSOCKET]{'result': 0}
+[2021-12-08 17:04:47][MYSOCKET]## Send Message ##
+[2021-12-08 17:04:47][MYSOCKET]orig : {'method': 'getDeviceFcltInfo', 'macAddr': 'D3:68:BF:B2:F2:5C'}
+[2021-12-08 17:04:48][MYSOCKET]dec : {"resulttime":"20211208170447","fcltSn":5,"errorCode":0,"orgnztSn":3}
+[2021-12-08 17:04:48][MYSOCKET]recvData : b'\xcd\x9b\xcbw\x7f,\xeb\x8f(\x9bk\x12\x83\x85#\xe2z \xf0\xb4\x9f\xce\x80.\xcdC\xe75f\xd6J\xe6B\xe0A~\x1a\xce\xd0\xbb\x10#\xcf\x8c<E,^\xb1-\xe2O"\xdc\x91\x88n\xb8\x15Q\xfa\xb7\xc9\xb3\x94\x97\xca\xc5\xaeI/\xf5\x1b\x9ad\xf29\xa9\x98\x9e'
+[2021-12-08 17:04:48][MYSOCKET]dicdata : {'resulttime': '20211208170447', 'fcltSn': 5, 'errorCode': 0, 'orgnztSn': 3}
+[2021-12-08 17:04:48][MYSOCKET]Receive Socket
+[2021-12-08 17:04:48][MYSOCKET]resulttime : 20211208170447
+[2021-12-08 17:04:48][MYSOCKET]Decoding : {"resulttime":"20211208170447","fcltSn":5,"errorCode":0,"orgnztSn":3}
+[2021-12-08 17:04:48][MYSOCKET]Call taskProcess
+[2021-12-08 17:04:48][TASK]taskProcess dic : {'resulttime': '20211208170447', 'fcltSn': 5, 'errorCode': 0, 'orgnztSn': 3}
+[2021-12-08 17:04:48][COMMAND]Write System Configuration File
+[2021-12-08 17:04:48][MAIN][Key] K4
+[2021-12-08 17:06:03][MAIN]접속 종료

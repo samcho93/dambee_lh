@@ -5,6 +5,7 @@ import command as pcmd
 
 TFT = ""
 draw = ""
+dispnum = 0
 
 fontfile = "/home/pi/dambee_lh/fonts/tway_air.ttf"
 
@@ -18,6 +19,7 @@ def DispWait(init=False):
     TFT.initspi(20, 16, 12)
     TFT.load_wallpaper("wait/wait.png")  
     TFT.display()
+    dispnum = 0
     if init == False:
       nfc.Initspi()
 
@@ -27,6 +29,7 @@ def DispOpen():
     TFT.load_wallpaper("wait/success.png")
     TFT.display()
     nfc.Initspi()
+    dispnum = 1
 
 def DispFail():
     global TFT
@@ -34,6 +37,7 @@ def DispFail():
     TFT.load_wallpaper("wait/fail.png")
     TFT.display()
     nfc.Initspi()
+    dispnum = 2
     
 def DispCall():
     global TFT
@@ -83,6 +87,7 @@ def DispNetworkDiscon():
     TFT.load_wallpaper("basic/basic3.png")
     TFT.display()
     nfc.Initspi()
+    dispnum = 4
     
 def DispSocketDiscon():
     global TFT
@@ -90,6 +95,7 @@ def DispSocketDiscon():
     TFT.load_wallpaper("basic/basic4.png")
     TFT.display()
     nfc.Initspi()
+    dispnum = 5
     
 def DispCoverOpen():
     global TFT
@@ -97,6 +103,7 @@ def DispCoverOpen():
     TFT.load_wallpaper("basic/basic7.png")
     TFT.display()
     nfc.Initspi()
+    dispnum = 3
     
 def DispGetinfo(sel):
     global TFT, draw

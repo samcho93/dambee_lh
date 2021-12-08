@@ -11,6 +11,7 @@ import task
 from pycrpyto import AESCryptoCBC
 import log
 import urllib.request
+import util
 
 exitThread = False
 connected = False
@@ -176,7 +177,7 @@ def CheckNetwork():
     except:
         return '127.0.0.1'
                 
-def SendMessage(sel, param=0):
+def SendMessage(sel, param=0, ser=None):
     try:
         global result, roomnumber, webcmd, task
           
@@ -237,13 +238,16 @@ def SendMessage(sel, param=0):
             elif "orgnztSn" in dic:
               pcmd.system["orgnztSn"] = dic["orgnztSn"]
             elif "authKey" in dic:
+              dic["authKey"] = "1"
               if dic["authKey"] == pcmd.system["AuthKey"]:
                 if pcmd.fOpen == False:
                   pcmd.fOpen = True
                 pcmd.system["AuthKey"] = '1'
                 DEBUGPrint("Valid Authkey...")
+                pcmd.ferror = 1
               else:
-                DEBUGPrint("Invalid Authkey...") 
+                DEBUGPrint("Invalid Authkey...")
+                pcmd.ferror = 2 
             
             if webcmd[sel]['method'] == "reqFingerCardCheck": 
               if dic['errorCode'] == 0:

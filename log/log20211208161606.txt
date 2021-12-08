@@ -1,0 +1,381 @@
+[2021-12-08 16:16:06][COMMAND]Read System Configuration File
+[2021-12-08 16:16:06][MAIN]입출력 초기화
+[2021-12-08 16:16:06][MAIN]LCD 초기화
+[2021-12-08 16:16:07][MAIN]사운드 초기화
+[2021-12-08 16:16:07][MAIN]네트워크 정보 로드
+[2021-12-08 16:16:07][UTIL]Send to BLE
+[2021-12-08 16:16:07][COMMAND]##################################################
+[2021-12-08 16:16:07][COMMAND]> CMD : Get BLE Infor.
+[2021-12-08 16:16:07][COMMAND]{'enckey': 'BBCCD728663FF5F2', 'mac': 'D3:68:BF:B2:F2:5C'}
+[2021-12-08 16:16:07][COMMAND]##################################################
+[2021-12-08 16:16:07][COMMAND]Write System Configuration File
+[2021-12-08 16:16:07][UTIL]key : 20D368BFB2F25CBBCCD728663FF5F221
+[2021-12-08 16:16:07][UTIL]iv : BBCCD728663FF5F2
+[2021-12-08 16:16:08][MAIN]터치초기화
+[2021-12-08 16:16:10][MAIN]카드리더초기화
+[2021-12-08 16:16:10][MAIN]소켓서버 연결
+[2021-12-08 16:16:10][MYSOCKET]접속 완료
+[2021-12-08 16:16:10][MYSOCKET]{'result': 0}
+[2021-12-08 16:16:10][MYSOCKET]## Send Message ##
+[2021-12-08 16:16:10][MYSOCKET]orig : {'method': 'getDeviceFcltInfo', 'macAddr': 'D3:68:BF:B2:F2:5C'}
+[2021-12-08 16:16:10][MYSOCKET]dec : {"resulttime":"20211208161610","fcltSn":5,"errorCode":0,"orgnztSn":3}
+[2021-12-08 16:16:10][MYSOCKET]recvData : b'\xcd\x9b\xcbw\x7f,\xeb\x8f(\x9bk\x12\x83\x85#\xe2\x85\x8dKb\x97\x96Z\xa7\xb0\x84w\xea&<\x9e%(\xbb\rv\xdf\xbc\xffdz\xda" \xfa\xb2 /\x83\xdc\xfb\x0f\x18\xaabj\x92\x84\x1d+\xd7<\\F\xdd8\xaa\x82\x00\xdc\xf2\xce\x0bH\x0b,C\x8ed<'
+[2021-12-08 16:16:10][MYSOCKET]dicdata : {'resulttime': '20211208161610', 'fcltSn': 5, 'errorCode': 0, 'orgnztSn': 3}
+[2021-12-08 16:16:10][MYSOCKET]Receive Socket
+[2021-12-08 16:16:10][MYSOCKET]resulttime : 20211208161610
+[2021-12-08 16:16:10][MYSOCKET]Decoding : {"resulttime":"20211208161610","fcltSn":5,"errorCode":0,"orgnztSn":3}
+[2021-12-08 16:16:10][MYSOCKET]Call taskProcess
+[2021-12-08 16:16:10][TASK]taskProcess dic : {'resulttime': '20211208161610', 'fcltSn': 5, 'errorCode': 0, 'orgnztSn': 3}
+[2021-12-08 16:16:10][COMMAND]Write System Configuration File
+[2021-12-08 16:16:11][MAIN][Key] K4
+[2021-12-08 16:16:16][COMMAND]+067cmd:setsyn,authkey:0905142444RYSTWU,timesync:20211208161615fcltsn:5
+[2021-12-08 16:16:16][COMMAND]+071cmd:setope,cardcnt:0001,pw1:944394,pw2:593182,pw3:870681,btry:0,error:1
+[2021-12-08 16:16:16][COMMAND]##################################################
+[2021-12-08 16:16:16][COMMAND]> CMD : door open
+[2021-12-08 16:16:16][COMMAND]> Authkey : :0001
+[2021-12-08 16:16:16][COMMAND]> Gender : Man
+[2021-12-08 16:16:16][COMMAND]> Request Time : 182
+[2021-12-08 16:16:16][COMMAND]> pw1 : y:0
+[2021-12-08 16:16:16][COMMAND]> pw2 : or:1
+[2021-12-08 16:16:16][MAIN]list index out of range
+[2021-12-08 16:16:17][COMMAND]+071cmd:setope,cardcnt:0001,pw1:944394,pw2:593182,pw3:870681,btry:0,error:1
++071cmd:setope,authkey:0905142444RYSTWU,gender:1,reqtime:20211208161615,cardcnt:0001,pw1:944394,pw2:593182,pw3:870681,btry:0,error:0
+[2021-12-08 16:16:17][COMMAND]##################################################
+[2021-12-08 16:16:17][COMMAND]> CMD : door open
+[2021-12-08 16:16:17][COMMAND]> Authkey : :0001
+[2021-12-08 16:16:17][COMMAND]> Gender : Man
+[2021-12-08 16:16:17][COMMAND]> Request Time : 182
+[2021-12-08 16:16:17][COMMAND]> pw1 : y:0
+[2021-12-08 16:16:17][COMMAND]> pw2 : or:1
+[2021-12-08 16:16:17][COMMAND]> pw3 : 1cmd:setope
+[2021-12-08 16:16:17][COMMAND]> Current Time : 20211208161617
+[2021-12-08 16:16:17][MAIN]time data '182' does not match format '%Y%m%d%H%M%S'
+[2021-12-08 16:16:17][COMMAND]+071cmd:setope,cardcnt:0001,pw1:944394,pw2:593182,pw3:870681,btry:0,error:1
++071cmd:setope,authkey:0905142444RYSTWU,gender:1,reqtime:20211208161615,cardcnt:0001,pw1:944394,pw2:593182,pw3:870681,btry:0,error:0
+IV = NULL
+[2021-12-08 16:16:17][COMMAND]##################################################
+[2021-12-08 16:16:17][COMMAND]> CMD : door open
+[2021-12-08 16:16:17][COMMAND]> Authkey : :0001
+[2021-12-08 16:16:17][COMMAND]> Gender : Man
+[2021-12-08 16:16:17][COMMAND]> Request Time : 182
+[2021-12-08 16:16:17][COMMAND]> pw1 : y:0
+[2021-12-08 16:16:17][COMMAND]> pw2 : or:1
+[2021-12-08 16:16:17][COMMAND]> pw3 : 1cmd:setope
+[2021-12-08 16:16:17][COMMAND]> Current Time : 20211208161617
+[2021-12-08 16:16:17][MAIN]time data '182' does not match format '%Y%m%d%H%M%S'
+[2021-12-08 16:16:17][COMMAND]+071cmd:setope,cardcnt:0001,pw1:944394,pw2:593182,pw3:870681,btry:0,error:1
++071cmd:setope,authkey:0905142444RYSTWU,gender:1,reqtime:20211208161615,cardcnt:0001,pw1:944394,pw2:593182,pw3:870681,btry:0,error:0
+IV = NULL
+KEY= BBCCD728663FF5F2
+[2021-12-08 16:16:17][COMMAND]##################################################
+[2021-12-08 16:16:17][COMMAND]> CMD : door open
+[2021-12-08 16:16:17][COMMAND]> Authkey : :0001
+[2021-12-08 16:16:17][COMMAND]> Gender : Man
+[2021-12-08 16:16:17][COMMAND]> Request Time : 182
+[2021-12-08 16:16:17][COMMAND]> pw1 : y:0
+[2021-12-08 16:16:17][COMMAND]> pw2 : or:1
+[2021-12-08 16:16:17][COMMAND]> pw3 : 1cmd:setope
+[2021-12-08 16:16:17][COMMAND]> Current Time : 20211208161617
+[2021-12-08 16:16:17][MAIN]time data '182' does not match format '%Y%m%d%H%M%S'
+[2021-12-08 16:16:17][COMMAND]+071cmd:setope,cardcnt:0001,pw1:944394,pw2:593182,pw3:870681,btry:0,error:1
++071cmd:setope,authkey:0905142444RYSTWU,gender:1,reqtime:20211208161615,cardcnt:0001,pw1:944394,pw2:593182,pw3:870681,btry:0,error:0
+IV = NULL
+KEY= BBCCD728663FF5F2
+CFM = +071cmd:setope,cardcnt:0001,pw1:944394,pw2:593182,pw3:870681,btry:0,error:1
+[2021-12-08 16:16:17][COMMAND]##################################################
+[2021-12-08 16:16:17][COMMAND]> CMD : door open
+[2021-12-08 16:16:17][COMMAND]> Authkey : :0001
+[2021-12-08 16:16:17][COMMAND]> Gender : Man
+[2021-12-08 16:16:17][COMMAND]> Request Time : 182
+[2021-12-08 16:16:17][COMMAND]> pw1 : y:0
+[2021-12-08 16:16:17][COMMAND]> pw2 : or:1
+[2021-12-08 16:16:17][COMMAND]> pw3 : 1cmd:setope
+[2021-12-08 16:16:17][COMMAND]> Current Time : 20211208161617
+[2021-12-08 16:16:17][MAIN]time data '182' does not match format '%Y%m%d%H%M%S'
+[2021-12-08 16:16:17][COMMAND]+071cmd:setope,cardcnt:0001,pw1:944394,pw2:593182,pw3:870681,btry:0,error:1
++071cmd:setope,authkey:0905142444RYSTWU,gender:1,reqtime:20211208161615,cardcnt:0001,pw1:944394,pw2:593182,pw3:870681,btry:0,error:0
+IV = NULL
+KEY= BBCCD728663FF5F2
+CFM = +071cmd:setope,cardcnt:0001,pw1:944394,pw2:593182,pw3:870681,btry:0,error:1
+
+[2021-12-08 16:16:17][COMMAND]##################################################
+[2021-12-08 16:16:17][COMMAND]> CMD : door open
+[2021-12-08 16:16:17][COMMAND]> Authkey : :0001
+[2021-12-08 16:16:17][COMMAND]> Gender : Man
+[2021-12-08 16:16:17][COMMAND]> Request Time : 182
+[2021-12-08 16:16:17][COMMAND]> pw1 : y:0
+[2021-12-08 16:16:17][COMMAND]> pw2 : or:1
+[2021-12-08 16:16:17][COMMAND]> pw3 : 1cmd:setope
+[2021-12-08 16:16:17][COMMAND]> Current Time : 20211208161617
+[2021-12-08 16:16:17][MAIN]time data '182' does not match format '%Y%m%d%H%M%S'
+[2021-12-08 16:16:17][COMMAND]+071cmd:setope,cardcnt:0001,pw1:944394,pw2:593182,pw3:870681,btry:0,error:1
++071cmd:setope,authkey:0905142444RYSTWU,gender:1,reqtime:20211208161615,cardcnt:0001,pw1:944394,pw2:593182,pw3:870681,btry:0,error:0
+IV = NULL
+KEY= BBCCD728663FF5F2
+CFM = +071cmd:setope,cardcnt:0001,pw1:944394,pw2:593182,pw3:870681,btry:0,error:1
+
+mbedtls_aes_cfb128_ecnrypt ******************
+[2021-12-08 16:16:17][COMMAND]##################################################
+[2021-12-08 16:16:17][COMMAND]> CMD : door open
+[2021-12-08 16:16:17][COMMAND]> Authkey : :0001
+[2021-12-08 16:16:17][COMMAND]> Gender : Man
+[2021-12-08 16:16:17][COMMAND]> Request Time : 182
+[2021-12-08 16:16:17][COMMAND]> pw1 : y:0
+[2021-12-08 16:16:17][COMMAND]> pw2 : or:1
+[2021-12-08 16:16:17][COMMAND]> pw3 : 1cmd:setope
+[2021-12-08 16:16:17][COMMAND]> Current Time : 20211208161617
+[2021-12-08 16:16:17][MAIN]time data '182' does not match format '%Y%m%d%H%M%S'
+[2021-12-08 16:16:17][COMMAND]+071cmd:setope,cardcnt:0001,pw1:944394,pw2:593182,pw3:870681,btry:0,error:1
++071cmd:setope,authkey:0905142444RYSTWU,gender:1,reqtime:20211208161615,cardcnt:0001,pw1:944394,pw2:593182,pw3:870681,btry:0,error:0
+IV = NULL
+KEY= BBCCD728663FF5F2
+CFM = +071cmd:setope,cardcnt:0001,pw1:944394,pw2:593182,pw3:870681,btry:0,error:1
+
+mbedtls_aes_cfb128_ecnrypt ******************
+InAscii = cmd:setope,cardcnt:0001,pw1:944394,pw2:593182,pw3:870681,btry:0,error:1
+[2021-12-08 16:16:17][COMMAND]##################################################
+[2021-12-08 16:16:17][COMMAND]> CMD : door open
+[2021-12-08 16:16:17][COMMAND]> Authkey : :0001
+[2021-12-08 16:16:17][COMMAND]> Gender : Man
+[2021-12-08 16:16:17][COMMAND]> Request Time : 182
+[2021-12-08 16:16:17][COMMAND]> pw1 : y:0
+[2021-12-08 16:16:17][COMMAND]> pw2 : or:1
+[2021-12-08 16:16:17][COMMAND]> pw3 : 1cmd:setope
+[2021-12-08 16:16:17][COMMAND]> Current Time : 20211208161617
+[2021-12-08 16:16:17][MAIN]time data '182' does not match format '%Y%m%d%H%M%S'
+[2021-12-08 16:16:17][COMMAND]+071cmd:setope,cardcnt:0001,pw1:944394,pw2:593182,pw3:870681,btry:0,error:1
++071cmd:setope,authkey:0905142444RYSTWU,gender:1,reqtime:20211208161615,cardcnt:0001,pw1:944394,pw2:593182,pw3:870681,btry:0,error:0
+IV = NULL
+KEY= BBCCD728663FF5F2
+CFM = +071cmd:setope,cardcnt:0001,pw1:944394,pw2:593182,pw3:870681,btry:0,error:1
+
+mbedtls_aes_cfb128_ecnrypt ******************
+InAscii = cmd:setope,cardcnt:0001,pw1:944394,pw2:593182,pw3:870681,btry:0,error:1
+OutHex = CB 7E 09 13 3E 00 D7 29 CA 80 2C 5C 34 8F 58 64 D6 BF D7 97 54 C6 1C C1 6E 33 BD 01 22 30 55 B8 DE 2F 6A 64 E0 B3 15 AE 57 7F 32 F3 D1 73 5F 3A E1 98 32 18 19 C4 DF C4 F1 AF 15 BF 79 F4 F4 F7 57 82 01 9A 31 5A 4A 
+[2021-12-08 16:16:17][COMMAND]##################################################
+[2021-12-08 16:16:17][COMMAND]> CMD : door open
+[2021-12-08 16:16:17][COMMAND]> Authkey : :0001
+[2021-12-08 16:16:17][COMMAND]> Gender : Man
+[2021-12-08 16:16:17][COMMAND]> Request Time : 182
+[2021-12-08 16:16:17][COMMAND]> pw1 : y:0
+[2021-12-08 16:16:17][COMMAND]> pw2 : or:1
+[2021-12-08 16:16:17][COMMAND]> pw3 : 1cmd:setope
+[2021-12-08 16:16:17][COMMAND]> Current Time : 20211208161617
+[2021-12-08 16:16:17][MAIN]time data '182' does not match format '%Y%m%d%H%M%S'
+[2021-12-08 16:16:17][COMMAND]+071cmd:setope,cardcnt:0001,pw1:944394,pw2:593182,pw3:870681,btry:0,error:1
++071cmd:setope,authkey:0905142444RYSTWU,gender:1,reqtime:20211208161615,cardcnt:0001,pw1:944394,pw2:593182,pw3:870681,btry:0,error:0
+IV = NULL
+KEY= BBCCD728663FF5F2
+CFM = +071cmd:setope,cardcnt:0001,pw1:944394,pw2:593182,pw3:870681,btry:0,error:1
+
+mbedtls_aes_cfb128_ecnrypt ******************
+InAscii = cmd:setope,cardcnt:0001,pw1:944394,pw2:593182,pw3:870681,btry:0,error:1
+OutHex = CB 7E 09 13 3E 00 D7 29 CA 80 2C 5C 34 8F 58 64 D6 BF D7 97 54 C6 1C C1 6E 33 BD 01 22 30 55 B8 DE 2F 6A 64 E0 B3 15 AE 57 7F 32 F3 D1 73 5F 3A E1 98 32 18 19 C4 DF C4 F1 AF 15 BF 79 F4 F4 F7 57 82 01 9A 31 5A 4A 
+###################################################
+[2021-12-08 16:16:17][COMMAND]##################################################
+[2021-12-08 16:16:17][COMMAND]> CMD : door open
+[2021-12-08 16:16:17][COMMAND]> Authkey : :0001
+[2021-12-08 16:16:17][COMMAND]> Gender : Man
+[2021-12-08 16:16:17][COMMAND]> Request Time : 182
+[2021-12-08 16:16:17][COMMAND]> pw1 : y:0
+[2021-12-08 16:16:17][COMMAND]> pw2 : or:1
+[2021-12-08 16:16:17][COMMAND]> pw3 : 1cmd:setope
+[2021-12-08 16:16:17][COMMAND]> Current Time : 20211208161617
+[2021-12-08 16:16:17][MAIN]time data '182' does not match format '%Y%m%d%H%M%S'
+[2021-12-08 16:16:17][COMMAND]+071cmd:setope,cardcnt:0001,pw1:944394,pw2:593182,pw3:870681,btry:0,error:1
++071cmd:setope,authkey:0905142444RYSTWU,gender:1,reqtime:20211208161615,cardcnt:0001,pw1:944394,pw2:593182,pw3:870681,btry:0,error:0
+IV = NULL
+KEY= BBCCD728663FF5F2
+CFM = +071cmd:setope,cardcnt:0001,pw1:944394,pw2:593182,pw3:870681,btry:0,error:1
+
+mbedtls_aes_cfb128_ecnrypt ******************
+InAscii = cmd:setope,cardcnt:0001,pw1:944394,pw2:593182,pw3:870681,btry:0,error:1
+OutHex = CB 7E 09 13 3E 00 D7 29 CA 80 2C 5C 34 8F 58 64 D6 BF D7 97 54 C6 1C C1 6E 33 BD 01 22 30 55 B8 DE 2F 6A 64 E0 B3 15 AE 57 7F 32 F3 D1 73 5F 3A E1 98 32 18 19 C4 DF C4 F1 AF 15 BF 79 F4 F4 F7 57 82 01 9A 31 5A 4A 
+###################################################
+BLE_GAP_EVT_DISCONNECTED: reason=0x13
+[2021-12-08 16:16:17][COMMAND]##################################################
+[2021-12-08 16:16:17][COMMAND]> CMD : door open
+[2021-12-08 16:16:17][COMMAND]> Authkey : :0001
+[2021-12-08 16:16:17][COMMAND]> Gender : Man
+[2021-12-08 16:16:17][COMMAND]> Request Time : 182
+[2021-12-08 16:16:17][COMMAND]> pw1 : y:0
+[2021-12-08 16:16:17][COMMAND]> pw2 : or:1
+[2021-12-08 16:16:17][COMMAND]> pw3 : 1cmd:setope
+[2021-12-08 16:16:17][COMMAND]> Current Time : 20211208161617
+[2021-12-08 16:16:17][MAIN]time data '182' does not match format '%Y%m%d%H%M%S'
+[2021-12-08 16:16:17][COMMAND]+071cmd:setope,cardcnt:0001,pw1:944394,pw2:593182,pw3:870681,btry:0,error:1
++071cmd:setope,authkey:0905142444RYSTWU,gender:1,reqtime:20211208161615,cardcnt:0001,pw1:944394,pw2:593182,pw3:870681,btry:0,error:0
+IV = NULL
+KEY= BBCCD728663FF5F2
+CFM = +071cmd:setope,cardcnt:0001,pw1:944394,pw2:593182,pw3:870681,btry:0,error:1
+
+mbedtls_aes_cfb128_ecnrypt ******************
+InAscii = cmd:setope,cardcnt:0001,pw1:944394,pw2:593182,pw3:870681,btry:0,error:1
+OutHex = CB 7E 09 13 3E 00 D7 29 CA 80 2C 5C 34 8F 58 64 D6 BF D7 97 54 C6 1C C1 6E 33 BD 01 22 30 55 B8 DE 2F 6A 64 E0 B3 15 AE 57 7F 32 F3 D1 73 5F 3A E1 98 32 18 19 C4 DF C4 F1 AF 15 BF 79 F4 F4 F7 57 82 01 9A 31 5A 4A 
+###################################################
+BLE_GAP_EVT_DISCONNECTED: reason=0x13
+BLE_HCI_REMOTE_USER_TERMINATED_CONNECTION
+[2021-12-08 16:16:17][COMMAND]##################################################
+[2021-12-08 16:16:17][COMMAND]> CMD : door open
+[2021-12-08 16:16:17][COMMAND]> Authkey : :0001
+[2021-12-08 16:16:17][COMMAND]> Gender : Man
+[2021-12-08 16:16:17][COMMAND]> Request Time : 182
+[2021-12-08 16:16:17][COMMAND]> pw1 : y:0
+[2021-12-08 16:16:17][COMMAND]> pw2 : or:1
+[2021-12-08 16:16:17][COMMAND]> pw3 : 1cmd:setope
+[2021-12-08 16:16:17][COMMAND]> Current Time : 20211208161617
+[2021-12-08 16:16:17][MAIN]time data '182' does not match format '%Y%m%d%H%M%S'
+[2021-12-08 16:16:18][COMMAND]+071cmd:setope,cardcnt:0001,pw1:944394,pw2:593182,pw3:870681,btry:0,error:1
++071cmd:setope,authkey:0905142444RYSTWU,gender:1,reqtime:20211208161615,cardcnt:0001,pw1:944394,pw2:593182,pw3:870681,btry:0,error:0
+IV = NULL
+KEY= BBCCD728663FF5F2
+CFM = +071cmd:setope,cardcnt:0001,pw1:944394,pw2:593182,pw3:870681,btry:0,error:1
+
+mbedtls_aes_cfb128_ecnrypt ******************
+InAscii = cmd:setope,cardcnt:0001,pw1:944394,pw2:593182,pw3:870681,btry:0,error:1
+OutHex = CB 7E 09 13 3E 00 D7 29 CA 80 2C 5C 34 8F 58 64 D6 BF D7 97 54 C6 1C C1 6E 33 BD 01 22 30 55 B8 DE 2F 6A 64 E0 B3 15 AE 57 7F 32 F3 D1 73 5F 3A E1 98 32 18 19 C4 DF C4 F1 AF 15 BF 79 F4 F4 F7 57 82 01 9A 31 5A 4A 
+###################################################
+BLE_GAP_EVT_DISCONNECTED: reason=0x13
+BLE_HCI_REMOTE_USER_TERMINATED_CONNECTION
+kickCommAction(CommActionConnectable), conState(StateConnecting)
+[2021-12-08 16:16:18][COMMAND]##################################################
+[2021-12-08 16:16:18][COMMAND]> CMD : door open
+[2021-12-08 16:16:18][COMMAND]> Authkey : :0001
+[2021-12-08 16:16:18][COMMAND]> Gender : Man
+[2021-12-08 16:16:18][COMMAND]> Request Time : 182
+[2021-12-08 16:16:18][COMMAND]> pw1 : y:0
+[2021-12-08 16:16:18][COMMAND]> pw2 : or:1
+[2021-12-08 16:16:18][COMMAND]> pw3 : 1cmd:setope
+[2021-12-08 16:16:18][COMMAND]> Current Time : 20211208161618
+[2021-12-08 16:16:18][MAIN]time data '182' does not match format '%Y%m%d%H%M%S'
+[2021-12-08 16:16:18][COMMAND]+071cmd:setope,cardcnt:0001,pw1:944394,pw2:593182,pw3:870681,btry:0,error:1
++071cmd:setope,authkey:0905142444RYSTWU,gender:1,reqtime:20211208161615,cardcnt:0001,pw1:944394,pw2:593182,pw3:870681,btry:0,error:0
+IV = NULL
+KEY= BBCCD728663FF5F2
+CFM = +071cmd:setope,cardcnt:0001,pw1:944394,pw2:593182,pw3:870681,btry:0,error:1
+
+mbedtls_aes_cfb128_ecnrypt ******************
+InAscii = cmd:setope,cardcnt:0001,pw1:944394,pw2:593182,pw3:870681,btry:0,error:1
+OutHex = CB 7E 09 13 3E 00 D7 29 CA 80 2C 5C 34 8F 58 64 D6 BF D7 97 54 C6 1C C1 6E 33 BD 01 22 30 55 B8 DE 2F 6A 64 E0 B3 15 AE 57 7F 32 F3 D1 73 5F 3A E1 98 32 18 19 C4 DF C4 F1 AF 15 BF 79 F4 F4 F7 57 82 01 9A 31 5A 4A 
+###################################################
+BLE_GAP_EVT_DISCONNECTED: reason=0x13
+BLE_HCI_REMOTE_USER_TERMINATED_CONNECTION
+kickCommAction(CommActionConnectable), conState(StateConnecting)
+BLE_ADV_EVT_FAST
+[2021-12-08 16:16:18][COMMAND]##################################################
+[2021-12-08 16:16:18][COMMAND]> CMD : door open
+[2021-12-08 16:16:18][COMMAND]> Authkey : :0001
+[2021-12-08 16:16:18][COMMAND]> Gender : Man
+[2021-12-08 16:16:18][COMMAND]> Request Time : 182
+[2021-12-08 16:16:18][COMMAND]> pw1 : y:0
+[2021-12-08 16:16:18][COMMAND]> pw2 : or:1
+[2021-12-08 16:16:18][COMMAND]> pw3 : 1cmd:setope
+[2021-12-08 16:16:18][COMMAND]> Current Time : 20211208161618
+[2021-12-08 16:16:18][MAIN]time data '182' does not match format '%Y%m%d%H%M%S'
+[2021-12-08 16:18:18][COMMAND]+071cmd:setope,cardcnt:0001,pw1:944394,pw2:593182,pw3:870681,btry:0,error:1
++071cmd:setope,authkey:0905142444RYSTWU,gender:1,reqtime:20211208161615,cardcnt:0001,pw1:944394,pw2:593182,pw3:870681,btry:0,error:0
+IV = NULL
+KEY= BBCCD728663FF5F2
+CFM = +071cmd:setope,cardcnt:0001,pw1:944394,pw2:593182,pw3:870681,btry:0,error:1
+
+mbedtls_aes_cfb128_ecnrypt ******************
+InAscii = cmd:setope,cardcnt:0001,pw1:944394,pw2:593182,pw3:870681,btry:0,error:1
+OutHex = CB 7E 09 13 3E 00 D7 29 CA 80 2C 5C 34 8F 58 64 D6 BF D7 97 54 C6 1C C1 6E 33 BD 01 22 30 55 B8 DE 2F 6A 64 E0 B3 15 AE 57 7F 32 F3 D1 73 5F 3A E1 98 32 18 19 C4 DF C4 F1 AF 15 BF 79 F4 F4 F7 57 82 01 9A 31 5A 4A 
+###################################################
+BLE_GAP_EVT_DISCONNECTED: reason=0x13
+BLE_HCI_REMOTE_USER_TERMINATED_CONNECTION
+kickCommAction(CommActionConnectable), conState(StateConnecting)
+BLE_ADV_EVT_FAST
+[MBLE] BLE_GAP_EVT_TIMEOUT
+[2021-12-08 16:18:18][COMMAND]##################################################
+[2021-12-08 16:18:18][COMMAND]> CMD : door open
+[2021-12-08 16:18:18][COMMAND]> Authkey : :0001
+[2021-12-08 16:18:18][COMMAND]> Gender : Man
+[2021-12-08 16:18:18][COMMAND]> Request Time : 182
+[2021-12-08 16:18:18][COMMAND]> pw1 : y:0
+[2021-12-08 16:18:18][COMMAND]> pw2 : or:1
+[2021-12-08 16:18:18][COMMAND]> pw3 : 1cmd:setope
+[2021-12-08 16:18:18][COMMAND]> Current Time : 20211208161818
+[2021-12-08 16:18:18][MAIN]time data '182' does not match format '%Y%m%d%H%M%S'
+[2021-12-08 16:18:18][COMMAND]+071cmd:setope,cardcnt:0001,pw1:944394,pw2:593182,pw3:870681,btry:0,error:1
++071cmd:setope,authkey:0905142444RYSTWU,gender:1,reqtime:20211208161615,cardcnt:0001,pw1:944394,pw2:593182,pw3:870681,btry:0,error:0
+IV = NULL
+KEY= BBCCD728663FF5F2
+CFM = +071cmd:setope,cardcnt:0001,pw1:944394,pw2:593182,pw3:870681,btry:0,error:1
+
+mbedtls_aes_cfb128_ecnrypt ******************
+InAscii = cmd:setope,cardcnt:0001,pw1:944394,pw2:593182,pw3:870681,btry:0,error:1
+OutHex = CB 7E 09 13 3E 00 D7 29 CA 80 2C 5C 34 8F 58 64 D6 BF D7 97 54 C6 1C C1 6E 33 BD 01 22 30 55 B8 DE 2F 6A 64 E0 B3 15 AE 57 7F 32 F3 D1 73 5F 3A E1 98 32 18 19 C4 DF C4 F1 AF 15 BF 79 F4 F4 F7 57 82 01 9A 31 5A 4A 
+###################################################
+BLE_GAP_EVT_DISCONNECTED: reason=0x13
+BLE_HCI_REMOTE_USER_TERMINATED_CONNECTION
+kickCommAction(CommActionConnectable), conState(StateConnecting)
+BLE_ADV_EVT_FAST
+[MBLE] BLE_GAP_EVT_TIMEOUT
+BLE_ADV_EVT_FAST
+[2021-12-08 16:18:18][COMMAND]##################################################
+[2021-12-08 16:18:18][COMMAND]> CMD : door open
+[2021-12-08 16:18:18][COMMAND]> Authkey : :0001
+[2021-12-08 16:18:18][COMMAND]> Gender : Man
+[2021-12-08 16:18:18][COMMAND]> Request Time : 182
+[2021-12-08 16:18:18][COMMAND]> pw1 : y:0
+[2021-12-08 16:18:18][COMMAND]> pw2 : or:1
+[2021-12-08 16:18:18][COMMAND]> pw3 : 1cmd:setope
+[2021-12-08 16:18:18][COMMAND]> Current Time : 20211208161818
+[2021-12-08 16:18:18][MAIN]time data '182' does not match format '%Y%m%d%H%M%S'
+[2021-12-08 16:19:15][COMMAND]+071cmd:setope,cardcnt:0001,pw1:944394,pw2:593182,pw3:870681,btry:0,error:1
++071cmd:setope,authkey:0905142444RYSTWU,gender:1,reqtime:20211208161615,cardcnt:0001,pw1:944394,pw2:593182,pw3:870681,btry:0,error:0
+IV = NULL
+KEY= BBCCD728663FF5F2
+CFM = +071cmd:setope,cardcnt:0001,pw1:944394,pw2:593182,pw3:870681,btry:0,error:1
+
+mbedtls_aes_cfb128_ecnrypt ******************
+InAscii = cmd:setope,cardcnt:0001,pw1:944394,pw2:593182,pw3:870681,btry:0,error:1
+OutHex = CB 7E 09 13 3E 00 D7 29 CA 80 2C 5C 34 8F 58 64 D6 BF D7 97 54 C6 1C C1 6E 33 BD 01 22 30 55 B8 DE 2F 6A 64 E0 B3 15 AE 57 7F 32 F3 D1 73 5F 3A E1 98 32 18 19 C4 DF C4 F1 AF 15 BF 79 F4 F4 F7 57 82 01 9A 31 5A 4A 
+###################################################
+BLE_GAP_EVT_DISCONNECTED: reason=0x13
+BLE_HCI_REMOTE_USER_TERMINATED_CONNECTION
+kickCommAction(CommActionConnectable), conState(StateConnecting)
+BLE_ADV_EVT_FAST
+[MBLE] BLE_GAP_EVT_TIMEOUT
+BLE_ADV_EVT_FAST
++067cmd:setsyn,authkey:0905142444RYSTWU,timesync:20211208161915fcltsn:5
+[2021-12-08 16:19:15][COMMAND]##################################################
+[2021-12-08 16:19:15][COMMAND]> CMD : door open
+[2021-12-08 16:19:15][COMMAND]> Authkey : :0001
+[2021-12-08 16:19:15][COMMAND]> Gender : Man
+[2021-12-08 16:19:15][COMMAND]> Request Time : 182
+[2021-12-08 16:19:15][COMMAND]> pw1 : y:0
+[2021-12-08 16:19:15][COMMAND]> pw2 : or:1
+[2021-12-08 16:19:15][COMMAND]> pw3 : 1cmd:setope
+[2021-12-08 16:19:15][COMMAND]> Current Time : 20211208161915
+[2021-12-08 16:19:15][MAIN]time data '182' does not match format '%Y%m%d%H%M%S'
+[2021-12-08 16:19:16][COMMAND]+071cmd:setope,cardcnt:0001,pw1:944394,pw2:593182,pw3:870681,btry:0,error:1
++071cmd:setope,authkey:0905142444RYSTWU,gender:1,reqtime:20211208161615,cardcnt:0001,pw1:944394,pw2:593182,pw3:870681,btry:0,error:0
+IV = NULL
+KEY= BBCCD728663FF5F2
+CFM = +071cmd:setope,cardcnt:0001,pw1:944394,pw2:593182,pw3:870681,btry:0,error:1
+
+mbedtls_aes_cfb128_ecnrypt ******************
+InAscii = cmd:setope,cardcnt:0001,pw1:944394,pw2:593182,pw3:870681,btry:0,error:1
+OutHex = CB 7E 09 13 3E 00 D7 29 CA 80 2C 5C 34 8F 58 64 D6 BF D7 97 54 C6 1C C1 6E 33 BD 01 22 30 55 B8 DE 2F 6A 64 E0 B3 15 AE 57 7F 32 F3 D1 73 5F 3A E1 98 32 18 19 C4 DF C4 F1 AF 15 BF 79 F4 F4 F7 57 82 01 9A 31 5A 4A 
+###################################################
+BLE_GAP_EVT_DISCONNECTED: reason=0x13
+BLE_HCI_REMOTE_USER_TERMINATED_CONNECTION
+kickCommAction(CommActionConnectable), conState(StateConnecting)
+BLE_ADV_EVT_FAST
+[MBLE] BLE_GAP_EVT_TIMEOUT
+BLE_ADV_EVT_FAST
++067cmd:setsyn,authkey:0905142444RYSTWU,timesync:20211208161915fcltsn:5
++071cmd:setope,authkey:0905142444RYSTWU,gender:1,reqtime:20211208161916,cardcnt:0001,pw1:566653,pw2:396428,pw3:298552,btry:0,error:0
+[2021-12-08 16:19:16][COMMAND]##################################################
+[2021-12-08 16:19:16][COMMAND]> CMD : door open
+[2021-12-08 16:19:16][COMMAND]> Authkey : :0001
+[2021-12-08 16:19:16][COMMAND]> Gender : Man
+[2021-12-08 16:19:16][COMMAND]> Request Time : 182
+[2021-12-08 16:19:16][COMMAND]> pw1 : y:0
+[2021-12-08 16:19:16][COMMAND]> pw2 : or:1
+[2021-12-08 16:19:16][COMMAND]> pw3 : 1cmd:setope
+[2021-12-08 16:19:16][COMMAND]> Current Time : 20211208161916
+[2021-12-08 16:19:16][MAIN]time data '182' does not match format '%Y%m%d%H%M%S'
+[2021-12-08 16:19:27][MAIN]접속 종료

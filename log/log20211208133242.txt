@@ -1,0 +1,41 @@
+[2021-12-08 13:32:42][COMMAND]Read System Configuration File
+[2021-12-08 13:32:42][MAIN]입출력 초기화
+[2021-12-08 13:32:42][MAIN]LCD 초기화
+[2021-12-08 13:32:43][MAIN]사운드 초기화
+[2021-12-08 13:32:43][MAIN]네트워크 정보 로드
+[2021-12-08 13:32:43][UTIL]Send to BLE
+[2021-12-08 13:32:43][COMMAND]##################################################
+[2021-12-08 13:32:43][COMMAND]> CMD : Get BLE Infor.
+[2021-12-08 13:32:43][COMMAND]{'enckey': 'BBCCD728663FF5F2', 'mac': 'D3:68:BF:B2:F2:5C'}
+[2021-12-08 13:32:43][COMMAND]##################################################
+[2021-12-08 13:32:43][COMMAND]Write System Configuration File
+[2021-12-08 13:32:43][UTIL]key : 20D368BFB2F25CBBCCD728663FF5F221
+[2021-12-08 13:32:43][UTIL]iv : BBCCD728663FF5F2
+[2021-12-08 13:32:44][MAIN]터치초기화
+[2021-12-08 13:32:46][MAIN]카드리더초기화
+[2021-12-08 13:32:46][MAIN]소켓서버 연결
+[2021-12-08 13:32:46][MYSOCKET]접속 완료
+[2021-12-08 13:32:47][MYSOCKET]{'result': 0}
+[2021-12-08 13:32:47][MYSOCKET]## Send Message ##
+[2021-12-08 13:32:47][MYSOCKET]orig : {'method': 'getDeviceFcltInfo', 'macAddr': 'D3:68:BF:B2:F2:5C'}
+[2021-12-08 13:32:51][MYSOCKET]Socket Timeout
+[2021-12-08 13:32:51][COMMAND]Write System Configuration File
+[2021-12-08 13:32:51][MAIN][Key] K4
+[2021-12-08 13:32:55][MYSOCKET]dec : 
+[2021-12-08 13:32:55][MYSOCKET]recvData : b''
+[2021-12-08 13:32:55][MYSOCKET]소켓스래드를 종료합니다
+[2021-12-08 13:32:56][MAIN]접속이 끊겼습니다.
+[2021-12-08 13:32:56][MYSOCKET]접속 완료
+[2021-12-08 13:32:56][MYSOCKET]{'result': 0}
+[2021-12-08 13:32:56][MYSOCKET]## Send Message ##
+[2021-12-08 13:32:56][MYSOCKET]orig : {'method': 'getDeviceFcltInfo', 'macAddr': 'D3:68:BF:B2:F2:5C'}
+[2021-12-08 13:32:56][MYSOCKET]dec : {"resulttime":"20211208133256","fcltSn":5,"errorCode":0,"orgnztSn":3}
+[2021-12-08 13:32:56][MYSOCKET]recvData : b'\xcd\x9b\xcbw\x7f,\xeb\x8f(\x9bk\x12\x83\x85#\xe2\xbe\x1a\xedH~C\xa7\xfa\x05\xd64\\\xf8l|\xa09\x95h\x9b\x1f\x91&\xb8o\xbd\xe5\xe6\x1b\xd1\xdd\xb0\xdc\xd3C&5s\xb0\xea6\x14\xc0\n\nq\xfaL\xc7h\xa1\x9d\x97\xaf\xc9\x89>\xc1\xad\xd4U\xb4\xf7\xba'
+[2021-12-08 13:32:56][MYSOCKET]dicdata : {'resulttime': '20211208133256', 'fcltSn': 5, 'errorCode': 0, 'orgnztSn': 3}
+[2021-12-08 13:32:56][MYSOCKET]resulttime : 20211208133256
+[2021-12-08 13:32:56][MYSOCKET]Receive Socket
+[2021-12-08 13:32:56][MYSOCKET]Decoding : {"resulttime":"20211208133256","fcltSn":5,"errorCode":0,"orgnztSn":3}
+[2021-12-08 13:32:56][MYSOCKET]Call taskProcess
+[2021-12-08 13:32:56][TASK]taskProcess dic : {'resulttime': '20211208133256', 'fcltSn': 5, 'errorCode': 0, 'orgnztSn': 3}
+[2021-12-08 13:33:01][MYSOCKET]연결이 거부 되었습니다
+[2021-12-08 13:33:36][MAIN]접속 종료

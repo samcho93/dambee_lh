@@ -75,10 +75,7 @@ def readThread(ser):
                 
           if c == 10:
             tmp = ''.join(line[:-2])
-            if bCover == False and netdiscon == False:
-                parsing_str(tmp)
-            else:
-                sendErrorMessage(ser, 1)
+            parsing_str(tmp)
                 
             del line[:]
       except Exception as e:
@@ -158,7 +155,7 @@ task = TASK()
 # 소켓서버 & 웹서버 연결
 DEBUGPrint("소켓서버 연결")
 mysocket.Init(pcmd.Server['IP'], pcmd.Server['PORT'], task)
-#mysocket.Init('192.168.137.100', 9000, task)
+#mysocket.Init('192.168.0.2', 9000, task)
 # 네트워크 설정 저장
 pcmd.save()
 
@@ -188,6 +185,7 @@ schedule.readSchedule()
 tog = 0
 
 display.DispWait()
+error_disp = 0
 
 while True:
   # Door Open 
@@ -303,6 +301,10 @@ while True:
       pcmd.fAuth = False
       DEBUGPrint("서버인증요청")
       mysocket.SendMessage(1)
+      
+  if pcmd.ferror != 0:
+    sendErrorMessage(ser, pcmd.ferror-1)
+    pcmd.ferror = 0
   
   if task.task == TASK_IDLE and (cur_time - net_time) >= 1:      
     now = datetime.now()
@@ -322,53 +324,64 @@ while True:
       schedule.fEnd = False
 
     # Cover Check
-    if pcmd.option['brkyn'] == 1:
-        if Input.InputState['Cover'] == 1 and bCover == False:
-          display.DispCoverOpen()
+    if pcmd.option['brkyn'] == 0:
+        if Input.InputState['Cover'] == 1 and bCover == False:          
           bCover = True
-          alarm_timer = cur_time
+          alarm_timer = 0
+          error_disp |= 1
           mysocket.SendMessage(3, "3")
         elif Input.InputState['Cover'] == 0 and bCover == True:
-          display.DispWait()
           bCover = False
-          netdiscon = False
-          mysocket.bRetryCon = False
+          if netdiscon == False and mysocket.bRetryCon == False:
+              display.DispWait()
+          mysocket.SendMessage(3, "0")
 
-    if pcmd.option['brkyn'] == 0 and bCover == True:
-        display.DispWait()
+    if pcmd.option['brkyn'] == 1 and bCover == True:
         bCover = False
-        netdiscon = False
-        mysocket.bRetryCon = False
                      
     # Check Network Disconnection       
     network = mysocket.CheckNetwork()    
     if network == '127.0.0.1' and netdiscon == False:
         netdiscon = True
-        display.DispNetworkDiscon()
+        error_disp |= 2        
     elif network != '127.0.0.1' and netdiscon == True:
         netdiscon = False
-        mysocket.bRetryCon = False
-        display.DispWait()
+        if bCover == False and mysocket.bRetryCon == False:
+          display.DispWait()
         
     # Check Socket Disconnection
     if  mysocket.connected == False:
         DEBUGPrint("접속이 끊겼습니다.")    
         mysocket.exitThread = False
         if mysocket.bRetryCon == False:
-            display.DispSocketDiscon()
+            error_disp |= 4            
             mysocket.bRetryCon = True          
         mysocket.Init(pcmd.Server['IP'], pcmd.Server['PORT'], task) 
-        #mysocket.Init('192.168.137.100', 9000, task)
+        #mysocket.Init('192.168.0.2', 9000, task)
     else:
         if mysocket.bRetryCon == True:
-            display.DispWait()
             mysocket.bRetryCon = False
-                                          
+            if netdiscon == False and bCover == False:
+              display.DispWait()
+            
+    if bCover == True:
+        if display.dispnum != 3:
+            display.DispCoverOpen()
+            error_disp = 2
+    elif netdiscon == True: 
+        if display.dispnum != 4:
+            display.DispNetworkDiscon()
+            error_disp = 3
+    elif mysocket.bRetryCon == True:
+        if display.dispnum != 5:
+            display.DispSocketDiscon()
+            error_disp = 4 
+                                                   
     net_time = cur_time
   
   if bCover == True:
-    if (cur_time - alarm_time) >= 2:
-        os.system("aplay -D plughw:1,0 /home/pi/dambee_lh/music/emergency.wav")
+    if (cur_time - alarm_time) >= 1:
+        os.system("aplay -D plughw:2,0 /home/pi/dambee_lh/music/emergency.wav")
         alarm_time = cur_time
       
   # Command Line Instruction

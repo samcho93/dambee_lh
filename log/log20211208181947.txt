@@ -1,0 +1,32 @@
+[2021-12-08 18:19:47][COMMAND]Read System Configuration File
+[2021-12-08 18:19:47][MAIN]입출력 초기화
+[2021-12-08 18:19:47][MAIN]LCD 초기화
+[2021-12-08 18:19:48][MAIN]사운드 초기화
+[2021-12-08 18:19:48][MAIN]네트워크 정보 로드
+[2021-12-08 18:19:48][UTIL]Send to BLE+010cmd:getble,error:0
+
+[2021-12-08 18:19:48][COMMAND]##################################################
+[2021-12-08 18:19:48][COMMAND]> CMD : Get BLE Infor.
+[2021-12-08 18:19:48][COMMAND]{'enckey': 'BBCCD728663FF5F2', 'mac': 'D3:68:BF:B2:F2:5C'}
+[2021-12-08 18:19:48][COMMAND]##################################################
+[2021-12-08 18:19:48][COMMAND]Write System Configuration File
+[2021-12-08 18:19:48][UTIL]key : 20D368BFB2F25CBBCCD728663FF5F221
+[2021-12-08 18:19:48][UTIL]iv : BBCCD728663FF5F2
+[2021-12-08 18:19:49][MAIN]터치초기화
+[2021-12-08 18:19:51][MAIN]카드리더초기화
+[2021-12-08 18:19:51][MAIN]소켓서버 연결
+[2021-12-08 18:19:51][MYSOCKET]접속 완료
+[2021-12-08 18:19:51][MYSOCKET]{'result': 0}
+[2021-12-08 18:19:51][MYSOCKET]## Send Message ##
+[2021-12-08 18:19:51][MYSOCKET]orig : {'method': 'getDeviceFcltInfo', 'macAddr': 'D3:68:BF:B2:F2:5C'}
+[2021-12-08 18:19:51][MYSOCKET]dec : {"resulttime":"20211208181951","fcltSn":5,"errorCode":0,"orgnztSn":3}
+[2021-12-08 18:19:51][MYSOCKET]recvData : b'\xcd\x9b\xcbw\x7f,\xeb\x8f(\x9bk\x12\x83\x85#\xe2\x19\xf6\x0f\x88\xc3\xa4\xf3\xec"\x96\xaek\xaf,\x03\x0f\x92d6\x16\xc4HK\x99<[\xaf\x8da\x10\xa8\xe2X\xf0~\xf7\x9aLGI\x0b\xd3\xcf\xee\xe9\xd5J+ \xbb\xa6\xc2W\xa0\xac\xc3o,\xd7xP;c\xf3'
+[2021-12-08 18:19:51][MYSOCKET]dicdata : {'resulttime': '20211208181951', 'fcltSn': 5, 'errorCode': 0, 'orgnztSn': 3}
+[2021-12-08 18:19:51][MYSOCKET]resulttime : 20211208181951
+[2021-12-08 18:19:51][MYSOCKET]Receive Socket
+[2021-12-08 18:19:51][MYSOCKET]Decoding : {"resulttime":"20211208181951","fcltSn":5,"errorCode":0,"orgnztSn":3}
+[2021-12-08 18:19:51][MYSOCKET]Call taskProcess
+[2021-12-08 18:19:51][TASK]taskProcess dic : {'resulttime': '20211208181951', 'fcltSn': 5, 'errorCode': 0, 'orgnztSn': 3}
+[2021-12-08 18:19:51][COMMAND]Write System Configuration File
+[2021-12-08 18:19:51][MAIN][Key] K4
+[2021-12-08 18:19:53][MAIN]접속 종료

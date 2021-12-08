@@ -1,0 +1,81 @@
+[2021-12-08 18:19:54][COMMAND]Read System Configuration File
+[2021-12-08 18:19:54][MAIN]입출력 초기화
+[2021-12-08 18:19:54][MAIN]LCD 초기화
+[2021-12-08 18:19:55][MAIN]사운드 초기화
+[2021-12-08 18:19:55][MAIN]네트워크 정보 로드
+[2021-12-08 18:19:55][UTIL]Send to BLE+010cmd:getble,error:0
+
+[2021-12-08 18:19:55][COMMAND]##################################################
+[2021-12-08 18:19:55][COMMAND]> CMD : Get BLE Infor.
+[2021-12-08 18:19:55][COMMAND]{'enckey': 'BBCCD728663FF5F2', 'mac': 'D3:68:BF:B2:F2:5C'}
+[2021-12-08 18:19:55][COMMAND]##################################################
+[2021-12-08 18:19:55][COMMAND]Write System Configuration File
+[2021-12-08 18:19:55][UTIL]key : 20D368BFB2F25CBBCCD728663FF5F221
+[2021-12-08 18:19:55][UTIL]iv : BBCCD728663FF5F2
+[2021-12-08 18:19:56][MAIN]터치초기화
+[2021-12-08 18:19:58][MAIN]카드리더초기화
+[2021-12-08 18:19:58][MAIN]소켓서버 연결
+[2021-12-08 18:19:58][MYSOCKET]접속 완료
+[2021-12-08 18:19:58][MYSOCKET]{'result': 0}
+[2021-12-08 18:19:58][MYSOCKET]## Send Message ##
+[2021-12-08 18:19:58][MYSOCKET]orig : {'method': 'getDeviceFcltInfo', 'macAddr': 'D3:68:BF:B2:F2:5C'}
+[2021-12-08 18:19:58][MYSOCKET]dec : {"resulttime":"20211208181958","fcltSn":5,"errorCode":0,"orgnztSn":3}
+[2021-12-08 18:19:58][MYSOCKET]recvData : b'\xcd\x9b\xcbw\x7f,\xeb\x8f(\x9bk\x12\x83\x85#\xe2O\x1cQ\xbe\x87\x9c\xb6{\r\x96\xe5ir\xd8f\x88jo~\x9b\xce\x083d\xfd\xb3\x12\xd6\xf0\x9c\xc1ina\xcb\\\x0f\xe4\xad\x9a\xb3M\xd4\x9f\xbb\x87\x82\x03\xef8/\x81\xf1\x90&2Rz\x17\xcfFlRf'
+[2021-12-08 18:19:58][MYSOCKET]dicdata : {'resulttime': '20211208181958', 'fcltSn': 5, 'errorCode': 0, 'orgnztSn': 3}
+[2021-12-08 18:19:58][MYSOCKET]resulttime : 20211208181958
+[2021-12-08 18:19:58][MYSOCKET]Receive Socket
+[2021-12-08 18:19:58][MYSOCKET]Decoding : {"resulttime":"20211208181958","fcltSn":5,"errorCode":0,"orgnztSn":3}
+[2021-12-08 18:19:58][MYSOCKET]Call taskProcess
+[2021-12-08 18:19:58][TASK]taskProcess dic : {'resulttime': '20211208181958', 'fcltSn': 5, 'errorCode': 0, 'orgnztSn': 3}
+[2021-12-08 18:19:58][COMMAND]Write System Configuration File
+[2021-12-08 18:19:58][MAIN][Key] K4
+[2021-12-08 18:19:59][MAIN][Key] K4
+[2021-12-08 18:20:02][MYSOCKET]## Send Message ##
+[2021-12-08 18:20:02][MYSOCKET]orig : {'method': 'setError', 'orgnztSn': '1', 'fcltSn': 5, 'errorCode': '3'}
+[2021-12-08 18:20:02][MYSOCKET]dec : {"resulttime":"20211208182002","errorCode":0}
+[2021-12-08 18:20:02][MYSOCKET]recvData : b'\xcd\x9b\xcbw\x7f,\xeb\x8f(\x9bk\x12\x83\x85#\xe2\x83_*\x9c\xb5/\xd7\x027\xc9G$\x0bZ\xce/\x8e\xc1\x91:=\xa7\xc8mf\xec\xe8\x06s\xfc\x8b\xf3'
+[2021-12-08 18:20:02][MYSOCKET]dicdata : {'resulttime': '20211208182002', 'errorCode': 0}
+[2021-12-08 18:20:02][MYSOCKET]Receive Socket
+[2021-12-08 18:20:02][MYSOCKET]resulttime : 20211208182002
+[2021-12-08 18:20:02][MYSOCKET]Decoding : {"resulttime":"20211208182002","errorCode":0}
+[2021-12-08 18:20:02][MYSOCKET]Call taskProcess
+[2021-12-08 18:20:02][TASK]taskProcess dic : {'resulttime': '20211208182002', 'errorCode': 0}
+[2021-12-08 18:20:13][MAIN][Key] K4
+[2021-12-08 18:20:33][MAIN][Key] K4
+[2021-12-08 18:20:33][MAIN][Key] K4
+[2021-12-08 18:20:43][MYSOCKET]## Send Message ##
+[2021-12-08 18:20:43][MYSOCKET]orig : {'method': 'setError', 'orgnztSn': '1', 'fcltSn': 5, 'errorCode': '3'}
+[2021-12-08 18:20:43][MYSOCKET]dec : ºÙòú»GõßÊ#$úÅRO¢s8ÿåe\DMðØ`ãq
+[2021-12-08 18:20:43][MYSOCKET]recvData : b'{"resulttime":"20211208182043","errorCode":999}'
+[2021-12-08 18:20:43][MYSOCKET]Error!!!!!
+[2021-12-08 18:20:43][MYSOCKET]b'{"resulttime":"20211208182043","errorCode":999}'ºÙòú»GõßÊ#$úÅRO¢s8ÿåe\DMðØ`ãq
+[2021-12-08 18:20:43][MYSOCKET]Receive Socket
+[2021-12-08 18:20:43][MYSOCKET]dec : ºÙòú»GõßÊ#$úÅRO¢s8ÿåe\DMðØ`ãq
+[2021-12-08 18:20:43][MYSOCKET]recvData : b'{"resulttime":"20211208182043","errorCode":999}'
+[2021-12-08 18:20:43][MYSOCKET]Error!!!!!
+[2021-12-08 18:20:43][MYSOCKET]b'{"resulttime":"20211208182043","errorCode":999}'ºÙòú»GõßÊ#$úÅRO¢s8ÿåe\DMðØ`ãq
+[2021-12-08 18:20:47][MAIN][Key] K4
+[2021-12-08 18:20:53][MAIN][Key] K4
+[2021-12-08 18:20:54][MAIN][Key] K4
+[2021-12-08 18:20:56][MAIN][Key] K4
+[2021-12-08 18:21:01][MAIN][Key] K4
+[2021-12-08 18:21:01][MYSOCKET]## Send Message ##
+[2021-12-08 18:21:01][MYSOCKET]orig : {'method': 'setError', 'orgnztSn': '1', 'fcltSn': 5, 'errorCode': '3'}
+[2021-12-08 18:21:01][MYSOCKET]dec : {"resulttime":"20211208182101","errorCode":0}
+[2021-12-08 18:21:01][MYSOCKET]recvData : b'\xcd\x9b\xcbw\x7f,\xeb\x8f(\x9bk\x12\x83\x85#\xe2u\x16\xfc\x0b\x12\xfd\xedS\x08\ntf|L\xa6Q+\xf7\xd0\rv\x0c2\xedF\xe0@=\xb8\x1f@.'
+[2021-12-08 18:21:01][MYSOCKET]dicdata : {'resulttime': '20211208182101', 'errorCode': 0}
+[2021-12-08 18:21:01][MYSOCKET]resulttime : 20211208182101
+[2021-12-08 18:21:01][MYSOCKET]Receive Socket
+[2021-12-08 18:21:01][MYSOCKET]Decoding : {"resulttime":"20211208182101","errorCode":0}
+[2021-12-08 18:21:01][MYSOCKET]Call taskProcess
+[2021-12-08 18:21:01][TASK]taskProcess dic : {'resulttime': '20211208182101', 'errorCode': 0}
+[2021-12-08 18:21:11][MAIN][Key] K4
+[2021-12-08 18:21:38][MAIN][Key] K4
+[2021-12-08 18:21:39][MAIN][Key] K4
+[2021-12-08 18:26:55][MAIN][Key] K4
+[2021-12-08 18:26:59][MAIN][Key] K4
+[2021-12-08 18:27:06][MAIN][Key] K4
+[2021-12-08 18:27:17][MAIN][Key] K4
+[2021-12-08 18:27:20][MAIN][Key] K4
+[2021-12-08 18:30:35][MAIN][Key] K4
+[2021-12-08 18:33:44][MAIN]접속 종료

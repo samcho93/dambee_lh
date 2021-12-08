@@ -20,6 +20,7 @@ fExit = False
 fAuth = False
 fRetry = False
 fCallFail = False
+ferror = 0
 
 def DEBUGPrint(msg, param1="", param2=""):
   string = "[COMMAND]" + str(msg) + str(param1) + str(param2)

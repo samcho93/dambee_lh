@@ -1,0 +1,31 @@
+[2021-12-08 16:52:21][COMMAND]Read System Configuration File
+[2021-12-08 16:52:21][MAIN]입출력 초기화
+[2021-12-08 16:52:21][MAIN]LCD 초기화
+[2021-12-08 16:52:22][MAIN]사운드 초기화
+[2021-12-08 16:52:22][MAIN]네트워크 정보 로드
+[2021-12-08 16:52:22][UTIL]Send to BLE
+[2021-12-08 16:52:22][COMMAND]##################################################
+[2021-12-08 16:52:22][COMMAND]> CMD : Get BLE Infor.
+[2021-12-08 16:52:22][COMMAND]{'enckey': 'BBCCD728663FF5F2', 'mac': 'D3:68:BF:B2:F2:5C'}
+[2021-12-08 16:52:22][COMMAND]##################################################
+[2021-12-08 16:52:22][COMMAND]Write System Configuration File
+[2021-12-08 16:52:22][UTIL]key : 20D368BFB2F25CBBCCD728663FF5F221
+[2021-12-08 16:52:22][UTIL]iv : BBCCD728663FF5F2
+[2021-12-08 16:52:23][MAIN]터치초기화
+[2021-12-08 16:52:25][MAIN]카드리더초기화
+[2021-12-08 16:52:25][MAIN]소켓서버 연결
+[2021-12-08 16:52:25][MYSOCKET]접속 완료
+[2021-12-08 16:52:25][MYSOCKET]{'result': 0}
+[2021-12-08 16:52:25][MYSOCKET]## Send Message ##
+[2021-12-08 16:52:25][MYSOCKET]orig : {'method': 'getDeviceFcltInfo', 'macAddr': 'D3:68:BF:B2:F2:5C'}
+[2021-12-08 16:52:25][MYSOCKET]dec : {"resulttime":"20211208165225","fcltSn":5,"errorCode":0,"orgnztSn":3}
+[2021-12-08 16:52:25][MYSOCKET]recvData : b'\xcd\x9b\xcbw\x7f,\xeb\x8f(\x9bk\x12\x83\x85#\xe25\xa5\xdfZ\xde\xe0\x02\xa8\x8a0\x87Q\xe2p\x08=0\xafS\xdc~\xd7g\x8dlr\x92r\xb4\x8cVSyg\xb2\xdc\x1a-jqc]\xce\xce\xe6\xa9\x94 0p\n\r\xaf\xba\x82m\x82\x88\xff,\xbf\t\xe9p'
+[2021-12-08 16:52:25][MYSOCKET]dicdata : {'resulttime': '20211208165225', 'fcltSn': 5, 'errorCode': 0, 'orgnztSn': 3}
+[2021-12-08 16:52:25][MYSOCKET]Receive Socket
+[2021-12-08 16:52:25][MYSOCKET]resulttime : 20211208165225
+[2021-12-08 16:52:25][MYSOCKET]Decoding : {"resulttime":"20211208165225","fcltSn":5,"errorCode":0,"orgnztSn":3}
+[2021-12-08 16:52:25][MYSOCKET]Call taskProcess
+[2021-12-08 16:52:25][TASK]taskProcess dic : {'resulttime': '20211208165225', 'fcltSn': 5, 'errorCode': 0, 'orgnztSn': 3}
+[2021-12-08 16:52:25][COMMAND]Write System Configuration File
+[2021-12-08 16:52:25][MAIN][Key] K4
+[2021-12-08 16:52:41][MAIN]접속 종료

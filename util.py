@@ -46,6 +46,8 @@ def parsing_str(cmd):
   elif cmd.find('setini') == 8:
     DEBUGPrint("Factory Reset")
     pcmd.fExit = True
+  elif cmd.find('geterr') == 8:
+    print(cmd)
   elif cmd.find('getble') == 8:
     pcmd.getble(cmd)
     iv = pcmd.ble["enckey"]
@@ -59,13 +61,13 @@ def sendInitMessage(ser):
 
   str = "+010cmd:getble,error:0\r\n"
   ser.write(str.encode('utf-8'))
-  DEBUGPrint("Send to BLE")
+  DEBUGPrint("Send to BLE", str)
   
 def sendErrorMessage(ser, error):
   
   str = "+010cmd:seterr,error:%d\r\n" %(error)
   ser.write(str.encode('utf-8'))
-  DEBUGPrint("Send to Error Message : ", str)
+  DEBUGPrint("Send to Message : ", str)
   
 def cli(key, inout, task, TFT):
   if key != "":  
