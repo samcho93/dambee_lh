@@ -2,6 +2,7 @@ from PIL import ImageFont
 from time import sleep
 import nfc
 import command as pcmd
+import log
 
 TFT = ""
 draw = ""
@@ -9,102 +10,64 @@ dispnum = 0
 
 fontfile = "/home/pi/dambee_lh/fonts/tway_air.ttf"
 
+def DEBUGPrint(msg, param1="", param2=""):
+  string = "[DISPLAY]" + str(msg) + str(param1) + str(param2)
+  print(string)
+  log.Log(string)
+  
 def DispInit(t, d):
     global TFT, draw
     TFT = t
     draw = d
 
-def DispWait(init=False):
-    global TFT
+def Display(filename, num=None):
+  try:
+    global TFT, dispnum
+    dispnum = num
     TFT.initspi(20, 16, 12)
-    TFT.load_wallpaper("wait/wait.png")  
+    TFT.load_wallpaper(filename)  
     TFT.display()
-    dispnum = 0
-    if init == False:
-      nfc.Initspi()
+    nfc.Initspi()
+
+  except:
+    DEBUGPrint("Display Error : ", param1=filename)        
+    
+def DispWait(init=False):
+    Display("wait/wait.png", 0)  
 
 def DispOpen():
-    global TFT
-    TFT.initspi(20, 16, 12)
-    TFT.load_wallpaper("wait/success.png")
-    TFT.display()
-    nfc.Initspi()
-    dispnum = 1
-
-def DispFail():
-    global TFT
-    TFT.initspi(20, 16, 12)
-    TFT.load_wallpaper("wait/fail.png")
-    TFT.display()
-    nfc.Initspi()
-    dispnum = 2
+    Display("wait/success.png", 1)
     
-def DispCall():
-    global TFT
-    TFT.initspi(20, 16, 12)
-    TFT.load_wallpaper("call/callbell.png")
-    TFT.display()
-    nfc.Initspi()
+def DispFail():
+    Display("wait/fail.png", 2)
 
+def DispCoverOpen():
+    Display("basic/basic7.png", 3)
+
+def DispNetworkDiscon():
+    Display("basic/basic3.png", 4)
+        
+def DispSocketDiscon():
+    Display("basic/basic4.png", 5)
+
+def DispCall():
+    Display("call/callbell.png", 6)
+    
 def DispCallFail():
-    global TFT
-    TFT.initspi(20, 16, 12)
-    TFT.load_wallpaper("call/callfail.png")
-    TFT.display()
-    nfc.Initspi()
+    Display("call/callfail.png", 7)
     
 def DispCallWait():
-    global TFT
-    TFT.initspi(20, 16, 12)
-    TFT.load_wallpaper("call/callwait.png")
-    TFT.display()
-    nfc.Initspi()
-
+    Display("call/callwait.png", 8)
+    
 def DispCallEnd():
-    global TFT
-    TFT.initspi(20, 16, 12)
-    TFT.load_wallpaper("call/callend.png")
-    TFT.display()
-    nfc.Initspi()
-
+    Display("call/callend.png", 9)
+    
 def DispCalling():
-    global TFT
-    TFT.initspi(20, 16, 12)
-    TFT.load_wallpaper("call/calling.png")
-    TFT.display()
-    nfc.Initspi()
-    
+    Display("call/calling.png", 10)
+          
 def DispRetry():
-    global TFT
-    TFT.initspi(20, 16, 12)
-    TFT.load_wallpaper("call/retry.png")
-    TFT.display()
-    nfc.Initspi()
-    
-def DispNetworkDiscon():
-    global TFT
-    TFT.initspi(20, 16, 12)
-    TFT.load_wallpaper("basic/basic3.png")
-    TFT.display()
-    nfc.Initspi()
-    dispnum = 4
-    
-def DispSocketDiscon():
-    global TFT
-    TFT.initspi(20, 16, 12)
-    TFT.load_wallpaper("basic/basic4.png")
-    TFT.display()
-    nfc.Initspi()
-    dispnum = 5
-    
-def DispCoverOpen():
-    global TFT
-    TFT.initspi(20, 16, 12)
-    TFT.load_wallpaper("basic/basic7.png")
-    TFT.display()
-    nfc.Initspi()
-    dispnum = 3
-    
+    Display("call/retry.png", 11)
+        
 def DispGetinfo(sel):
     global TFT, draw
     img = ["setsysinfo/info.png", "setsysinfo/netinfo.png", "setsysinfo/setinfo.png"]
@@ -133,7 +96,7 @@ def DispGetinfo(sel):
     TFT.display()
     
 def DispTemp():
-    global TFT
+    global TFT, dispnum
     TFT.load_wallpaper('setmanf/br.png')
     
     font = ImageFont.truetype(fontfile, 20)
@@ -144,7 +107,7 @@ def DispTemp():
     draw.textrotated((90, 40), text, 90, font, fill='white')
     text = "S/W Ver. : v.%s" %(str(pcmd.system['frmver']))
     draw.textrotated((135, 100), text, 90, font, fill='white')
-    
+    dispnum = 6
     TFT.display()
     
 def DispTestColor():

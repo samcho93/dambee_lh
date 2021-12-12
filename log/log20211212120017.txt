@@ -1,0 +1,35 @@
+[2021-12-12 12:00:17][COMMAND]Read System Configuration File
+[2021-12-12 12:00:17][MAIN]입출력 초기화
+[2021-12-12 12:00:17][MAIN]LCD 초기화
+[2021-12-12 12:00:18][MAIN]사운드 초기화
+[2021-12-12 12:00:18][MAIN]네트워크 정보 로드
+[2021-12-12 12:00:18][UTIL]Send to BLE+010cmd:getble,error:0
+
+[2021-12-12 12:00:18][COMMAND]##################################################
+[2021-12-12 12:00:18][COMMAND]> CMD : Get BLE Infor.
+[2021-12-12 12:00:18][COMMAND]{'enckey': 'BBCCD728663FF5F2', 'mac': 'D3:68:BF:B2:F2:5C'}
+[2021-12-12 12:00:18][COMMAND]##################################################
+[2021-12-12 12:00:18][COMMAND]Write System Configuration File
+[2021-12-12 12:00:18][UTIL]key : 20D368BFB2F25CBBCCD728663FF5F221
+[2021-12-12 12:00:18][UTIL]iv : BBCCD728663FF5F2
+[2021-12-12 12:00:19][MAIN]터치초기화
+[2021-12-12 12:00:21][MAIN]카드리더초기화
+[2021-12-12 12:00:21][MAIN]소켓서버 연결
+[2021-12-12 12:00:21][MYSOCKET]접속 완료
+[2021-12-12 12:00:21][MYSOCKET]{'result': 0}
+[2021-12-12 12:00:21][MYSOCKET]## Send Message : 0
+[2021-12-12 12:00:21][MYSOCKET]orig : {'method': 'getDeviceFcltInfo', 'macAddr': 'D3:68:BF:B2:F2:5C'}
+[2021-12-12 12:00:21][MYSOCKET]dec : {"resulttime":"20211212120021","fcltSn":12,"errorCode":0,"orgnztSn":3}
+[2021-12-12 12:00:21][MYSOCKET]recvData : b'\xcd\x9b\xcbw\x7f,\xeb\x8f(\x9bk\x12\x83\x85#\xe2\x8e\xc3\r\xb8x\xd7\xda\x89p\xce\x83B\xa0w\xe6\xf2\xc2\x89wP!\xb2\x82\xead\x89*\xcb1\x0b\x80\xfc\xf1\xd6XY\x93\xf0\x15\xbc\x07\xc58\x80u\x043\x95Xfx\n\xcc\xb2\x0f\xb9q\xb2\xc4\n\xc1 \xb6\xa7'
+[2021-12-12 12:00:22][MYSOCKET]dicdata : {'resulttime': '20211212120021', 'fcltSn': 12, 'errorCode': 0, 'orgnztSn': 3}
+[2021-12-12 12:00:22][MYSOCKET]resulttime : 20211212120021
+[2021-12-12 12:00:22][MYSOCKET]Decoding : {"resulttime":"20211212120021","fcltSn":12,"errorCode":0,"orgnztSn":3}
+[2021-12-12 12:00:22][MYSOCKET]Call taskProcess
+[2021-12-12 12:00:22][TASK]taskProcess dic : {'resulttime': '20211212120021', 'fcltSn': 12, 'errorCode': 0, 'orgnztSn': 3}
+[2021-12-12 12:00:22][COMMAND]Write System Configuration File
+[2021-12-12 12:00:27][MYSOCKET]## Send Message : 3
+[2021-12-12 12:00:27][MYSOCKET]orig : {'method': 'setError', 'orgnztSn': '1', 'fcltSn': 12, 'errorCode': '0'}
+[2021-12-12 12:00:27][MYSOCKET]dec : ºÙòú»GõßÊÃ·ös÷äïÍÚä@ç[¤åe\DLúÒbãq
+[2021-12-12 12:00:27][MYSOCKET]recvData : b'{"resulttime":"20211212120027","errorCode":999}'
+[2021-12-12 12:00:27][MYSOCKET]Error!!!!!
+[2021-12-12 12:00:27][MYSOCKET]b'{"resulttime":"20211212120027","errorCode":999}'ºÙòú»GõßÊÃ·ös÷äïÍÚä@ç[¤åe\DLúÒbãq

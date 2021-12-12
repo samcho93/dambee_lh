@@ -103,7 +103,7 @@ def keyThread():
 ######################
 # Start Main Program # 
 ######################
-log.Init(False)
+log.Init(True)
 pcmd.read()
 
 # GPIO 입출력
@@ -257,14 +257,23 @@ while True:
       #if keycnt == 5:
         keybusy = True
         DEBUGPrint(GetKey(vkey, touch))
-        if touch == vkey['K*']:    
+        if touch == vkey['K*']:
+          disp_time = 0
+              
           task.task = TASK_REQUEST_CALL 
         elif touch == vkey['K#']:
           print(keyinput)
+          os.system("aplay -D plughw:1,0 /home/pi/dambee_lh/music/click.wav &")
+          if keyinput == ['3','2','1','4','8','6','9','8']:
+              display.DispTemp()
+          elif keyinput == [] and display.dispnum == 6:
+              display.DispWait()
+              
           keyinput = []
         else:
             try:
                 keyinput.append(ckey[touch])      
+                os.system("aplay -D plughw:1,0 /home/pi/dambee_lh/music/click.wav &")
             except:
               pass
     elif touch == 0:
@@ -372,9 +381,10 @@ while True:
     if pcmd.ferrorcnt >= 2:
           aliveerror = True
     elif pcmd.ferrorcnt == 0:
-          aliveerror = False 
-          if netdiscon == False and bCover == False and mysocket.bRetryCon == False:
-              display.DispWait()
+          if aliveerror == True:
+              aliveerror = False 
+              if netdiscon == False and bCover == False and mysocket.bRetryCon == False:
+                  display.DispWait()
             
     if bCover == True:
         if display.dispnum != 3:
@@ -406,6 +416,8 @@ while True:
   # Command Line Instruction
   key = cli(key, inout, task, TFT)
   if key == "quit": break
+  
+
   
   cur_time = int(time())    
   

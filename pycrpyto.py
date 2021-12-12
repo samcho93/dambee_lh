@@ -33,7 +33,6 @@ class AESCryptoCBC():
                 ldata.append(16-a)
 
         enc = self.crypto.encrypt(bytes(ldata))
-
         return enc
 
     def decrypt(self, enc):
@@ -56,34 +55,45 @@ class AESCryptoCBC():
         return string
 
 if __name__ == "__main__":
-    data = '{"method":"getDeviceFcltInfo","macAddr":"CF:78:4D:10:83:10"}'
-    #data = '{"method":"getAuthKeyInfo", "orgnztSn":1,"fcltSn":1}'
-    #data = '{"method":"setMapXY","orgnztSn":1,"fcltSn":1,"mapX":"32.52024821","mapY":"126.359038"}'
-    #data = '{"method":"setError","orgnztSn":1,"fcltSn":1,"errorCode":0}'
+    data1 = '{"method":"getDeviceFcltInfo","macAddr":"D3:68:BF:B2:F2:5C"}'
+    data2 = '{"method":"getAuthKeyInfo", "orgnztSn":1,"fcltSn":1}'
+    data3 = '{"method":"setMapXY","orgnztSn":1,"fcltSn":1,"mapX":"32.52024821","mapY":"126.359038"}'
+    data4 = '{"method":"setError","orgnztSn":1,"fcltSn":1,"errorCode":0}'
 
     # Encoding
     aes = AESCryptoCBC(key, iv)
-    enc = aes.encrypt(data)
-
-    #enc = data
-    #print("The encrypted value is " + str(list(enc)))
+    aes2 = AESCryptoCBC(key, iv)
     
-    port = 17005
-    server_ip = '58.124.36.107'
-    #port = 9102
-    #server_ip = '192.168.0.4'
-    clientSock = socket(AF_INET, SOCK_STREAM)
-    clientSock.connect((server_ip, port))
+    
+    enc = aes.encrypt(data1)
+    dec = aes2.decrypt(enc)
+    print(dec)
 
-    clientSock.send(enc)
-    recvData = clientSock.recv(1024) 
-    #print('from Server > ', recvData.decode('utf-8'))
+    enc = aes.encrypt(data2)
+    dec = aes2.decrypt(enc)
+    print(dec)  
+    
+    enc = aes.encrypt(data3)
+    dec = aes2.decrypt(enc)
+    print(dec)
+    
+    enc = aes.encrypt(data4)
+    dec = aes2.decrypt(enc)
+    print(dec)    
+    port = 17005
+    server_ip = "yeolligo-soc.com"
+
+    #clientSock = socket(AF_INET, SOCK_STREAM)
+    #clientSock.connect((server_ip, port))
+
+    #clientSock.send(enc)
+    #recvData = clientSock.recv(1024) 
 
     #키 생성
     # Decoding
-    aes2 = AESCryptoCBC(key, iv)
-    dec = aes2.decrypt(recvData)
-    print(dec)
+    #aes2 = AESCryptoCBC(key, iv)
+    #dec = aes.decrypt(recvData)
+    #print(dec)
 
     #data = json.loads(dec)
     #print(type(data), str(data))

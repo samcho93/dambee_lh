@@ -1,0 +1,31 @@
+[2021-12-10 22:48:47][COMMAND]Read System Configuration File
+[2021-12-10 22:48:47][MAIN]입출력 초기화
+[2021-12-10 22:48:47][MAIN]LCD 초기화
+[2021-12-10 22:48:47][MAIN]사운드 초기화
+[2021-12-10 22:48:47][MAIN]네트워크 정보 로드
+[2021-12-10 22:48:47][UTIL]Send to BLE+010cmd:getble,error:0
+
+[2021-12-10 22:48:47][COMMAND]##################################################
+[2021-12-10 22:48:47][COMMAND]> CMD : Get BLE Infor.
+[2021-12-10 22:48:47][COMMAND]{'enckey': 'BBCCD728663FF5F2', 'mac': 'D3:68:BF:B2:F2:5C'}
+[2021-12-10 22:48:47][COMMAND]##################################################
+[2021-12-10 22:48:47][COMMAND]Write System Configuration File
+[2021-12-10 22:48:47][UTIL]key : 20D368BFB2F25CBBCCD728663FF5F221
+[2021-12-10 22:48:47][UTIL]iv : BBCCD728663FF5F2
+[2021-12-10 22:48:48][MAIN]터치초기화
+[2021-12-10 22:48:51][MAIN]카드리더초기화
+[2021-12-10 22:48:51][MAIN]소켓서버 연결
+[2021-12-10 22:48:51][MYSOCKET]접속 완료
+[2021-12-10 22:48:51][MYSOCKET]{'result': 0}
+[2021-12-10 22:48:51][MYSOCKET]## Send Message ##
+[2021-12-10 22:48:51][MYSOCKET]orig : {'method': 'getDeviceFcltInfo', 'macAddr': 'D3:68:BF:B2:F2:5C'}
+[2021-12-10 22:48:51][MYSOCKET]+++++++++++ Check Point +++++++++++++
+[2021-12-10 22:48:51][MYSOCKET]Send Message : {"method": "getDeviceFcltInfo", "macAddr": "D3:68:BF:B2:F2:5C"}
+[2021-12-10 22:48:51][MYSOCKET]Encode Message : b"\x82\x8c\xe7^\xf8sN\x15\xf6\xe8\x9c\xf1M\x8f\xd5\x8d\xd9\xc7J\x88\xe7qG\xf0\xf1\xd45\xe1F\x0c\x93\xbc{\t\xc9*I\x90\xfa\x18\xb1\x0bf\x00&A@\x8f0\xdb%xE'\x087u\xd6\xb9\xe3f\x94\xac\x82"
+[2021-12-10 22:48:51][MYSOCKET]SendMessage Error
+[2021-12-10 22:48:51][COMMAND]Write System Configuration File
+[2021-12-10 22:48:51][MYSOCKET]dec : {"resulttime":"20211210224851","fcltSn":1,"errorCode":0,"orgnztSn":2}
+[2021-12-10 22:48:51][MYSOCKET]recvData : b'\xcd\x9b\xcbw\x7f,\xeb\x8f(\x9bk\x12\x83\x85#\xe2\x8e\xbd\xbc\t\x1d?{1B\xc3\x9e\xd2\x03\x88T\xeb[\x9d\x83?\xe6\x86\x98lG\x82s\x0e\xca\x0f\x98\x02\x03\xe9SS\x15,\xc9\xa0\xb9>e\xdb\xf1\x83\x99\xf1=^\xbd\xad\x1d\xcb\xf8#\xc4\xc7\x02\xcc\xc6/\xcc\x83'
+[2021-12-10 22:48:51][MYSOCKET]dicdata : {'resulttime': '20211210224851', 'fcltSn': 1, 'errorCode': 0, 'orgnztSn': 2}
+[2021-12-10 22:48:51][MYSOCKET]resulttime : 20211210224851
+[2021-12-10 22:49:41][MAIN]접속 종료

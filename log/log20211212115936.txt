@@ -1,0 +1,33 @@
+[2021-12-12 11:59:36][COMMAND]Read System Configuration File
+[2021-12-12 11:59:36][MAIN]입출력 초기화
+[2021-12-12 11:59:36][MAIN]LCD 초기화
+[2021-12-12 11:59:37][MAIN]사운드 초기화
+[2021-12-12 11:59:37][MAIN]네트워크 정보 로드
+[2021-12-12 11:59:37][UTIL]Send to BLE+010cmd:getble,error:0
+
+[2021-12-12 11:59:37][COMMAND]##################################################
+[2021-12-12 11:59:37][COMMAND]> CMD : Get BLE Infor.
+[2021-12-12 11:59:37][COMMAND]{'enckey': 'BBCCD728663FF5F2', 'mac': 'D3:68:BF:B2:F2:5C'}
+[2021-12-12 11:59:37][COMMAND]##################################################
+[2021-12-12 11:59:37][COMMAND]Write System Configuration File
+[2021-12-12 11:59:37][UTIL]key : 20D368BFB2F25CBBCCD728663FF5F221
+[2021-12-12 11:59:37][UTIL]iv : BBCCD728663FF5F2
+[2021-12-12 11:59:38][MAIN]터치초기화
+[2021-12-12 11:59:40][MAIN]카드리더초기화
+[2021-12-12 11:59:40][MAIN]소켓서버 연결
+[2021-12-12 11:59:40][MYSOCKET]접속 완료
+[2021-12-12 11:59:40][MYSOCKET]{'result': 0}
+[2021-12-12 11:59:40][MYSOCKET]## Send Message : 0
+[2021-12-12 11:59:40][MYSOCKET]orig : {'method': 'getDeviceFcltInfo', 'macAddr': 'D3:68:BF:B2:F2:5C'}
+[2021-12-12 11:59:40][MYSOCKET]dec : ºÙòú»GõßÊ)­PêBc°[Ò :üåe\DLúÑgêq
+[2021-12-12 11:59:40][MYSOCKET]recvData : b'{"resulttime":"20211212115940","errorCode":999}'
+[2021-12-12 11:59:40][MYSOCKET]Error!!!!!
+[2021-12-12 11:59:40][MYSOCKET]b'{"resulttime":"20211212115940","errorCode":999}'ºÙòú»GõßÊ)­PêBc°[Ò :üåe\DLúÑgêq
+[2021-12-12 11:59:40][MYSOCKET]연결이 거부 되었습니다
+[2021-12-12 11:59:40][COMMAND]Write System Configuration File
+[2021-12-12 11:59:45][MYSOCKET]## Send Message : 3
+[2021-12-12 11:59:45][MYSOCKET]orig : {'method': 'setError', 'orgnztSn': '1', 'fcltSn': 12, 'errorCode': '0'}
+[2021-12-12 11:59:45][MYSOCKET]dec : ºÙòú»GõßÊIã¼=»#[uVÄýåe\DLúÑgêq
+[2021-12-12 11:59:45][MYSOCKET]recvData : b'{"resulttime":"20211212115945","errorCode":999}'
+[2021-12-12 11:59:45][MYSOCKET]Error!!!!!
+[2021-12-12 11:59:45][MYSOCKET]b'{"resulttime":"20211212115945","errorCode":999}'ºÙòú»GõßÊIã¼=»#[uVÄýåe\DLúÑgêq

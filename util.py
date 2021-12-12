@@ -54,6 +54,7 @@ def parsing_str(cmd):
     blemac = pcmd.ble["mac"].replace(":","")
     mysocket.key = "20"+blemac+iv+"21"
     mysocket.iv = iv
+    
     DEBUGPrint("key : ", mysocket.key)
     DEBUGPrint("iv : ", mysocket.iv)
     

@@ -7,7 +7,7 @@ import json
 import requests
 import re
 import command as pcmd
-import task
+from task import *
 from pycrpyto import AESCryptoCBC
 import log
 import urllib.request
@@ -28,6 +28,8 @@ roomnumber = 0
 callsn = 0
 task = 0
 webcmd = []
+msgnum = 0
+recvData = ""
 
 response = {"responseId" : "", "errorCode" : 0}
 
@@ -41,6 +43,7 @@ datas = {
   "fcltMapX":"36.241241"
   }
   
+  
 def DEBUGPrint(msg, param1="", param2=""):
   string = "[MYSOCKET]" + str(msg) + str(param1) + str(param2)
   print(string)
@@ -51,6 +54,7 @@ def receive(sock):
     global connected
     global cmd
     global dicdata
+    global recvData
     global result
     global iv
     global key
@@ -62,7 +66,7 @@ def receive(sock):
           error = False
         except:
           error = True
-          DEBUGPrint("Socket Receved Errro!!!")
+          DEBUGPrint("Socket Receved Error!!!")
         
         try:
           if error == False:
@@ -79,8 +83,7 @@ def receive(sock):
                 connected = False
                 sock.close()
             elif string[0] != '{' and string[:-1] != '}':
-                DEBUGPrint("Error!!!!!")
-                DEBUGPrint(str(recvData), string)
+                DEBUGPrint("Error Data : ", str(recvData), string)
                 result = "error"
                 #task.task = task.TASK_IDLE
                 #cmd = ""
@@ -106,7 +109,8 @@ def receive(sock):
 
 def encdata(data):
     global clientSock
-
+    global key, iv
+    
     string = json.dumps(data)
     DEBUGPrint(string)
     #clientSock.send(string.encode('utf-8'))
@@ -126,7 +130,7 @@ def Init(server_ip, server_port, tsk):
     global connected
     global webcmd
     global task
-    
+
     task = tsk
     
     req = requests.get("http://ipconfig.kr")   
@@ -167,7 +171,7 @@ def Init(server_ip, server_port, tsk):
         SendMessage(0)
     except:
         DEBUGPrint("연결이 거부 되었습니다")
-        
+               
 def CheckNetwork():
     try:
         s = socket(AF_INET, SOCK_DGRAM)
@@ -180,10 +184,11 @@ def CheckNetwork():
 def SendMessage(sel, param=0, ser=None):
     try:
         global result, roomnumber, webcmd, task
-          
-        #if "roomNumber" in webcmd[sel]:
-          #webcmd[sel]["roomNumber"] = roomnumber
-          
+        global iv, key
+        global recvData
+        
+        msgnum = sel
+
         if sel == 3:
           webcmd[sel]['errorCode'] = param
           webcmd[sel]['orgnztSn'] = pcmd.system["orgnztSn"]
@@ -194,7 +199,7 @@ def SendMessage(sel, param=0, ser=None):
         if "fcltSn" in webcmd[sel]:
             webcmd[sel]["fcltSn"] = pcmd.system["fcltsn"]
           
-        DEBUGPrint("## Send Message ##")
+        DEBUGPrint("## Send Message : ", sel)
         DEBUGPrint("orig : ", webcmd[sel])
         
         da = str(webcmd[sel])        
@@ -205,8 +210,13 @@ def SendMessage(sel, param=0, ser=None):
         
         result = ""
         aes = AESCryptoCBC(key, iv)
-        enc = aes.encrypt(da)
+        enc = aes.encrypt(da)             
         clientSock.send(enc)
+        
+        aes2 = AESCryptoCBC(key, iv)
+        dec = aes2.decrypt(enc)
+        print("*** dec : ", dec)
+        
         
         #recvData = clientSock.recv(1024)
         timeout = int(time())
@@ -221,7 +231,6 @@ def SendMessage(sel, param=0, ser=None):
     
         if timeout != -1:
           recv = result
-          DEBUGPrint("Receive Socket")
           #DEBUGPrint('from Server > ', recvData)
       
           #키 생성
@@ -259,14 +268,16 @@ def SendMessage(sel, param=0, ser=None):
             DEBUGPrint("Call taskProcess")
             task.taskProcess(dic)
           else:
-            if task.task == 2:
-              task.task = 3# TASK_REQUEST_CALL_RESULT
-              task.timeout = int(time()*1000)
-              task.belltime = task.timeout
+            dicdata = json.loads(recvData)
+            if dicdata['errorCode'] == 999:
+                DEBUGPrint("Error : ", dicdata)
+                if task.task == TASK_REQUEST_CALL_RESULT_WAIT:
+                    task.task = TASK_REQUEST_CALL_RESULT
       
           result = ""
     except:
         DEBUGPrint("SendMessage Error")
+        
             
 def Close():
     global clientSock

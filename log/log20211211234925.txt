@@ -1,0 +1,25 @@
+[2021-12-11 23:49:25][COMMAND]Read System Configuration File
+[2021-12-11 23:49:25][MAIN]입출력 초기화
+[2021-12-11 23:49:25][MAIN]LCD 초기화
+[2021-12-11 23:49:25][MAIN]사운드 초기화
+[2021-12-11 23:49:25][MAIN]네트워크 정보 로드
+[2021-12-11 23:49:25][UTIL]Send to BLE+010cmd:getble,error:0
+
+[2021-12-11 23:49:25][COMMAND]##################################################
+[2021-12-11 23:49:25][COMMAND]> CMD : Get BLE Infor.
+[2021-12-11 23:49:25][COMMAND]{'enckey': 'BBCCD728663FF5F2', 'mac': 'D3:68:BF:B2:F2:5C'}
+[2021-12-11 23:49:25][COMMAND]##################################################
+[2021-12-11 23:49:25][COMMAND]Write System Configuration File
+[2021-12-11 23:49:25][UTIL]key : 20D368BFB2F25CBBCCD728663FF5F221
+[2021-12-11 23:49:25][UTIL]iv : BBCCD728663FF5F2
+[2021-12-11 23:49:26][MAIN]터치초기화
+[2021-12-11 23:49:28][MAIN]카드리더초기화
+[2021-12-11 23:49:28][MAIN]소켓서버 연결
+[2021-12-11 23:49:34][MYSOCKET]접속 완료
+[2021-12-11 23:49:34][MYSOCKET]{'result': 0}
+[2021-12-11 23:49:34][MYSOCKET]## Send Message : 0
+[2021-12-11 23:49:34][MYSOCKET]orig : {'method': 'getDeviceFcltInfo', 'macAddr': 'D3:68:BF:B2:F2:5C'}
+[2021-12-11 23:49:34][MYSOCKET]SendMessage Error
+[2021-12-11 23:49:34][MYSOCKET]연결이 거부 되었습니다
+[2021-12-11 23:49:34][COMMAND]Write System Configuration File
+[2021-12-11 23:50:14][MAIN]접속 종료

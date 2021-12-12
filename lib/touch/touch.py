@@ -65,7 +65,7 @@ class TS20:
           data = b'\x00\x66'
           self._write_data(data)
           
-          data = b'\x01\x33'
+          data = b'\x01\x66'
           self._write_data(data)
           
           data = b'\x02\x33'

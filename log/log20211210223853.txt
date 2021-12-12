@@ -1,0 +1,36 @@
+[2021-12-10 22:38:53][COMMAND]Read System Configuration File
+[2021-12-10 22:38:53][MAIN]입출력 초기화
+[2021-12-10 22:38:53][MAIN]LCD 초기화
+[2021-12-10 22:38:54][MAIN]사운드 초기화
+[2021-12-10 22:38:54][MAIN]네트워크 정보 로드
+[2021-12-10 22:38:54][UTIL]Send to BLE+010cmd:getble,error:0
+
+[2021-12-10 22:38:54][COMMAND]##################################################
+[2021-12-10 22:38:54][COMMAND]> CMD : Get BLE Infor.
+[2021-12-10 22:38:54][COMMAND]{'enckey': 'BBCCD728663FF5F2', 'mac': 'D3:68:BF:B2:F2:5C'}
+[2021-12-10 22:38:54][COMMAND]##################################################
+[2021-12-10 22:38:54][COMMAND]Write System Configuration File
+[2021-12-10 22:38:54][UTIL]key : 20D368BFB2F25CBBCCD728663FF5F221
+[2021-12-10 22:38:54][UTIL]iv : BBCCD728663FF5F2
+[2021-12-10 22:38:55][MAIN]터치초기화
+[2021-12-10 22:38:57][MAIN]카드리더초기화
+[2021-12-10 22:38:57][MAIN]소켓서버 연결
+[2021-12-10 22:38:57][MYSOCKET]접속 완료
+[2021-12-10 22:38:57][MYSOCKET]{'result': 0}
+[2021-12-10 22:38:57][MYSOCKET]## Send Message ##
+[2021-12-10 22:38:57][MYSOCKET]orig : {'method': 'getDeviceFcltInfo', 'macAddr': 'D3:68:BF:B2:F2:5C'}
+[2021-12-10 22:38:57][MYSOCKET]SendMessage Error
+[2021-12-10 22:38:57][COMMAND]Write System Configuration File
+[2021-12-10 22:39:03][MAIN]UID :9DBC0500
+[2021-12-10 22:39:03][MYSOCKET]## Send Message ##
+[2021-12-10 22:39:03][MYSOCKET]orig : {'method': 'reqFingerCardCheck', 'cardNumber': '00AABBCCDDEE', 'fcltSn': 1}
+[2021-12-10 22:39:03][MYSOCKET]SendMessage Error
+[2021-12-10 22:39:57][MYSOCKET]## Send Message ##
+[2021-12-10 22:39:57][MYSOCKET]orig : {'method': 'setError', 'orgnztSn': '1', 'fcltSn': 1, 'errorCode': '0'}
+[2021-12-10 22:39:57][MYSOCKET]SendMessage Error
+[2021-12-10 22:39:57][MAIN]+++++++++++ Alive Message
+[2021-12-10 22:40:57][MYSOCKET]## Send Message ##
+[2021-12-10 22:40:57][MYSOCKET]orig : {'method': 'setError', 'orgnztSn': '1', 'fcltSn': 1, 'errorCode': '0'}
+[2021-12-10 22:40:57][MYSOCKET]SendMessage Error
+[2021-12-10 22:40:57][MAIN]+++++++++++ Alive Message
+[2021-12-10 22:41:12][MAIN]접속 종료

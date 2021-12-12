@@ -1,0 +1,32 @@
+[2021-12-12 11:45:46][COMMAND]Read System Configuration File
+[2021-12-12 11:45:46][MAIN]입출력 초기화
+[2021-12-12 11:45:46][MAIN]LCD 초기화
+[2021-12-12 11:45:47][MAIN]사운드 초기화
+[2021-12-12 11:45:47][MAIN]네트워크 정보 로드
+[2021-12-12 11:45:47][UTIL]Send to BLE+010cmd:getble,error:0
+
+[2021-12-12 11:45:47][COMMAND]##################################################
+[2021-12-12 11:45:47][COMMAND]> CMD : Get BLE Infor.
+[2021-12-12 11:45:47][COMMAND]{'enckey': 'BBCCD728663FF5F2', 'mac': 'D3:68:BF:B2:F2:5C'}
+[2021-12-12 11:45:47][COMMAND]##################################################
+[2021-12-12 11:45:47][COMMAND]Write System Configuration File
+[2021-12-12 11:45:47][MAIN]module 'mysocket' has no attribute 'SetCrpyto'
+[2021-12-12 11:45:48][MAIN]터치초기화
+[2021-12-12 11:45:50][MAIN]카드리더초기화
+[2021-12-12 11:45:50][MAIN]소켓서버 연결
+[2021-12-12 11:45:51][MYSOCKET]접속 완료
+[2021-12-12 11:45:51][MYSOCKET]{'result': 0}
+[2021-12-12 11:45:51][MYSOCKET]## Send Message : 0
+[2021-12-12 11:45:51][MYSOCKET]orig : {'method': 'getDeviceFcltInfo', 'macAddr': 'D3:68:BF:B2:F2:5C'}
+[2021-12-12 11:45:51][MYSOCKET]dec : {"resulttime":"20211212114551","fcltSn":12,"errorCode":0,"orgnztSn":3}
+[2021-12-12 11:45:51][MYSOCKET]recvData : b"\xcd\x9b\xcbw\x7f,\xeb\x8f(\x9bk\x12\x83\x85#\xe2,HT_\xa6#\x05\xd0\xbe\xaf\xa8\x91T\xbd\x16\x01\xa2'\xf4W\xe4\x10\xf1\xd0\xd2\xe3n\x01|\xfd2\x81\xbfG\x94\xed\xe4\\\xc9J\x89\x00P\x98yM\xcbU\xdd\xce\xc9\x1a\xc4\xfbhP\xd7\xc6\xe2\xa0\x1c\xf8\xed\xf7"
+[2021-12-12 11:45:51][MYSOCKET]dicdata : {'resulttime': '20211212114551', 'fcltSn': 12, 'errorCode': 0, 'orgnztSn': 3}
+[2021-12-12 11:45:51][MYSOCKET]resulttime : 20211212114551
+[2021-12-12 11:45:51][MYSOCKET]연결이 거부 되었습니다
+[2021-12-12 11:45:51][COMMAND]Write System Configuration File
+[2021-12-12 11:46:51][MYSOCKET]## Send Message : 3
+[2021-12-12 11:46:51][MYSOCKET]orig : {'method': 'setError', 'orgnztSn': '1', 'fcltSn': 12, 'errorCode': '0'}
+[2021-12-12 11:46:51][MYSOCKET]dec : {"resulttime":"20211212114651","errorCode":0}
+[2021-12-12 11:46:51][MYSOCKET]recvData : b'\xcd\x9b\xcbw\x7f,\xeb\x8f(\x9bk\x12\x83\x85#\xe2J\xf7\xae\xcf\xc6\xea\x19Oa\x85P/\x0c\xb1\x1d\xc6~|\xbf\xd3\x00m\xc5w\x04GDO\xac\xbcA\xbd'
+[2021-12-12 11:46:51][MYSOCKET]dicdata : {'resulttime': '20211212114651', 'errorCode': 0}
+[2021-12-12 11:46:51][MYSOCKET]resulttime : 20211212114651

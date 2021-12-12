@@ -1,0 +1,31 @@
+[2021-12-11 21:37:03][COMMAND]Read System Configuration File
+[2021-12-11 21:37:03][MAIN]입출력 초기화
+[2021-12-11 21:37:03][MAIN]LCD 초기화
+[2021-12-11 21:37:03][MAIN]사운드 초기화
+[2021-12-11 21:37:03][MAIN]네트워크 정보 로드
+[2021-12-11 21:37:03][UTIL]Send to BLE+010cmd:getble,error:0
+
+[2021-12-11 21:37:03][COMMAND]##################################################
+[2021-12-11 21:37:03][COMMAND]> CMD : Get BLE Infor.
+[2021-12-11 21:37:03][COMMAND]{'enckey': 'BBCCD728663FF5F2', 'mac': 'D3:68:BF:B2:F2:5C'}
+[2021-12-11 21:37:03][COMMAND]##################################################
+[2021-12-11 21:37:03][COMMAND]Write System Configuration File
+[2021-12-11 21:37:03][UTIL]key : 20D368BFB2F25CBBCCD728663FF5F221
+[2021-12-11 21:37:03][UTIL]iv : BBCCD728663FF5F2
+[2021-12-11 21:37:04][MAIN]터치초기화
+[2021-12-11 21:37:06][MAIN]카드리더초기화
+[2021-12-11 21:37:06][MAIN]소켓서버 연결
+[2021-12-11 21:37:06][MYSOCKET]접속 완료
+[2021-12-11 21:37:07][MYSOCKET]{'result': 0}
+[2021-12-11 21:37:07][MYSOCKET]## Send Message : 0
+[2021-12-11 21:37:07][MYSOCKET]orig : {'method': 'getDeviceFcltInfo', 'macAddr': 'D3:68:BF:B2:F2:5C'}
+[2021-12-11 21:37:07][MYSOCKET]dec : {"resulttime":"20211211213707","fcltSn":12,"errorCode":0,"orgnztSn":3}
+[2021-12-11 21:37:07][MYSOCKET]recvData : b'\xcd\x9b\xcbw\x7f,\xeb\x8f(\x9bk\x12\x83\x85#\xe2\xc1\x81rG:W\xf0\xbe\xf5X&\xa7\xfb\xf8!\xe4)J\xe9 Z\xbb\xbf\x9c\xe2L\xc8\x88 \xe5\xafQ2\xb0\xdd\xfe\xa9\x8d\xe2\xff\xf3\x06\xad\x7f\xb7\xf1\\\x9d;\xd6<\x8f\x99\x1c#\x98|\xc7|IGy\xaf\xf6'
+[2021-12-11 21:37:07][MYSOCKET]dicdata : {'resulttime': '20211211213707', 'fcltSn': 12, 'errorCode': 0, 'orgnztSn': 3}
+[2021-12-11 21:37:07][MYSOCKET]Receive Socket
+[2021-12-11 21:37:07][MYSOCKET]resulttime : 20211211213707
+[2021-12-11 21:37:07][MYSOCKET]Decoding : {"resulttime":"20211211213707","fcltSn":12,"errorCode":0,"orgnztSn":3}
+[2021-12-11 21:37:07][MYSOCKET]Call taskProcess
+[2021-12-11 21:37:07][TASK]taskProcess dic : {'resulttime': '20211211213707', 'fcltSn': 12, 'errorCode': 0, 'orgnztSn': 3}
+[2021-12-11 21:37:07][COMMAND]Write System Configuration File
+[2021-12-11 21:37:09][MAIN]접속 종료

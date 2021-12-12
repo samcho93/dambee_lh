@@ -1,0 +1,64 @@
+[2021-12-11 18:27:51][COMMAND]Read System Configuration File
+[2021-12-11 18:27:51][MAIN]입출력 초기화
+[2021-12-11 18:27:51][MAIN]LCD 초기화
+[2021-12-11 18:27:52][MAIN]사운드 초기화
+[2021-12-11 18:27:52][MAIN]네트워크 정보 로드
+[2021-12-11 18:27:52][UTIL]Send to BLE+010cmd:getble,error:0
+
+[2021-12-11 18:27:52][COMMAND]##################################################
+[2021-12-11 18:27:52][COMMAND]> CMD : Get BLE Infor.
+[2021-12-11 18:27:52][COMMAND]{'enckey': 'BBCCD728663FF5F2', 'mac': 'D3:68:BF:B2:F2:5C'}
+[2021-12-11 18:27:52][COMMAND]##################################################
+[2021-12-11 18:27:52][COMMAND]Write System Configuration File
+[2021-12-11 18:27:52][UTIL]key : 20D368BFB2F25CBBCCD728663FF5F221
+[2021-12-11 18:27:52][UTIL]iv : BBCCD728663FF5F2
+[2021-12-11 18:27:53][MAIN]터치초기화
+[2021-12-11 18:27:55][MAIN]카드리더초기화
+[2021-12-11 18:27:55][MAIN]소켓서버 연결
+[2021-12-11 18:27:55][MYSOCKET]접속 완료
+[2021-12-11 18:27:55][MYSOCKET]{'result': 0}
+[2021-12-11 18:27:55][MYSOCKET]## Send Message ##
+[2021-12-11 18:27:55][MYSOCKET]orig : {'method': 'getDeviceFcltInfo', 'macAddr': 'D3:68:BF:B2:F2:5C'}
+[2021-12-11 18:27:55][MYSOCKET]dec : $¦½¾0eRADÒÇÌ~
+[2021-12-11 18:27:55][MYSOCKET]recvData : b'{"errorCode":0}'
+[2021-12-11 18:27:55][MYSOCKET]Error!!!!!
+[2021-12-11 18:27:55][MYSOCKET]b'{"errorCode":0}'$¦½¾0eRADÒÇÌ~
+[2021-12-11 18:27:55][MYSOCKET]Receive Socket
+[2021-12-11 18:27:55][COMMAND]Write System Configuration File
+[2021-12-11 18:28:13][MYSOCKET]dec : {"method":"getDeviceOption","responseId":"bd371618eeab49deaf499e875c9fc4d4"}
+[2021-12-11 18:28:13][MYSOCKET]recvData : b']s\xa1\x82\rM38\xc39)]\xfb\x83E\n\x19\xc2\x85\xc0\xbe \xde\x89\t&\r\x15,J6\x93l\x89\x1c\xba]dG\x95\x1ek`\xbc\xd4%\xee\xddL\x19\x16\x13\x0f\xf6>\xe9I\xfa\x84\xe0\x1f\xc6\xf7\x7fGg\xf2\x87bU\x81\x10\x15\xc2\xe3\x1a\xb5k}\t'
+[2021-12-11 18:28:13][MYSOCKET]dicdata : {'method': 'getDeviceOption', 'responseId': 'bd371618eeab49deaf499e875c9fc4d4'}
+[2021-12-11 18:28:13][MYSOCKET]Method getDeviceOption
+[2021-12-11 18:28:13][MYSOCKET]{"responseId": "bd371618eeab49deaf499e875c9fc4d4", "opetime": 3, "lcd": 5, "lcdtxt": 2, "spk": 3, "mic": 3, "bluepwr": 3, "brkyn": 0, "errorCode": 0}
+[2021-12-11 18:28:13][SOCKETCMD]> {'responseId': 'bd371618eeab49deaf499e875c9fc4d4', 'opetime': 3, 'lcd': 5, 'lcdtxt': 2, 'spk': 3, 'mic': 3, 'bluepwr': 3, 'brkyn': 0, 'errorCode': 0}
+[2021-12-11 18:28:13][MYSOCKET]dec : $¦½¾0eRADÒÇÌ~
+[2021-12-11 18:28:13][MYSOCKET]recvData : b'{"errorCode":0}'
+[2021-12-11 18:28:13][MYSOCKET]Error!!!!!
+[2021-12-11 18:28:13][MYSOCKET]b'{"errorCode":0}'$¦½¾0eRADÒÇÌ~
+[2021-12-11 18:28:31][MYSOCKET]dec : {"method":"getDeviceOption","responseId":"fec7af162b724ea480e1c2c0325ead7b"}
+[2021-12-11 18:28:31][MYSOCKET]recvData : b']s\xa1\x82\rM38\xc39)]\xfb\x83E\n\x19\xc2\x85\xc0\xbe \xde\x89\t&\r\x15,J6\x93\xfaK\x00\xb3A&77\xbd\x19;\xb0\n \x05iZT\xf2\xf1\xc9\x9b\xc8\xba\x9d\xc1\xd8Q\x86+\xda\xd0@l\xaeQ\x1f\xd2\xa4)\xeeC\x05\xa6c\x90\xb5\x07'
+[2021-12-11 18:28:31][MYSOCKET]dicdata : {'method': 'getDeviceOption', 'responseId': 'fec7af162b724ea480e1c2c0325ead7b'}
+[2021-12-11 18:28:31][MYSOCKET]Method getDeviceOption
+[2021-12-11 18:28:31][MYSOCKET]{"responseId": "fec7af162b724ea480e1c2c0325ead7b", "opetime": 3, "lcd": 5, "lcdtxt": 2, "spk": 3, "mic": 3, "bluepwr": 3, "brkyn": 0, "errorCode": 0}
+[2021-12-11 18:28:31][SOCKETCMD]> {'responseId': 'fec7af162b724ea480e1c2c0325ead7b', 'opetime': 3, 'lcd': 5, 'lcdtxt': 2, 'spk': 3, 'mic': 3, 'bluepwr': 3, 'brkyn': 0, 'errorCode': 0}
+[2021-12-11 18:28:31][MYSOCKET]dec : $¦½¾0eRADÒÇÌ~
+[2021-12-11 18:28:31][MYSOCKET]recvData : b'{"errorCode":0}'
+[2021-12-11 18:28:31][MYSOCKET]Error!!!!!
+[2021-12-11 18:28:31][MYSOCKET]b'{"errorCode":0}'$¦½¾0eRADÒÇÌ~
+[2021-12-11 18:28:55][MYSOCKET]## Send Message ##
+[2021-12-11 18:28:55][MYSOCKET]orig : {'method': 'setError', 'orgnztSn': '1', 'fcltSn': 1, 'errorCode': '0'}
+[2021-12-11 18:28:55][MYSOCKET]dec : $¦½¾0eRADÒÇÌ~
+[2021-12-11 18:28:55][MYSOCKET]recvData : b'{"errorCode":0}'
+[2021-12-11 18:28:55][MYSOCKET]Error!!!!!
+[2021-12-11 18:28:55][MYSOCKET]b'{"errorCode":0}'$¦½¾0eRADÒÇÌ~
+[2021-12-11 18:28:55][MYSOCKET]Receive Socket
+[2021-12-11 18:28:55][MAIN]+++++++++++ Alive Message
+[2021-12-11 18:29:55][MYSOCKET]## Send Message ##
+[2021-12-11 18:29:55][MYSOCKET]orig : {'method': 'setError', 'orgnztSn': '1', 'fcltSn': 1, 'errorCode': '0'}
+[2021-12-11 18:29:55][MYSOCKET]dec : ºÙòú»GõßÊpÍú²Ê£V!Æ&8vÕ»åe\DLùØ`êq
+[2021-12-11 18:29:55][MYSOCKET]recvData : b'{"resulttime":"20211211182955","errorCode":999}'
+[2021-12-11 18:29:55][MYSOCKET]Error!!!!!
+[2021-12-11 18:29:55][MYSOCKET]b'{"resulttime":"20211211182955","errorCode":999}'ºÙòú»GõßÊpÍú²Ê£V!Æ&8vÕ»åe\DLùØ`êq
+[2021-12-11 18:29:55][MYSOCKET]Receive Socket
+[2021-12-11 18:29:55][MAIN]+++++++++++ Alive Message
+[2021-12-11 18:30:46][MAIN]접속 종료

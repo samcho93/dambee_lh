@@ -1,0 +1,24 @@
+[2021-12-10 22:44:11][COMMAND]Read System Configuration File
+[2021-12-10 22:44:11][MAIN]입출력 초기화
+[2021-12-10 22:44:11][MAIN]LCD 초기화
+[2021-12-10 22:44:11][MAIN]사운드 초기화
+[2021-12-10 22:44:11][MAIN]네트워크 정보 로드
+[2021-12-10 22:44:11][UTIL]Send to BLE+010cmd:getble,error:0
+
+[2021-12-10 22:44:11][COMMAND]##################################################
+[2021-12-10 22:44:11][COMMAND]> CMD : Get BLE Infor.
+[2021-12-10 22:44:11][COMMAND]{'enckey': 'BBCCD728663FF5F2', 'mac': 'D3:68:BF:B2:F2:5C'}
+[2021-12-10 22:44:11][COMMAND]##################################################
+[2021-12-10 22:44:11][COMMAND]Write System Configuration File
+[2021-12-10 22:44:11][UTIL]key : 20D368BFB2F25CBBCCD728663FF5F221
+[2021-12-10 22:44:11][UTIL]iv : BBCCD728663FF5F2
+[2021-12-10 22:44:12][MAIN]터치초기화
+[2021-12-10 22:44:14][MAIN]카드리더초기화
+[2021-12-10 22:44:14][MAIN]소켓서버 연결
+[2021-12-10 22:44:14][MYSOCKET]접속 완료
+[2021-12-10 22:44:15][MYSOCKET]{'result': 0}
+[2021-12-10 22:44:15][MYSOCKET]## Send Message ##
+[2021-12-10 22:44:15][MYSOCKET]orig : {'method': 'getDeviceFcltInfo', 'macAddr': 'D3:68:BF:B2:F2:5C'}
+[2021-12-10 22:44:15][MYSOCKET]SendMessage Error
+[2021-12-10 22:44:15][COMMAND]Write System Configuration File
+[2021-12-10 22:44:56][MAIN]접속 종료

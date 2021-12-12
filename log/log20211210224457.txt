@@ -1,0 +1,78 @@
+[2021-12-10 22:44:57][COMMAND]Read System Configuration File
+[2021-12-10 22:44:57][MAIN]입출력 초기화
+[2021-12-10 22:44:57][MAIN]LCD 초기화
+[2021-12-10 22:44:58][MAIN]사운드 초기화
+[2021-12-10 22:44:58][MAIN]네트워크 정보 로드
+[2021-12-10 22:44:58][UTIL]Send to BLE+010cmd:getble,error:0
+
+[2021-12-10 22:44:58][COMMAND]##################################################
+[2021-12-10 22:44:58][COMMAND]> CMD : Get BLE Infor.
+[2021-12-10 22:44:58][COMMAND]{'enckey': 'BBCCD728663FF5F2', 'mac': 'D3:68:BF:B2:F2:5C'}
+[2021-12-10 22:44:58][COMMAND]##################################################
+[2021-12-10 22:44:58][COMMAND]Write System Configuration File
+[2021-12-10 22:44:58][UTIL]key : 20D368BFB2F25CBBCCD728663FF5F221
+[2021-12-10 22:44:58][UTIL]iv : BBCCD728663FF5F2
+[2021-12-10 22:44:59][MAIN]터치초기화
+[2021-12-10 22:45:01][MAIN]카드리더초기화
+[2021-12-10 22:45:01][MAIN]소켓서버 연결
+[2021-12-10 22:45:01][MYSOCKET]접속 완료
+[2021-12-10 22:45:02][MYSOCKET]{'result': 0}
+[2021-12-10 22:45:02][MYSOCKET]## Send Message ##
+[2021-12-10 22:45:02][MYSOCKET]orig : {'method': 'getDeviceFcltInfo', 'macAddr': 'D3:68:BF:B2:F2:5C'}
+[2021-12-10 22:45:02][MYSOCKET]+++++++++++ Check Point +++++++++++++
+[2021-12-10 22:45:02][MYSOCKET]Send Message : {"method": "getDeviceFcltInfo", "macAddr": "D3:68:BF:B2:F2:5C"}
+[2021-12-10 22:45:02][MYSOCKET]Encode Message : b"\x82\x8c\xe7^\xf8sN\x15\xf6\xe8\x9c\xf1M\x8f\xd5\x8d\xd9\xc7J\x88\xe7qG\xf0\xf1\xd45\xe1F\x0c\x93\xbc{\t\xc9*I\x90\xfa\x18\xb1\x0bf\x00&A@\x8f0\xdb%xE'\x087u\xd6\xb9\xe3f\x94\xac\x82"
+[2021-12-10 22:45:02][MYSOCKET]Decode Message : {"method": "getDeviceFcltInfo", "macAddr": "D3:68:BF:B2:F2:5C"}
+[2021-12-10 22:45:02][MYSOCKET]+++++++++++++++++++++++++++++++++++++
+[2021-12-10 22:45:02][MYSOCKET]dec : »^reV{7çÀÈ0211210224502","fcltSn":1,"errorCode":0,"orgnztSn":2}
+[2021-12-10 22:45:02][MYSOCKET]recvData : b'\xcd\x9b\xcbw\x7f,\xeb\x8f(\x9bk\x12\x83\x85#\xe2g\xacx\xa7\x95\xa0\xd8\n\xb7\xca\xd5\x07\x10_\x9d\x12q\xf6\xf69\x80\xb4E\x10a|+\x18\xef\x87(j\xe5-h\xb2\xc4]h\xb0\xe5h\\b\xbfW\xeaG^\x1f\r\x05\xe3\x97=fZ\xd9\xeeR\xe03^\xe5'
+[2021-12-10 22:45:02][MYSOCKET]Error!!!!!
+[2021-12-10 22:45:02][MYSOCKET]b'\xcd\x9b\xcbw\x7f,\xeb\x8f(\x9bk\x12\x83\x85#\xe2g\xacx\xa7\x95\xa0\xd8\n\xb7\xca\xd5\x07\x10_\x9d\x12q\xf6\xf69\x80\xb4E\x10a|+\x18\xef\x87(j\xe5-h\xb2\xc4]h\xb0\xe5h\\b\xbfW\xeaG^\x1f\r\x05\xe3\x97=fZ\xd9\xeeR\xe03^\xe5'»^reV{7çÀÈ0211210224502","fcltSn":1,"errorCode":0,"orgnztSn":2}
+[2021-12-10 22:45:02][MYSOCKET]Receive Socket
+[2021-12-10 22:45:02][COMMAND]Write System Configuration File
+[2021-12-10 22:45:05][MAIN]UID :9DBC0500
+[2021-12-10 22:45:05][MYSOCKET]## Send Message ##
+[2021-12-10 22:45:05][MYSOCKET]orig : {'method': 'reqFingerCardCheck', 'cardNumber': '00AABBCCDDEE', 'fcltSn': 1}
+[2021-12-10 22:45:05][MYSOCKET]+++++++++++ Check Point +++++++++++++
+[2021-12-10 22:45:05][MYSOCKET]Send Message : {"method": "reqFingerCardCheck", "cardNumber": "00AABBCCDDEE", "fcltSn": 1}
+[2021-12-10 22:45:05][MYSOCKET]Encode Message : b"\xb8\xb0\x801p\xa6\x02\x86\xcd\xed^\xfefi\xf9\x04\x1a\x08\xce\x7f\x1b\xd3\xbb\x9a\\?i\xe0\x19\x0b\xfb\xc5~\xac\x10t\xb7\xd77\r4|Z\x0b\x1c\x1c\xe72\x03\xa9a\xf6\xa2\x8b\xbaF\xfb\x8d\xef,'\x0e\x0b4\xd6=M\xbc\x8d\xb3\x04\x9c\xe2\x0bT~f\xaa\xfb\xc0"
+[2021-12-10 22:45:05][MYSOCKET]Decode Message : æEÒØZ55wôÂ!ingerCardCheck", "cardNumber": "00AABBCCDDEE", "fcltSn": 1}
+[2021-12-10 22:45:05][MYSOCKET]+++++++++++++++++++++++++++++++++++++
+[2021-12-10 22:45:09][MYSOCKET]Socket Timeout
+[2021-12-10 22:46:02][MYSOCKET]## Send Message ##
+[2021-12-10 22:46:02][MYSOCKET]orig : {'method': 'setError', 'orgnztSn': '1', 'fcltSn': 1, 'errorCode': '0'}
+[2021-12-10 22:46:02][MYSOCKET]+++++++++++ Check Point +++++++++++++
+[2021-12-10 22:46:02][MYSOCKET]Send Message : {"method": "setError", "orgnztSn": "1", "fcltSn": 1, "errorCode": "0"}
+[2021-12-10 22:46:02][MYSOCKET]Encode Message : b'%\xe0\x04\x92\xc9IQ\x17\x00\xe4b\xb8\xaej2\xb4\x85\xd5\x9e\x0fnAsO\x83>\xc6\xac\x8d\xd9Hg-\xdb~P\x90]\xf1\xf7\xedF\x00\xa7\x9eO$\xa8#R\xcf\xa0\xc7\x01#\xf7\x96\xb12\xcf=}\xa3\x1f\xdb\xb5\rm\x10YO\xe9\x8e\x0b\xfbv\x01\xe1\t\x08'
+[2021-12-10 22:46:02][MYSOCKET]Decode Message : {"method": "setError", "orgnztSn": "1", "fcltSn": 1, "errorCode": "0"}
+[2021-12-10 22:46:02][MYSOCKET]+++++++++++++++++++++++++++++++++++++
+[2021-12-10 22:46:06][MYSOCKET]Socket Timeout
+[2021-12-10 22:46:06][MAIN]+++++++++++ Alive Message
+[2021-12-10 22:46:16][MAIN]UID :9DBC0500
+[2021-12-10 22:46:16][MYSOCKET]## Send Message ##
+[2021-12-10 22:46:16][MYSOCKET]orig : {'method': 'reqFingerCardCheck', 'cardNumber': '00AABBCCDDEE', 'fcltSn': 1}
+[2021-12-10 22:46:16][MYSOCKET]+++++++++++ Check Point +++++++++++++
+[2021-12-10 22:46:16][MYSOCKET]Send Message : {"method": "reqFingerCardCheck", "cardNumber": "00AABBCCDDEE", "fcltSn": 1}
+[2021-12-10 22:46:16][MYSOCKET]Encode Message : b'\x86\x02"|I\xb8{\xea\xc6\xa1\x8e;\x82\xf69\x9f\xcf&~\xa0\xde\x11\x8a\x00\x18\x80\x805\tH\x15pL`\x15\xb0\xf6\xe5\xa3\xc7}\xb3\x08\xe3;\x8fq\xfc\xe1a#B\xe5\x95\xc5\xfb6$\xaf\x80\x91\nfL\x15R\xa5\xbb\x088IS\xb6\xda{.!_6\x0c'
+[2021-12-10 22:46:16][MYSOCKET]Decode Message : {"method": "reqFingerCardCheck", "cardNumber": "00AABBCCDDEE", "fcltSn": 1}
+[2021-12-10 22:46:16][MYSOCKET]+++++++++++++++++++++++++++++++++++++
+[2021-12-10 22:46:20][MYSOCKET]Socket Timeout
+[2021-12-10 22:47:02][MYSOCKET]## Send Message ##
+[2021-12-10 22:47:02][MYSOCKET]orig : {'method': 'setError', 'orgnztSn': '1', 'fcltSn': 1, 'errorCode': '0'}
+[2021-12-10 22:47:02][MYSOCKET]+++++++++++ Check Point +++++++++++++
+[2021-12-10 22:47:02][MYSOCKET]Send Message : {"method": "setError", "orgnztSn": "1", "fcltSn": 1, "errorCode": "0"}
+[2021-12-10 22:47:02][MYSOCKET]Encode Message : b'\x8d=\x16\x92\xcf=\xe5\xae^n\xfc\xac\xfa$_-\x84\x8btc\x8e\xd51#\xb7\x91\x9dNH\xe4 \x12h\xc6\x9a\xf1\xe3l!\xe1\xcc$\xe8\xa8K\x88\xbf5\x92\xe6\x11@lj\xd3A\x8b,1\x0e\xa9P_0(\xdfb\x08G\x84Q\xe5\x86\xb6\x0f\x1bO\x97\x07\xa2'
+[2021-12-10 22:47:02][MYSOCKET]Decode Message : {"method": "setError", "orgnztSn": "1", "fcltSn": 1, "errorCode": "0"}
+[2021-12-10 22:47:02][MYSOCKET]+++++++++++++++++++++++++++++++++++++
+[2021-12-10 22:47:06][MYSOCKET]Socket Timeout
+[2021-12-10 22:47:06][MAIN]+++++++++++ Alive Message
+[2021-12-10 22:48:02][MYSOCKET]## Send Message ##
+[2021-12-10 22:48:02][MYSOCKET]orig : {'method': 'setError', 'orgnztSn': '1', 'fcltSn': 1, 'errorCode': '0'}
+[2021-12-10 22:48:02][MYSOCKET]+++++++++++ Check Point +++++++++++++
+[2021-12-10 22:48:02][MYSOCKET]Send Message : {"method": "setError", "orgnztSn": "1", "fcltSn": 1, "errorCode": "0"}
+[2021-12-10 22:48:02][MYSOCKET]Encode Message : b"\x99'[\xc6EL1\xd4\xef\xdf6\xb5\xbe\x88\x0c\xe0\x8f\xd8\x9d=\xc2\xe8\xeb\xee\xc6a+y\xc2\xe5\x13)\x8e\xa9\xd1\xb3\x1a\x87\x90\x0b)\xaa\x1d\x85vl3\xe2\xbf\xe2\xe2\x08.\x06\xbb\xd5\xe73%\x8dh\x8f\x1a|\x1f\x91;\x9e\x17\xe2(\x81\x03\xb4\xa5\xb1\xfbh\xef\xf2"
+[2021-12-10 22:48:02][MYSOCKET]Decode Message : {"method": "setError", "orgnztSn": "1", "fcltSn": 1, "errorCode": "0"}
+[2021-12-10 22:48:02][MYSOCKET]+++++++++++++++++++++++++++++++++++++
+[2021-12-10 22:48:06][MYSOCKET]Socket Timeout
+[2021-12-10 22:48:06][MAIN]+++++++++++ Alive Message
+[2021-12-10 22:48:45][MAIN]접속 종료

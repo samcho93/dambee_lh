@@ -1,0 +1,3 @@
+[2021-12-12 12:24:19][COMMAND]Read System Configuration File
+[2021-12-12 12:24:19][MAIN]입출력 초기화
+[2021-12-12 12:24:19][MAIN]LCD 초기화

@@ -46,19 +46,7 @@ class TASK():
           ms.SendMessage(4)      
         except:
           DEBUGPrint("task error : TASK_REQUEST_CALL")
-          task = TASK_IDLE           
-        
-      elif self.task == TASK_CALL_ENTRY_WAIT:
-        try:
-          cur_time = int(time()*1000)
-          if((cur_time - self.timewait) >= 6000):
-            DEBUGPrint("Request Calling....")
-            
-            display.DispCallWait()
-            self.task = TASK_REQUEST_CALL_RESULT
-        except:
-          DEBUGPrint("task error : TASK_CALL_ENTRY_WAIT")
-          task = TASK_IDLE 
+          self.task = TASK_IDLE                   
       elif self.task == TASK_REQUEST_CALL_RESULT:
         try:
           DEBUGPrint("TASK_REQUEST_CALL_RESULT")
@@ -70,7 +58,7 @@ class TASK():
           self.belltime = self.timeout - 3800    
         except:
           DEBUGPrint("task error : TASK_REQUEST_CALL_RESULT")
-          task = TASK_IDLE                     
+          self.task = TASK_IDLE                     
       elif self.task == TASK_REQUEST_CALL_RESULT_WAIT:
         try:
           cur_time = int(time()*1000)
@@ -84,7 +72,7 @@ class TASK():
             os.system("aplay -D plughw:1,0 /home/pi/dambee_lh/music/doorbell.wav &")
         except:
           DEBUGPrint("task error : TASK_REQUEST_CALL_RESULT_WAIT")
-          task = TASK_IDLE 
+          self.task = TASK_IDLE 
       elif self.task == TASK_VIDEOCALL_COMPLETE:
         DEBUGPrint("TASK_VIDEOCALL_COMPLETE")
         
@@ -98,7 +86,7 @@ class TASK():
           self.task = TASK_IDLE
         except:
           DEBUGPrint("task error : TASK_REQUEST_CALL_TIMEOUT")
-          task = TASK_IDLE 
+          self.task = TASK_IDLE 
       elif self.task == TASK_CALL_TERMINATE_WAIT:  
         self.task = TASK_IDLE
       
@@ -118,6 +106,7 @@ class TASK():
                 display.DispCall()                         
                 self.task = TASK_REQUEST_CALL_RESULT            
             except:
+              self.task = TASK_IDLE 
               DEBUGPrint("task process error : TASK_REQUEST_CALL_RESP")                            
       else:
         DEBUGPrint("ErrorCode : ", errorCode)        
