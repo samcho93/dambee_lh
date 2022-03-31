@@ -46,7 +46,7 @@ class TS20:
           data = b'\x0b\x52'
           self._write_data(data)
           
-          data = b'\x0C\x22'
+          data = b'\x0C\x92'
           self._write_data(data)
           
           data = b'\x0E\x00' # 1 ~ 4
@@ -62,43 +62,43 @@ class TS20:
           self._write_data(data)
 
           
-          data = b'\x00\x66'
+          sen = b'\x55'
+          data = b'\x00' + sen
           self._write_data(data)
           
-          data = b'\x01\x66'
+          data = b'\x01' + sen
           self._write_data(data)
           
-          data = b'\x02\x33'
+          data = b'\x02' + sen
           self._write_data(data)
           
-          data = b'\x03\x33'
+          data = b'\x03' + sen
           self._write_data(data)
           
-          data = b'\x04\x33'
+          data = b'\x04' + sen
           self._write_data(data)
           
-          data = b'\x05\x66'
+          data = b'\x05' + sen
           self._write_data(data)
           
-          data = b'\x06\x66'
+          data = b'\x06' + sen
           self._write_data(data)
           
-          data = b'\x07\x66'
+          data = b'\x07' + sen
           self._write_data(data)
+          
 
-           
-          
           data = b'\x14\x00'
           self._write_data(data)
           
-          data = b'\x15\x00'
+          data = b'\x15\x00' 
           self._write_data(data)
           
           data = b'\x16\x00'
           self._write_data(data)
           
           
-          data = b'\x17\x1F'
+          data = b'\x17\x0D'
           self._write_data(data)
           
           
@@ -149,7 +149,7 @@ class TS20:
             self._write_data(data)
             touch = self._i2c.read(3)      
             if touch[2] & 0x20 == 0:
-              return touch[0] + touch[1] * 256
+              return (touch[0] & 0x7F)  + (touch[1] & 0x1F) * 256
             else:
               return 0 
         except:
